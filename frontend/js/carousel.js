@@ -1,8 +1,10 @@
 var Carousel1 =document.getElementsByClassName("Carousel1")
-Carousel1[0].style.width=Carousel1[0].children.length*100/3 + "%" 
+Carousel1[0].style.width=Carousel1[0].children.length*100/2 + "%" 
+
 for (let index = 0; index < Carousel1[0].children.length; index++) {
     Carousel1[0].children[index].style.width=parseInt(100/Carousel1[0].children.length)+"%";
 }
+
 //Creer navigation
 var BtnNav=function(classe)
 {
@@ -40,13 +42,10 @@ let Navigation=function(index,dir)
     }
     if(index==2)
     {
-        Carousel1[0].style.transform="translateX(-"+(1.95+0.86)*100/Carousel1[0].children.length+"%)"
+        Carousel1[0].style.transform="translateX(-"+(2.95+0.86)*100/Carousel1[0].children.length+"%)"
         
     }
-    /*
-        * on cacher a left par exemple 
-        * on va chacher le 1 ere element sur index =1
-    */
+
     if(index==0)
     {
         Carousel1[0].style.transform="translateX(0)"
