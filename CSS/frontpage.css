@@ -1,0 +1,273 @@
+
+.beThe{
+  position: relative;
+  color: black; 
+  text-align: left;
+  font-size: 15.5vw;
+  font-weight: 1500;
+  font-family: Bastardo;
+  margin:0%;
+  margin-top:-1%;
+  letter-spacing: -5;
+  width: 100%;
+  height: auto;
+
+}
+
+
+.best{
+  position: relative;
+  color: black; 
+  text-align: left;
+  font-size: 15.5vw;
+  font-weight: 1500;
+  font-family: Bastardo;
+  margin:0%;
+  margin-top: -11%;
+  margin-left: 48.5%;
+  letter-spacing: -5;
+  width: 100%;
+  height: auto;
+}
+
+.atYour{
+  position: relative;
+  color: black; 
+  text-align: left;
+  font-size: 15.5vw;
+  font-weight: 1500;
+  font-family: Bastardo;
+  margin:0%;
+  margin-top:-16%;
+  margin-left: 21%;
+  letter-spacing: -5;  width: 100%;
+  height: auto;
+}
+
+.worst{
+  position: relative;
+  color: black; 
+  text-align: left;
+  font-size: 15.5vw;
+  font-weight: 1500;
+  font-family: Bastardo;
+  margin: auto;
+  margin-left: 45%;
+  margin-top: -10%;
+  letter-spacing: -5;  width: 100%;
+  height: auto;
+}
+
+.outstanding{
+  color: black; 
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 4%;
+  font-size: 200%;
+  font-family: Helvetica;
+  font-weight: 500;  width: 100%;
+  height: auto;
+  font-size: 2.5vw;
+}
+
+.outstanding a{
+  color: black; 
+  text-align: left;
+  font-family: Helvetica;
+  font-weight: 500;  width: 100%;
+  height: auto;
+
+}
+
+.outstanding a:hover{
+  text-decoration: underline;
+}
+
+.video{
+  display:block;
+  margin-left:40%; 
+  position:relative;
+  width:58vw;
+  height:67vh;
+}
+
+.howTo {
+  margin-left: 7%;
+  width: 100%;
+  height: 100%;  width: 100%;
+  height: auto;
+}
+
+.sickEvents {
+  margin-left: 7%;
+  font-family: Bastardo;
+  font-size: 5vw;
+  font-weight: 800;  
+  width: 100%;
+  height: auto;
+}
+
+.collecting {
+  position:absolute;
+  margin-top:20%;
+  margin-left: 6.4rem;
+  font-family:Helvetica;
+  font-size: 1.5vw;
+  font-weight: 300;  width: 100%;
+  height: auto;
+}
+.yesYou {
+  position:absolute;
+  margin-top:40%;
+  margin-left: 10%;
+  font-family:Helvetica;
+  font-size: 1.5vw;
+  font-weight: 300;  width: 100%;
+  height: auto;
+}
+
+.lazy {  
+  width: 100%;
+  height: auto;
+  position:absolute;
+  margin-top:90%;
+  margin-left: 6.4rem;
+  font-family:Helvetica;
+  font-size: 1.5vw;
+  font-weight: 300;
+}
+
+.scroll {
+  width: 100%;
+  display:flex;
+  outline: 3px solid black;
+}
+
+.scroll .tick{
+  font-size: 2em;
+  font-family: Bastardo;
+  white-space: nowrap;
+  animation: animate 40s linear infinite;
+  animation-delay: -40s;
+  padding: 1vw;
+}
+
+.scroll .tick:nth-child(2){
+  animation: animate2 40s linear infinite;
+  animation-delay: -20s;
+}
+
+@keyframes animate{
+
+  0%
+  {
+    transform: translateX(100%);
+  }
+
+  100%
+  {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate2{
+
+  0%
+  {
+    transform: translateX(0%);
+  }
+
+  100%
+  {
+    transform: translateX(-200%);
+  }
+}
+
+
+body
+{
+    overflow-x: hidden; 
+    background:linear-gradient(to right,blue,red);
+}
+.item
+{
+    float: left;
+    margin-right: 5px;
+    background-color: white;
+}
+.item img
+{
+width: 100%;
+}
+.Carousel1
+{
+    transition: transform .5s;
+}
+.content1
+{
+    position: relative;
+}
+h1,h2,p
+{
+    margin-left: 50px;
+}
+.Carousel1_point1,.Carousel1_point2,.Carousel1_point3
+{
+    display: inline-block;
+    width: 10px;
+    margin-top: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2;
+}
+.points1
+{
+    text-align: center;
+}
+.Left,.right
+{
+    background: url(https://i.postimg.cc/rFxP1K3b/left.png) no-repeat white center;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 20px;
+    top: 50%;
+    margin-top: -20px;
+    background-size: 30px;
+    width: 40px;
+    height: 40px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.right
+{
+   right: 15px;
+   background-image: url(https://i.postimg.cc/GmV2DgDd/4beb4317ebb605abb3096d9a1b5dbde4.png);
+}
+.Left:hover,.right:hover
+{
+    opacity: 1;
+}
+.now
+{
+    transform: scale(1.3);
+    transition:transform .3s;
+}
+img{
+    width: 125px;
+    height: 200px;
+}
+h1
+{
+  width: 100%;
+  color:#5F4;
+  text-align: center;
+}
+@media screen and (max-width:600px)
+{
+  body
+  {
+    width:600px;
+  }
+}
+

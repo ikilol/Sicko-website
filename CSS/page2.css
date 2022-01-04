@@ -1,0 +1,144 @@
+
+.numUno{
+  position: relative;
+  color: white; 
+  text-align: left;
+  font-size: 15.5vw;
+  font-weight: 1500;
+  font-family: Bastardo;
+  margin:0%;
+  margin-top:7%;
+  margin-left:20%;
+  letter-spacing: -5;
+  z-index: 11;
+  width: 100%;
+  height: auto;
+
+}
+
+
+.numDue{
+  position: relative;
+  color: white; 
+  text-align: left;
+  font-size: 15.5vw;
+  font-weight: 1500;
+  font-family: Bastardo;
+  margin:0%;
+  margin-top:-5%;
+  margin-left: 32.5%;
+  letter-spacing: -5;
+  z-index: 11;
+    width: 100%;
+  height: auto;
+}
+
+.numTre{
+  position: relative;
+  color: white; 
+  text-align: left;
+  font-size: 15.5vw;
+  font-weight: 1500;
+  font-family: Bastardo;
+  margin:0%;
+  margin-top:-5%;
+  margin-left: 26%;
+  letter-spacing: -5;
+  z-index: 11;
+    width: 100%;
+  height: auto;
+}
+
+.users {
+  position:absolute;
+  color:white;
+  margin-top:10%;
+  margin-left: 7%;
+  font-family:Helvetica;
+  font-size: 1.5vw;
+  font-weight: 300;
+    width: 100%;
+  height: auto;
+}
+
+.ickss {
+  position:absolute;
+  color:white;
+  margin-top:24.5%;
+  margin-left: 7%;
+  font-family:Helvetica;
+  font-size: 1.5vw;
+  font-weight: 300;
+  width: 100%;
+  height: auto;
+}
+
+.challenges {
+  position:absolute;
+  color:white;
+  margin-top:38.5%;
+  margin-left: 7%;
+  font-family:Helvetica;
+  font-size: 1.5vw;
+  font-weight: 300;
+  width: 100%;
+  height: auto;
+}
+
+.hash {
+  position:absolute;
+  margin-top:-73%;
+  margin-left: 32%;
+  z-index: 10;
+  width: 100%;
+  height: auto;
+  transform: scale(0.25);
+}
+
+.exla {
+  position:absolute;
+  margin-top:-185%;
+  margin-left: 12%;
+  z-index: 12;
+  width: 100%;
+  height: auto;
+  transform: scale(0.07);
+}
+
+.rankingss {
+  position:relative;
+    margin-left: 2.5%;
+    transform: scale(0.9);
+    width: 100%;
+    height: auto;
+  }
+
+
+
+.ticker {
+	--size: 54ch;
+	font-size: 2em;
+	font-weight: light;
+  margin-top: -1.2%;
+	will-change: transform;
+  text-align: center;
+	animation: ticker 8s infinite linear;
+	text-shadow:
+		calc( var(--size) + 0.5em ) 0 currentcolor,	
+		calc( (var(--size) + 0.5em) * 2 ) 0 currentcolor
+	;
+}
+
+.ticker-container {
+  width: 100%;
+  height: 100%;
+	overflow: hidden;
+  padding: 2%;
+  outline: 3px solid black;
+}
+
+@keyframes ticker {
+	to {
+		transform: translateX( calc( (var(--size) + 0.5em) * -1 ) )
+	}
+}

@@ -1,0 +1,195 @@
+
+.what{
+  position: relative;
+  color: white; 
+  text-align: left;
+  font-size: 15vw;
+  font-weight: 1500;
+  font-family: Bastardo;
+  margin:0%;
+  margin-top:0%;
+  margin-left:20%;
+  letter-spacing: -5;
+    width: 100%;
+  height: auto;
+
+}
+
+
+.theHell{
+  position: relative;
+  color: white; 
+  text-align: left;
+    font-size: 15vw;
+  font-weight: 1500;
+  font-family: Bastardo;
+  margin:0%;
+  margin-top:-5%;
+  margin-left: 35%;
+  letter-spacing: -5;
+    width: 100%;
+  height: auto;
+}
+
+.isThis{
+  position: relative;
+  color: white; 
+  text-align: left;
+    font-size: 15vw;
+  font-weight: 1500;
+  font-family: Bastardo;
+  margin:0%;
+  margin-top:-5%;
+  margin-left: 28%;
+  letter-spacing: -5;
+    width: 100%;
+  height: auto;
+}
+
+.sick0{
+  position: relative;
+  color: white; 
+  text-align: left;
+    font-size: 15vw;
+  font-weight: 1500;
+  font-family: Bastardo;
+  margin: auto;
+  margin-left: 33.5%;
+  margin-top: -5%;
+  letter-spacing: -5;
+    width: 100%;
+  height: auto;
+}
+
+.confused {
+  position:absolute;
+  color:white;
+  margin-top:20%;
+  margin-left: 10%;
+  font-family:Helvetica;
+  font-size: 1.5vw;
+  font-weight: 300;
+    width: 100%;
+  height: auto;
+}
+.foolproof {
+  position:absolute;
+  color:white;
+  margin-top:40%;
+  margin-left: 10%;
+  font-family:Helvetica;
+  font-size: 1.5vw;
+  font-weight: 300;
+    width: 100%;
+  height: auto;
+}
+
+.text{
+  color: white; 
+  text-align: left;
+  margin-left: 7%;
+  margin-top: 4%;
+  font-size: 2.5vw;
+  font-family: Helvetica;
+  font-weight: 500;
+  width: 100%;
+  height: auto;
+}
+
+.text2{
+  color: white; 
+  text-align: left;
+  margin-left: 7%;
+  margin-top: 5%;
+  font-size: 2.5vw;
+  font-family: Helvetica;
+  font-weight: 500;
+    width: 100%;
+  height: auto;
+}
+
+
+.loudermodel {
+  display: block;
+  position: relative;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 400px;
+}
+
+.ticker {
+	--size: 54ch;
+	font-size: 2em;
+	font-weight: light;
+  margin-top: -1.2%;
+	will-change: transform;
+  text-align: center;
+	animation: ticker 8s infinite linear;
+	text-shadow:
+		calc( var(--size) + 0.5em ) 0 currentcolor,	
+		calc( (var(--size) + 0.5em) * 2 ) 0 currentcolor
+	;
+}
+
+.text:hover {
+  color:#888888;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color:#888888;
+}
+
+.scroll2 {
+  width: 100%;
+  display:flex;
+  outline: 3px solid white;
+  margin-top:8%;
+}
+
+.scroll2 .tick2{
+  font-size: 2em;
+  font-family: Bastardo;
+  color: white;
+  white-space: nowrap;
+  animation: animate 40s linear infinite;
+  animation-delay: -40s;
+  padding: 1vw;
+}
+
+.scroll2 .tick2:nth-child(2){
+  animation: animate2 40s linear infinite;
+  animation-delay: -20s;
+}
+
+@keyframes animate{
+
+  0%
+  {
+    transform: translateX(100%);
+  }
+
+  100%
+  {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate2{
+
+  0%
+  {
+    transform: translateX(0%);
+  }
+
+  100%
+  {
+    transform: translateX(-200%);
+  }
+}

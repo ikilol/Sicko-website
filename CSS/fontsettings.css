@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Bastardo';
+    src: url('../fonts/BastardoGroteskish-Regular.eot');
+    src: url('../fonts/BastardoGroteskish-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BastardoGroteskish-Regular.woff2') format('woff2'),
+        url('../fonts/BastardoGroteskish-Regular.woff') format('woff'),
+        url('../fonts/BastardoGroteskish-Regular.ttf') format('truetype'),
+        url('../fonts/BastardoGroteskish-Regular.svg#BastardoGroteskish-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bastardo';
+    src: url('../fonts/BastardoGroteskish-Bold.eot');
+    src: url('../fonts/BastardoGroteskish-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BastardoGroteskish-Bold.woff2') format('woff2'),
+        url('../fonts/BastardoGroteskish-Bold.woff') format('woff'),
+        url('../fonts/BastardoGroteskish-Bold.ttf') format('truetype'),
+        url('../fonts/BastardoGroteskish-Bold.svg#BastardoGroteskish-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bastardo';
+    src: url('../fonts/BastardoGroteskish-Medium.eot');
+    src: url('../fonts/BastardoGroteskish-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BastardoGroteskish-Medium.woff2') format('woff2'),
+        url('../fonts/BastardoGroteskish-Medium.woff') format('woff'),
+        url('../fonts/BastardoGroteskish-Medium.ttf') format('truetype'),
+        url('../fonts/BastardoGroteskish-Medium.svg#BastardoGroteskish-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bastardo';
+    src: url('../fonts/BastardoGroteskish-Thin.eot');
+    src: url('../fonts/BastardoGroteskish-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BastardoGroteskish-Thin.woff2') format('woff2'),
+        url('../fonts/BastardoGroteskish-Thin.woff') format('woff'),
+        url('../fonts/BastardoGroteskish-Thin.ttf') format('truetype'),
+        url('../fonts/BastardoGroteskish-Thin.svg#BastardoGroteskish-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/FreeSans.eot');
+    src: url('../fonts/FreeSans.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FreeSans.woff2') format('woff2'),
+        url('../fonts/FreeSans.woff') format('woff'),
+        url('../fonts/FreeSans.ttf') format('truetype'),
+        url('../fonts/FreeSans.svg#FreeSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+

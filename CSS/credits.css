@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    display: flex;
+  
+  }
+
+  .synthesis {
+    position:absolute;
+    color:#8ee002;
+    margin-top:7%;
+    margin-left:27%;
+    
+    font-family:Helvetica;
+    font-size: 2.3vw;
+    font-weight: 800;
+  }
+
+  .teachers {
+    position:absolute;
+    color:#888888;
+    margin-top:20%;
+    margin-left:27%;
+    
+    font-family:Helvetica;
+    font-size: 2vw;
+    font-weight: 500;
+  }
+
+  
+  .assistants {
+    position:absolute;
+    color:#888888;
+    margin-top:20%;
+    margin-left:65%;
+    
+    font-family:Helvetica;
+    font-size: 2vw;
+    font-weight: 500;
+  }
+
+  .students {
+    position:absolute;
+    color:#888888;
+    margin-top:33%;
+    margin-left:27%;
+    
+    font-family:Helvetica;
+    font-size: 2vw;
+    font-weight: 500;
+  }
+
+  .legit {
+    position:absolute;
+    color:white;
+    margin-top:20%;
+    margin-left: 7%;
+    font-family:Helvetica;
+    font-size: 1.5vw;
+    font-weight: 300;
+  }
+
+  .never {
+    position:absolute;
+    color:white;
+    margin-top:33%;
+    margin-left: 7%;
+    font-family:Helvetica;
+    font-size: 1.5vw;
+    font-weight: 300;
+  }
+
+  .jk{
+    position:absolute;
+    margin-top: -42%;
+    margin-left: -25%;
+    width:100%;
+    height:auto;
+    transform: scale(0.1);
+  }
+
+  .teachersimg{
+    position:absolute;
+    margin-top: -164%;
+    margin-left: -27%;
+    width:100%;
+    height:auto;
+    transform: scale(0.03);
+  }
+
+  .assistimg{
+    position:absolute;
+    margin-top: -128%;
+    margin-left: 11%;
+    width:100%;
+    height:auto;
+    transform: scale(0.03);
+  }
+
+  a:hover{
+    color: white;
+  }
+
+  .icon{
+    color: white;
+    width: 50px;
+    height: 50px;
+    transform:rotate(45deg);
+    transition:transform 0.5s linear;
+  }
+  .icon:hover{
+    transform:rotate(180deg);
+  }

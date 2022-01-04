@@ -1,0 +1,100 @@
+
+.if{
+  position: relative;
+  color: black; 
+  text-align: left;
+  font-size: 15vw;
+  font-weight: 1500;
+  font-family: Bastardo;
+  margin:0%;
+  margin-top:0%;
+  margin-left:5%;
+  letter-spacing: -10;
+
+}
+
+
+.angry{
+  position: relative;
+  color: black; 
+  text-align: left;
+  font-size: 15vw;
+  font-weight: 1500;
+  font-family: Bastardo;
+  margin:0%;
+  margin-top:-6%;
+  margin-left: 6%;
+  letter-spacing: -10;
+}
+
+.know{
+  position: relative;
+  color: black; 
+  text-align: left;
+  font-size: 15vw;
+  font-weight: 1500;
+  font-family: Bastardo;
+  margin:0%;
+  margin-top:-3%;
+  margin-left: 28%;
+  letter-spacing: -5;
+}
+
+.buy{
+  position: relative;
+  color: black; 
+  text-align: left;
+  font-size: 15vw;
+  font-weight: 1500;
+  font-family: Bastardo;
+  margin: auto;
+  margin-left: 15%;
+  margin-top: -7%;
+  letter-spacing: -5;
+}
+
+.imgshop {
+  position: relative;
+  transform: scale(0.85);
+  margin-left: 0%;
+  margin-top: 10%;
+  width: 100%;
+  height: auto;
+
+}
+
+.shops {
+  position: relative;
+  transform: scale(0.86);
+  margin-left: 0%;
+  margin-top: -4%;
+  width: 100%;
+  height: auto;
+
+}
+
+.shopnow {
+  margin-left: 7%;
+  font-family: Bastardo;
+  font-size: 5vw;
+  font-weight: 800;  width: 100%;
+  height: auto;
+}
+
+
+
+
+.ticker {
+	--size: 54ch;
+	font-size: 2em;
+	font-weight: light;
+  margin-top: -1.2%;
+	will-change: transform;
+  text-align: center;
+	animation: ticker 8s infinite linear;
+	text-shadow:
+		calc( var(--size) + 0.5em ) 0 currentcolor,	
+		calc( (var(--size) + 0.5em) * 2 ) 0 currentcolor
+	;
+}
+
