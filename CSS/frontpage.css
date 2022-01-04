@@ -196,10 +196,12 @@ img {
   width: 584px;
   height: 413px; 
 }
+
 .Carousel1
 {
     transition: transform .5s;
     margin-left: 7%;
+
     margin-top: 2%;
     display: inline-block;
 }
@@ -220,7 +222,6 @@ img {
     background-size: 30px;
     width: 40px;
     height: 40px;
-    opacity: 0.6;
     cursor: pointer;
 }
 .right
@@ -228,9 +229,4 @@ img {
    right: 15px;
    background-image: url(https://i.postimg.cc/GmV2DgDd/4beb4317ebb605abb3096d9a1b5dbde4.png);
 }
-.Left:hover,.right:hover
-{
-    opacity: 1;
-}
-
 
