@@ -67,6 +67,7 @@
 		font-size:30vw;
     text-align: left;
     margin-left: 28vw;
+    margin-top: 10vh;
     
 	}
 
@@ -123,7 +124,7 @@
 	.confused{
 		font-size:2.5vw;
     font-weight: 500;
-    margin-top:8vh;
+    margin-top:13vh;
 	}
 
   .foolproof{

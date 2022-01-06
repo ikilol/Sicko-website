@@ -62,32 +62,35 @@
 
 	.beThe{
 		font-size:30vw;
-    text-align: left;
-    margin-left: 17vw;
+    text-align: right;
+    margin-left: 0vw;
+    margin-top: 51vh;
+    margin-right:10vw
     
 	}
 
   .best{
 		font-size:30vw;
-    margin-left: 33vw;
+    margin-left: 0vw;
     margin-top: -5vh;
-    text-align: left;
+    text-align: right;
     
 	}
 
   .atYour{
 		font-size:30vw;
-    margin-left: 10vw;
+    margin-left: 0vw;
     margin-top: -6vh;
-    text-align: left;
+    text-align: right;
     
     
 	}
 
   .worst{
 		font-size:30vw;
-    margin-left: 19vw;
+    margin-left: 0;
     margin-top: -5vh;
+    text-align: right;
     
 	}
 }
@@ -206,9 +209,9 @@
 @media only screen and (max-width:586px){
 
 	.collecting{
-		font-size:2.5vw;
+		font-size:0vw;
     font-weight: 500;
-    margin-top:17vh;
+    margin-top:67vh;
 	}
 
   .yesYou{
