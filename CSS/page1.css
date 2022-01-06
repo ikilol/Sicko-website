@@ -251,3 +251,13 @@ a:hover {
     transform: translateX(-200%);
   }
 }
+
+iframe{
+  width: 650px;
+  height: 900px;
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}

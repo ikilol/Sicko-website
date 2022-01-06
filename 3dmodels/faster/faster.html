@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d model</title>
+    <style>
+        body{
+            margin: o;
+            background-color: rgb(0, 0, 0);
+        }
+        canvas {
+            width: auto;
+            margin: auto; 
+            background-image: url('asterisco_B.png');  
+            background-repeat: no-repeat;  
+            background-position-x: center;
+            background-size: 700px 
+            
+        }
+    </style>
+</head>
+
+<body>
+    <script src= "three.js"> </script>
+    <script type="module" src= "GLTFLoader.js"> </script>
+    <script type="module">
+        import{GLTFLoader} from "./GLTFLoader.js";
+        import{OrbitControls} from "./OrbitControls.js";
+
+        //scene
+        var scene = new THREE.Scene();
+
+        //camera
+        var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, .01, 1000);
+        camera.position.set(0, 0, 0.2);
+
+        //renderer
+        var renderer = new THREE.WebGLRenderer({ alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        //controls
+        var controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableZoom = false;
+
+        //lights
+        var light = new THREE.HemisphereLight(0xffffff, 0x000000, 1);
+        scene.add(light);
+        
+        var light2 = new THREE.AmbientLight(0x404040); // soft white light
+        scene.add( light2 );
+        
+        const dirLight = new THREE.DirectionalLight( 0xffffff, 2 );
+        dirLight.position.set( 0, 100, 100 );
+        scene.add( dirLight );
+        
+        const dirLight2 = new THREE.DirectionalLight( 0xffffff, 2 );
+        dirLight2.position.set( -100, -100, -100 );
+        scene.add( dirLight2 );
+        
+        const dirLight3 = new THREE.DirectionalLight( 0xffffff, 2 );
+        dirLight3.position.set( 100, 0, 0 );
+        scene.add( dirLight3 );
+
+        const pointLight = new THREE.PointLight( 0x000000, 1 );
+        pointLight.position.set( 100, 100, 0 );
+        scene.add( pointLight );
+        
+        //loader
+        var loader = new GLTFLoader ();        
+        var obj
+        loader.load("faster.gltf", function(gltf){
+            obj = gltf.scene;
+            scene.add(gltf.scene);
+            animate();
+        });
+        
+        function animate() {
+            requestAnimationFrame(animate); 
+            renderer.render(scene, camera);
+        }
+        
+        //responsiveWindow
+        window.addEventListener( 'resize', onWindowResize, false );            
+        function onWindowResize() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize( window.innerWidth, window.innerHeight);
+        }
+    </script>
+
+</body>
+</html>

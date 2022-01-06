@@ -1,0 +1,331 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                5
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Light",
+            "rotation" : [
+                0.16907575726509094,
+                0.7558803558349609,
+                -0.27217137813568115,
+                0.570947527885437
+            ],
+            "translation" : [
+                4.076245307922363,
+                5.903861999511719,
+                -1.0054539442062378
+            ]
+        },
+        {
+            "name" : "Camera",
+            "rotation" : [
+                0.483536034822464,
+                0.33687159419059753,
+                -0.20870360732078552,
+                0.7804827094078064
+            ],
+            "translation" : [
+                7.358891487121582,
+                4.958309173583984,
+                6.925790786743164
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "base",
+            "scale" : [
+                10,
+                10,
+                10
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "led",
+            "scale" : [
+                10,
+                10,
+                10
+            ]
+        },
+        {
+            "mesh" : 2,
+            "name" : "sopra",
+            "scale" : [
+                10,
+                10,
+                10
+            ]
+        },
+        {
+            "children" : [
+                2,
+                3,
+                4
+            ],
+            "name" : "stronger_def v19",
+            "scale" : [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0010000000474974513
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Plastic - Glossy (Grey)",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.16470588743686676,
+                    0.16470588743686676,
+                    0.16470588743686676,
+                    1
+                ],
+                "roughnessFactor" : 0.5527864098548889
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Plastic - Glossy (Grey).001",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.250980406999588,
+                    0.9725490212440491,
+                    0.12941177189350128,
+                    1
+                ],
+                "roughnessFactor" : 0.5527864098548889
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "base",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "led",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 1
+                }
+            ]
+        },
+        {
+            "name" : "sopra",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 8,
+                        "NORMAL" : 9,
+                        "TEXCOORD_0" : 10
+                    },
+                    "indices" : 11,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 3074,
+            "max" : [
+                7.5,
+                5.099999904632568,
+                7.5
+            ],
+            "min" : [
+                -7.5,
+                -0.800000011920929,
+                -7.5
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 3074,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 3074,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 11862,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 640,
+            "max" : [
+                7.400000095367432,
+                3.299999952316284,
+                7.400000095367432
+            ],
+            "min" : [
+                -7.400000095367432,
+                2.299999952316284,
+                -7.400000095367432
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 640,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 640,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 2280,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 1548,
+            "max" : [
+                7.5,
+                6.400000095367432,
+                7.5
+            ],
+            "min" : [
+                -7.5,
+                3.700000047683716,
+                -7.5
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5126,
+            "count" : 1548,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 10,
+            "componentType" : 5126,
+            "count" : 1548,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 11,
+            "componentType" : 5123,
+            "count" : 6492,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 36888,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 36888,
+            "byteOffset" : 36888
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 24592,
+            "byteOffset" : 73776
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 23724,
+            "byteOffset" : 98368
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 7680,
+            "byteOffset" : 122092
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 7680,
+            "byteOffset" : 129772
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5120,
+            "byteOffset" : 137452
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4560,
+            "byteOffset" : 142572
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 18576,
+            "byteOffset" : 147132
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 18576,
+            "byteOffset" : 165708
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 12384,
+            "byteOffset" : 184284
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 12984,
+            "byteOffset" : 196668
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 209652,
+            "uri" : "stronger.bin"
+        }
+    ]
+}
