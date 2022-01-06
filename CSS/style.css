@@ -519,9 +519,15 @@ body{
 	margin-top: 3.2%;
 	margin-left: -1.2%;
 	z-index: 7;
-	
+}
 
-	
+@media only screen and (max-width:586px){
+
+	.sicko{
+	font-size:7vw;
+	margin-top: 6%;
+	margin-left: -2%;
+	}
 }
 
 

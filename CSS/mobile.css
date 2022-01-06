@@ -1,0 +1,160 @@
+@media only screen and (max-width:586px){
+	body{
+		overflow:auto
+}
+}
+.module{
+	padding:0px 2rem
+}
+@media only screen and (max-width:586px){
+	.module{
+		padding:0px 1rem
+}
+}
+
+@media only screen and (max-width:586px){
+	.page{
+		width:100vw;
+		height:auto;
+		position:relative;
+		z-index:1!important
+}
+}
+@media only screen and (max-width:586px){
+	.page .snap{
+		height:auto
+}
+}
+
+@media only screen and (max-width:586px){
+	.page .snap.intro{
+		font-size:1.1rem;
+		line-height:1.5em;
+		padding-top:0em;
+		margin-top:50px
+}
+}
+
+@media only screen and (max-width:586px){
+	.page .header{
+		padding:50px 0 0 0;
+		width:100%
+}
+}
+
+@media only screen and (max-width:586px){
+	.page .header .module{
+		height:auto
+}
+}
+
+@media only screen and (max-width:586px){
+	.page .header .page_cover{
+		padding-bottom:60%;
+		margin-bottom:0;
+		height:auto
+}
+}
+
+@media only screen and (min-width:587px){
+	.page:hover{
+		-webkit-transform:translateX(1vw);
+		-ms-transform:translateX(1vw);
+		transform:translateX(1vw)
+}
+}
+
+@media only screen and (max-width:586px){
+	.page.is-end .page_title{
+		margin-top:10px
+}
+}
+
+@media only screen and (max-width:586px){
+	.page.is-end .page_subtitle2{
+		font-size:1.1rem;
+		line-height:1.5em
+}
+}
+
+@media only screen and (max-width:586px){
+	.page.is-end .page_subtitle{
+		font-size:1.1rem;
+		line-height:1.5em
+}
+}
+
+@media only screen and (max-width:586px){
+	.page.is-end:hover>*{
+		opacity:1
+}
+}
+
+@media only screen and (max-width:586px){
+	.page.n6{
+		left:0
+}
+}
+@media only screen and (max-width:586px){
+	.page.n5{
+		left:0
+}
+}
+@media only screen and (max-width:586px){
+	.page.n4{
+		left:0
+}
+}
+@media only screen and (max-width:586px){
+	.page.n3{
+		left:0
+}
+}
+@media only screen and (max-width:586px){
+	.page.n1{
+		left:0
+}
+}
+@media only screen and (max-width:586px){
+	.page.n0{
+		left:0
+}
+}
+
+@media only screen and (max-width:586px){
+	.page_content{
+		position:relative;
+		padding:0px;
+		-webkit-transform:translateX(0);
+		-ms-transform:translateX(0);
+		transform:translateX(0)
+}
+}
+@media only screen and (max-width:1280px){
+	.page_title{
+		font-size:3rem;
+		line-height:3.2rem
+}
+}
+@media only screen and (max-width:586px){
+	.page_title{
+		min-height:auto;
+		font-size:2rem;
+		line-height:2.3rem;
+		padding-top:0;
+		padding-right:50px
+}
+}
+
+@media only screen and (max-width:586px){
+	.page_number{
+		width:auto;
+		right:1rem;
+		font-size:2rem;
+		line-height:2.3rem
+}
+
+	.outstanding{
+		font-size:400%;
+	}
+}

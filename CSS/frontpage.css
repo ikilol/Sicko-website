@@ -58,16 +58,59 @@
   height: auto;
 }
 
+@media only screen and (max-width:586px){
+
+	.beThe{
+		font-size:800%;
+    text-align: left;
+    margin-left: 20%;
+    
+	}
+
+  .best{
+		font-size:800%;
+    margin-left: 39%;
+    margin-top: -10%;
+    text-align: left;
+    
+	}
+
+  .atYour{
+		font-size:800%;
+    margin-left: 13%;
+    margin-top: -10%;
+    text-align: left;
+    
+    
+	}
+
+  .worst{
+		font-size:800%;
+    margin-left: 23%;
+    margin-top: -10%;
+    
+	}
+}
+
 .outstanding{
   color: black; 
   text-align: left;
-  margin-left: 10%;
+  margin-left: 7%;
   margin-top: 4%;
   font-size: 200%;
   font-family: Helvetica;
   font-weight: 500;  width: 100%;
   height: auto;
   font-size: 2.5vw;
+}
+
+@media only screen and (max-width:586px){
+
+	.outstanding{
+		font-size:190%;
+    font-weight: 500;
+    width: 72%;
+	}
 }
 
 .outstanding a{
@@ -81,6 +124,7 @@
 
 .outstanding a:hover{
   text-decoration: underline;
+  color: black; 
 }
 
 .video{
@@ -90,6 +134,17 @@
   width:58vw;
   height:67vh;
 }
+
+@media only screen and (max-width:586px){
+
+	.video{
+    margin-top: 17%;
+    width:100%;
+    height:auto;
+	}
+}
+
+
 
 .howTo {
   margin-left: 7%;
@@ -107,19 +162,29 @@
   height: auto;
 }
 
+@media only screen and (max-width:586px){
+
+	.sickEvents{
+		font-size:8vw;
+    
+	}
+}
+
 .collecting {
   position:absolute;
   margin-top:20%;
-  margin-left: 6.4rem;
+  margin-left: 7%;
   font-family:Helvetica;
   font-size: 1.5vw;
   font-weight: 300;  width: 100%;
   height: auto;
 }
+
+
 .yesYou {
   position:absolute;
   margin-top:40%;
-  margin-left: 10%;
+  margin-left: 7%;
   font-family:Helvetica;
   font-size: 1.5vw;
   font-weight: 300;  width: 100%;
@@ -131,10 +196,32 @@
   height: auto;
   position:absolute;
   margin-top:90%;
-  margin-left: 6.4rem;
+  margin-left: 7%;
   font-family:Helvetica;
   font-size: 1.5vw;
   font-weight: 300;
+}
+
+
+@media only screen and (max-width:586px){
+
+	.collecting{
+		font-size:2.5vw;
+    font-weight: 500;
+    margin-top:29%;
+	}
+
+  .yesYou{
+		font-size:2.5vw;
+    font-weight: 500;
+    margin-top:76%;
+	}
+
+  .lazy{
+		font-size:2.5vw;
+    font-weight: 500;
+    margin-top:195%;
+	}
 }
 
 .scroll {
@@ -228,5 +315,25 @@ img {
 {
    right: 15px;
    background-image: url(https://i.postimg.cc/GmV2DgDd/4beb4317ebb605abb3096d9a1b5dbde4.png);
+}
+
+@media only screen and (max-width:586px){
+
+	.img{
+		width: 1px;
+    height: 103.25px;
+	}
+
+  .yesYou{
+		font-size:2.5vw;
+    font-weight: 500;
+    margin-top:76%;
+	}
+
+  .lazy{
+		font-size:2.5vw;
+    font-weight: 500;
+    margin-top:195%;
+	}
 }
 
