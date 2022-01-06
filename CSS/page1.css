@@ -61,6 +61,40 @@
   height: auto;
 }
 
+@media only screen and (max-width:586px){
+
+	.what{
+		font-size:30vw;
+    text-align: left;
+    margin-left: 28vw;
+    
+	}
+
+  .theHell{
+		font-size:30vw;
+    margin-left: 4vw;
+    margin-top: -3vh;
+    text-align: left;
+    
+	}
+
+  .isThis{
+		font-size:30vw;
+    margin-left: 22vw;
+    margin-top: -3vh;
+    text-align: left;
+    
+    
+	}
+
+  .sick0{
+		font-size:30vw;
+    margin-left: -1vw;
+    margin-top: -3vh;
+    
+	}
+}
+
 .confused {
   position:absolute;
   color:white;
@@ -82,6 +116,22 @@
   font-weight: 300;
     width: 100%;
   height: auto;
+}
+
+@media only screen and (max-width:586px){
+
+	.confused{
+		font-size:2.5vw;
+    font-weight: 500;
+    margin-top:8vh;
+	}
+
+  .foolproof{
+		font-size:0;
+    font-weight: 500;
+    margin-top:21.5rem;
+	}
+
 }
 
 .text{
@@ -108,16 +158,22 @@
   height: auto;
 }
 
+@media only screen and (max-width:586px){
 
-.loudermodel {
-  display: block;
-  position: relative;
-  margin-top: 5%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 800px;
-  height: 400px;
+	.text{
+		font-size:2.4vh;
+    font-weight: 500;
+    width: 70vw;
+	}
+
+  .text2{
+    font-size:2.4vh;
+    font-weight: 500;
+    width: 70vw;
+  
+  }
 }
+
 
 .ticker {
 	--size: 54ch;
@@ -149,12 +205,13 @@ a:hover {
 .scroll2 {
   width: 100%;
   display:flex;
-  outline: 3px solid white;
+  outline: 0.5vw solid white;
   margin-top:8%;
+  margin-bottom:16%;
 }
 
 .scroll2 .tick2{
-  font-size: 2em;
+  font-size: 7vw;
   font-family: Bastardo;
   color: white;
   white-space: nowrap;

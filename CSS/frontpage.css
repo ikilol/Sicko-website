@@ -61,33 +61,33 @@
 @media only screen and (max-width:586px){
 
 	.beThe{
-		font-size:800%;
+		font-size:30vw;
     text-align: left;
-    margin-left: 20%;
+    margin-left: 17vw;
     
 	}
 
   .best{
-		font-size:800%;
-    margin-left: 39%;
-    margin-top: -10%;
+		font-size:30vw;
+    margin-left: 33vw;
+    margin-top: -5vh;
     text-align: left;
     
 	}
 
   .atYour{
-		font-size:800%;
-    margin-left: 13%;
-    margin-top: -10%;
+		font-size:30vw;
+    margin-left: 10vw;
+    margin-top: -6vh;
     text-align: left;
     
     
 	}
 
   .worst{
-		font-size:800%;
-    margin-left: 23%;
-    margin-top: -10%;
+		font-size:30vw;
+    margin-left: 19vw;
+    margin-top: -5vh;
     
 	}
 }
@@ -107,10 +107,15 @@
 @media only screen and (max-width:586px){
 
 	.outstanding{
-		font-size:190%;
+		font-size:2.8vh;
     font-weight: 500;
-    width: 72%;
+    width: 70vw;
 	}
+
+  .outstanding a{
+    text-decoration: underline;
+  
+  }
 }
 
 .outstanding a{
@@ -138,13 +143,12 @@
 @media only screen and (max-width:586px){
 
 	.video{
-    margin-top: 17%;
+    position: relative;
+    margin-left: 7vw;
     width:100%;
     height:auto;
 	}
 }
-
-
 
 .howTo {
   margin-left: 7%;
@@ -176,8 +180,7 @@
   margin-left: 7%;
   font-family:Helvetica;
   font-size: 1.5vw;
-  font-weight: 300;  width: 100%;
-  height: auto;
+  font-weight: 300; 
 }
 
 
@@ -187,13 +190,10 @@
   margin-left: 7%;
   font-family:Helvetica;
   font-size: 1.5vw;
-  font-weight: 300;  width: 100%;
-  height: auto;
+  font-weight: 300;
 }
 
 .lazy {  
-  width: 100%;
-  height: auto;
   position:absolute;
   margin-top:90%;
   margin-left: 7%;
@@ -208,30 +208,30 @@
 	.collecting{
 		font-size:2.5vw;
     font-weight: 500;
-    margin-top:29%;
+    margin-top:17vh;
 	}
 
   .yesYou{
-		font-size:2.5vw;
+		font-size:0;
     font-weight: 500;
-    margin-top:76%;
+    margin-top:21.5rem;
 	}
 
   .lazy{
-		font-size:2.5vw;
+		font-size:0;
     font-weight: 500;
-    margin-top:195%;
+    margin-top: 72em;
 	}
 }
 
 .scroll {
   width: 100%;
   display:flex;
-  outline: 3px solid black;
+  outline: 0.5vw solid black;
 }
 
 .scroll .tick{
-  font-size: 2em;
+  font-size: 7vw;
   font-family: Bastardo;
   white-space: nowrap;
   animation: animate 40s linear infinite;
@@ -280,8 +280,8 @@
 /* mettere width responsive e trasformare di 0,6*/
 
 img {
-  width: 584px;
-  height: 413px; 
+  width: 45vw;
+  height:auto; 
 }
 
 .Carousel1
@@ -324,16 +324,5 @@ img {
     height: 103.25px;
 	}
 
-  .yesYou{
-		font-size:2.5vw;
-    font-weight: 500;
-    margin-top:76%;
-	}
-
-  .lazy{
-		font-size:2.5vw;
-    font-weight: 500;
-    margin-top:195%;
-	}
 }
 

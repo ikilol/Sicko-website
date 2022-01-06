@@ -433,10 +433,9 @@ body{
 }
 @media only screen and (max-width:586px){
 	.about{
-		width:auto;
-		right:1rem;
-		font-size:2rem;
-		line-height:2.3rem
+		font-size:5vw;
+		margin-top: 6%;
+		margin-left: -1%;
 }
 }
 
@@ -453,12 +452,12 @@ body{
 	margin-left: 94.5%;
 	z-index: 8;
 }
+
 @media only screen and (max-width:586px){
-	.about{
-		width:auto;
-		right:1rem;
-		font-size:2rem;
-		line-height:2.3rem
+	.rankings{
+		font-size:5vw;
+		margin-top: 9%;
+		margin-left: -4%;
 }
 }
 
@@ -475,12 +474,12 @@ body{
 	margin-left: 95.8%;
 	z-index: 8;
 }
+
 @media only screen and (max-width:586px){
-	.about{
-		width:auto;
-		right:1rem;
-		font-size:2rem;
-		line-height:2.3rem
+	.shop{
+		font-size:5vw;
+		margin-top: 6%;
+		margin-left: -1%;
 }
 }
 
@@ -498,12 +497,12 @@ body{
 	letter-spacing: -0.1;
 	z-index: 8;
 }
+
 @media only screen and (max-width:586px){
-	.about{
-		width:auto;
-		right:1rem;
-		font-size:2rem;
-		line-height:2.3rem
+	.personal{
+		font-size:5vw;
+		margin-top: 7%;
+		margin-left: -1%;
 }
 }
 

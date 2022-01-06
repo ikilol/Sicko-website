@@ -142,3 +142,71 @@
 		transform: translateX( calc( (var(--size) + 0.5em) * -1 ) )
 	}
 }
+
+@media only screen and (max-width:586px){
+
+	.numUno{
+		font-size:30vw;
+    text-align: left;
+    margin-left: 28vw;
+    margin-top: 7vh;
+    
+	}
+
+  .numDue{
+		font-size:30vw;
+    margin-left: -3vw;
+    margin-top: 3vh;
+    text-align: left;
+    
+	}
+
+  .numTre{
+		font-size:30vw;
+    margin-left: -3vw;
+    margin-top: 3vh;
+    text-align: left;
+    
+    
+	}
+}
+
+
+@media only screen and (max-width:586px){
+
+	.users{
+    text-align:right;
+		font-size:2.5vw;
+    font-weight: 500;
+    margin-top:3vh;
+    margin-left: -3vh;
+	}
+
+  .ickss{
+      text-align:right;
+      font-size:2.5vw;
+      font-weight: 500;
+      margin-top:23vh;
+      margin-left: -3vh;
+	}
+
+  .challenges{
+    text-align:right;
+    font-size:2.5vw;
+    font-weight: 500;
+    margin-top:43vh;
+    margin-left: -3vh;
+	}
+
+  .exla{
+    margin-left: 45vw;
+    margin-top: -200%;
+    transform:scale(0.09);
+  }
+
+  .hash{
+    margin-top: -145%;
+    margin-left: -15%;
+
+  }
+}
