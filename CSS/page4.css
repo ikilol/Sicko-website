@@ -1,8 +1,47 @@
-.login {
+.loginimm {
     margin-top: -10%;
     margin-left: -2%;
     transform: scale(0.4);
     width: 100%;
     height: auto;
 
+}
+
+.login {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+    width: 40%;
+}
+
+input{
+    border-style: solid;
+    border-right-style: none;
+    border-left-style: none;
+    border-width: 1px;
+    padding: 6px;
+    text-align: center;
+    font-size: 15pt;  
+    margin: 6px;
+    width: 100%;
+}
+
+a.freccia {
+    font-size: 100pt;
+    font-family: Bastardo;
+    text-align: center;
+    text-decoration: none;
+    color: #8ee002;
+}
+
+.text {
+    font-size: 15vm;
+    font-family: Bastardo;
+    text-align: center;
+    color: black;
+}
+
+a.text:hover{
+    color: #8ee002;
 }
