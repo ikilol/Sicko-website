@@ -11,7 +11,7 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 250px;
+    margin-top: 200px;
     width: 40%;
 }
 
@@ -28,11 +28,15 @@ input{
 }
 
 a.freccia {
-    font-size: 100pt;
+    font-size: 200pt;
     font-family: Bastardo;
     text-align: center;
     text-decoration: none;
     color: #8ee002;
+}
+
+a.freccia:hover {
+    color: rgb(173, 173, 173);
 }
 
 .text {
