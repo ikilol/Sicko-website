@@ -127,12 +127,12 @@ iframe {
   width: 80%;
   height: 600px;
   float: left;
+  border-style: none;
 }
 
 .wireframe{
-  width: 5%;
   float: left;
-  margin-top: 22%;
+  margin-top: 18%;
   position: relative;
 }
 
