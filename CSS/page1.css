@@ -143,7 +143,7 @@
   font-size: 2.5vw;
   font-family: Helvetica;
   font-weight: 500;
-  width: 100%;
+  width: 60vw;
   height: auto;
 }
 
@@ -190,29 +190,25 @@
 	;
 }
 
-.text:hover {
-  color:#888888;
-}
-
 a {
   text-decoration: none;
   color: white;
 }
 
 a:hover {
-  color:#888888;
+  color:#8ee002;
 }
 
 .scroll2 {
   width: 100%;
   display:flex;
-  outline: 0.5vw solid white;
+  outline: 0.2vw solid white;
   margin-top:8%;
   margin-bottom:16%;
 }
 
 .scroll2 .tick2{
-  font-size: 7vw;
+  font-size: 3vw;
   font-family: Bastardo;
   color: white;
   white-space: nowrap;
