@@ -1,9 +1,12 @@
+body{
+  background-color: #888787;
+}
 
 .numUno{
   position: relative;
   color: white; 
   text-align: left;
-  font-size: 15.5vw;
+  font-size: 18vw;
   font-weight: 1500;
   font-family: Bastardo;
   margin:0%;
@@ -21,7 +24,7 @@
   position: relative;
   color: white; 
   text-align: left;
-  font-size: 15.5vw;
+  font-size: 18vw;
   font-weight: 1500;
   font-family: Bastardo;
   margin:0%;
@@ -37,7 +40,7 @@
   position: relative;
   color: white; 
   text-align: left;
-  font-size: 15.5vw;
+  font-size: 18vw;
   font-weight: 1500;
   font-family: Bastardo;
   margin:0%;
@@ -53,7 +56,6 @@
   position:absolute;
   color:white;
   margin-top:10%;
-  margin-left: 7%;
   font-family:Helvetica;
   font-size: 1.5vw;
   font-weight: 300;
@@ -65,7 +67,6 @@
   position:absolute;
   color:white;
   margin-top:24.5%;
-  margin-left: 7%;
   font-family:Helvetica;
   font-size: 1.5vw;
   font-weight: 300;
@@ -77,7 +78,6 @@
   position:absolute;
   color:white;
   margin-top:38.5%;
-  margin-left: 7%;
   font-family:Helvetica;
   font-size: 1.5vw;
   font-weight: 300;
@@ -113,8 +113,6 @@
     height: auto;
   }
 
-
-
 .ticker {
 	--size: 54ch;
 	font-size: 2em;
@@ -135,6 +133,61 @@
 	overflow: hidden;
   padding: 2%;
   outline: 3px solid black;
+}
+
+.title {
+  font-family: Bastardo;
+  font-size: 27pt;
+  font-weight: 800;  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.text {
+  font-family: Bastardo;
+  font-size: 15pt;
+}
+
+.row {
+  border-top-style: solid;
+  border-top-width: 1px;
+  padding: 10px;
+  height: 40px;
+}
+
+.row.white{
+  color: #ffffff;
+}
+
+.row.green{
+  color: #8ee006;
+}
+
+.ranking {
+  margin-right: 15%;
+  float: left;
+  padding: 10px;
+  content: 2%;
+}
+
+img.players {
+  width: 40px;
+  float: left;
+}
+
+.username {
+  float: left;
+  margin-left: 10px;
+  border-left-style: solid;
+  border-left-width: 1px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.icks {
+  float: right;
+  padding: 10px;
 }
 
 @keyframes ticker {
@@ -170,7 +223,6 @@
     
 	}
 }
-
 
 @media only screen and (max-width:586px){
 
