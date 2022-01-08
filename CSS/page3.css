@@ -54,20 +54,6 @@ body {
   letter-spacing: -5;
 }
 
-.ticker {
-	--size: 54ch;
-	font-size: 2em;
-	font-weight: light;
-  margin-top: -1.2%;
-	will-change: transform;
-  text-align: center;
-	animation: ticker 8s infinite linear;
-	text-shadow:
-		calc( var(--size) + 0.5em ) 0 currentcolor,	
-		calc( (var(--size) + 0.5em) * 2 ) 0 currentcolor
-	;
-}
-
 .container{
   margin-top: 50px;
 }
@@ -88,15 +74,20 @@ hr {
 }
 
 
-div.text {
+.text {
   margin: 0%;
-  font-size: 19pt;
+  font-size: 3vw;
+}
+
+.textgr {
+  margin: 0%;
+  font-size: 2vw;
 }
 
 div.bold {
   margin: 0%;
-  font-size: 19pt;
   font-weight: bold;
+  font-size: 2vw;
 }
 
 .grid-element {
@@ -121,6 +112,13 @@ a:hover {
   color: #8ee002;
 }
 
+.price{
+  font-size: 7vw;
+  float: right;
+  font-weight: bold;
+
+}
+
 iframe {
   margin-top: 0%;
   margin-left: 7%;
@@ -132,7 +130,7 @@ iframe {
 
 .wireframe{
   float: left;
-  margin-top: 18%;
+  margin-top: 5vh;
   position: relative;
 }
 
@@ -185,5 +183,11 @@ iframe {
     letter-spacing: -5px;
     line-height: 90%;
 	}
+
+  .text{
+
+    font-size: 5vw;
+  }
+
 }
 

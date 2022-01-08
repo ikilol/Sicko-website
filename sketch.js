@@ -25,7 +25,7 @@ let h20 = 440;
 
 
 function setup() {
-  cnv = createCanvas(1200, 1450);
+  cnv = createCanvas(1200, 450);
   background(255);
   // serial constructor
   serial = new p5.SerialPort();
