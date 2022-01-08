@@ -1,3 +1,6 @@
+body {
+  background-color: #DDDDDD;
+}
 
 .if{
   position: relative;
@@ -12,7 +15,6 @@
   letter-spacing: -10;
 
 }
-
 
 .angry{
   position: relative;
@@ -73,17 +75,6 @@
 
 }
 
-.shopnow {
-  margin-left: 7%;
-  font-family: Bastardo;
-  font-size: 5vw;
-  font-weight: 800;  width: 100%;
-  height: auto;
-}
-
-
-
-
 .ticker {
 	--size: 54ch;
 	font-size: 2em;
@@ -96,6 +87,89 @@
 		calc( var(--size) + 0.5em ) 0 currentcolor,	
 		calc( (var(--size) + 0.5em) * 2 ) 0 currentcolor
 	;
+}
+
+.container{
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 50px;
+}
+
+.shopnow {
+  font-family: Bastardo;
+  font-size: 5vw;
+  font-weight: 800;  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+hr {
+  width: 100%;
+  size: 2;
+  color: black;
+  position: relative;
+}
+
+
+div.text {
+  margin: 0%;
+  font-size: 19pt;
+}
+
+div.bold {
+  margin: 0%;
+  font-size: 19pt;
+  font-weight: bold;
+}
+
+.grid-element {
+  margin: 0%;
+  float: left;
+  width: 29%;
+  padding-top: 7px;
+  padding-bottom: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a {
+  margin: 0%;
+  font-size: 20pt;
+  font-weight: bold;
+  color: #9b9b9b;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8ee002;
+}
+
+iframe {
+  margin-top: 0%;
+  width: 80%;
+  height: 600px;
+  float: left;
+}
+
+.wireframe{
+  width: 5%;
+  float: left;
+  margin-left: 7%;
+  margin-top: 22%;
+  position: relative;
+}
+
+.buybox{
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 7px;
+  padding-left: 7px;
+  position: relative;
+  float: right;
+  margin: 4px;
 }
 
 @media only screen and (max-width:586px){
@@ -124,9 +198,6 @@
     margin-left:0vw;
     margin-right:4vw;
     letter-spacing: -5px;
-
-    
-    
 	}
 
   .buy{
