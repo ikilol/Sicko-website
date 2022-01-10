@@ -21,7 +21,7 @@ input{
     border-width: 1px;
     padding: 6px;
     text-align: center;
-    font-size: 1.2vw;  
+    font-size: 1.6vw;  
     margin: 6px;
     width: 100%;
 }
@@ -61,7 +61,7 @@ hr {
 }
 
 #data1 {
-    font-size: 0.8vw; 
+    font-size: 1vw; 
     float: left; 
     width: 25%;
     padding-top: 1%;
@@ -69,7 +69,7 @@ hr {
 }
 
 #data2 {
-    font-size: 0.8vw;
+    font-size: 1vw;
     float: right; 
     text-align: right; 
     width: 25%;  

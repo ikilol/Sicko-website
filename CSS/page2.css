@@ -142,7 +142,7 @@ body{
 
 .title {
   font-family: Bastardo;
-  font-size: 27pt;
+  font-size: 3vw;
   font-weight: 800;  width: 100%;
   height: auto;
   margin-bottom: 10px;
@@ -151,7 +151,16 @@ body{
 
 .text {
   font-family: Bastardo;
-  font-size: 15pt;
+  font-size: 1.6vw;
+}
+
+@media only screen and (max-width:586px){
+	.text {
+    font-size: 3.5vw;
+  }  
+  .title {
+    font-size: 6vw;
+  }  
 }
 
 .row {
@@ -169,23 +178,31 @@ body{
   color: #8ee006;
 }
 
+.left {
+  width: 25%;
+  float: left;
+}
+
+.right {
+  float: right;
+  border-left-style: solid;
+  border-left-width: 1px;
+  width: 73%;
+}
+
 .ranking {
-  margin-right: 15%;
   float: left;
   padding: 10px;
-  content: 2%;
 }
 
 img.players {
   width: 40px;
-  float: left;
+  float: right;
 }
 
 .username {
   float: left;
   margin-left: 10px;
-  border-left-style: solid;
-  border-left-width: 1px;
   padding: 10px;
   font-weight: bold;
 }
@@ -208,7 +225,7 @@ footer {
 }
 
 #data1 {
-  font-size: 0.8vw; 
+  font-size: 1vw; 
   float: left; 
   width: 25%;
   padding-top: 1%;
@@ -216,7 +233,7 @@ footer {
 }
 
 #data2 {
-  font-size: 0.8vw;
+  font-size: 1vw;
   float: right; 
   text-align: right; 
   width: 25%;  
@@ -306,11 +323,12 @@ footer {
     #data2 {
     font-size: 1.1vw;
     }
-  }
+}
   
-  @media only screen and (max-width:586px){
+@media only screen and (max-width:586px){
     footer{
       display: none;
     }
-  }
-  
+}
+
+

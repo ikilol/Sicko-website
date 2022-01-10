@@ -158,7 +158,7 @@ footer {
 }
 
 #data1 {
-  font-size: 0.8vw; 
+  font-size: 1vw; 
   float: left; 
   width: 25%;
   padding-top: 1%;
@@ -166,7 +166,7 @@ footer {
 }
 
 #data2 {
-  font-size: 0.8vw;
+  font-size: 1vw;
   float: right; 
   text-align: right; 
   width: 25%;  
