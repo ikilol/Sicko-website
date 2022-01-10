@@ -7,11 +7,16 @@ body{
 
 .main-content{flex:1;}
 
+.headtitle {
+  margin-top: 10%;
+  margin-bottom: 7%;
+}
+
 .numUno{
   position: relative;
   color: white; 
   text-align: left;
-  font-size: 18vw;
+  font-size: 22vw;
   font-weight: 1500;
   font-family: Bastardo;
   margin:0%;
@@ -27,7 +32,7 @@ body{
   position: relative;
   color: white; 
   text-align: left;
-  font-size: 18vw;
+  font-size: 22vw;
   font-weight: 1500;
   font-family: Bastardo;
   margin:0%;
@@ -43,7 +48,7 @@ body{
   position: relative;
   color: white; 
   text-align: left;
-  font-size: 18vw;
+  font-size: 22vw;
   font-weight: 1500;
   font-family: Bastardo;
   margin:0%;
@@ -58,7 +63,7 @@ body{
 .users {
   position:absolute;
   color:white;
-  margin-top:10%;
+  margin-top:13%;
   font-family:Helvetica;
   font-size: 1.5vw;
   font-weight: 300;
@@ -69,7 +74,7 @@ body{
 .ickss {
   position:absolute;
   color:white;
-  margin-top:24.5%;
+  margin-top:33%;
   font-family:Helvetica;
   font-size: 1.5vw;
   font-weight: 300;
@@ -80,7 +85,7 @@ body{
 .challenges {
   position:absolute;
   color:white;
-  margin-top:38.5%;
+  margin-top:53%;
   font-family:Helvetica;
   font-size: 1.5vw;
   font-weight: 300;
@@ -90,7 +95,7 @@ body{
 
 .hash {
   position:absolute;
-  margin-top:-73%;
+  margin-top:-80%;
   margin-left: 32%;
   z-index: 10;
   width: 100%;
@@ -100,8 +105,8 @@ body{
 
 .exla {
   position:absolute;
-  margin-top:-185%;
-  margin-left: 12%;
+  margin-top:-195%;
+  margin-left: 17%;
   z-index: 12;
   width: 100%;
   height: auto;
@@ -250,27 +255,22 @@ footer {
 
 	.numUno{
 		font-size:30vw;
-    text-align: left;
-    margin-left: 28vw;
-    margin-top: 13vh;
-    
+    text-align: right;
+    margin-left: -10%;
 	}
 
   .numDue{
 		font-size:30vw;
     margin-left: -3vw;
-    margin-top: 3vh;
-    text-align: left;
-    
+    margin-top: 1vh;
+    text-align: right;  
 	}
 
   .numTre{
 		font-size:30vw;
     margin-left: -3vw;
-    margin-top: 3vh;
-    text-align: left;
-    
-    
+    margin-top: 1vh;
+    text-align: right;  
 	}
 }
 
@@ -280,36 +280,36 @@ footer {
     text-align:right;
 		font-size:2.5vw;
     font-weight: 500;
-    margin-top:10vh;
-    margin-left: -3vh;
+    margin-top: 38%;
+    margin-left: -3%;
 	}
 
   .ickss{
-      text-align:right;
-      font-size:2.5vw;
-      font-weight: 500;
-      margin-top:28vh;
-      margin-left: -3vh;
+    text-align:right;
+    font-size:2.5vw;
+    font-weight: 500;
+    margin-top:71%;
+    margin-left: -3%;
 	}
 
   .challenges{
     text-align:right;
     font-size:2.5vw;
     font-weight: 500;
-    margin-top:46vh;
-    margin-left: -3vh;
+    margin-top:106%;
+    margin-left: -3%;
 	}
 
   .exla{
-    margin-left: 45vw;
-    margin-top: -200%;
-    transform:scale(0.09);
+    margin-right: 0%;
+    margin-left: 45%;
+    margin-top: -230%;
+    transform:scale(0.1);
   }
 
   .hash{
-    margin-top: -145%;
-    margin-left: -15%;
-
+    margin-top: -100%;
+    margin-left: -22%;
   }
 }
 
