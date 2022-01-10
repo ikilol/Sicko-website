@@ -7,6 +7,10 @@ body {
 
 .main-content{flex:1;}
 
+.headtitle {
+  margin-top: 3%;
+}
+
 .if{
   position: relative;
   color: black; 
@@ -23,8 +27,8 @@ body {
 .angry{
   position: relative;
   color: black; 
-  text-align: left;
-  font-size: 18vw;
+  text-align: right;
+  font-size: 17.5vw;
   font-weight: 1500;
   font-family: Bastardo;
   margin:0%;
@@ -59,6 +63,49 @@ body {
   letter-spacing: -5;
 }
 
+.weknow {
+  position:absolute;
+  color:black;
+  margin-top:24%;
+  font-family:Helvetica;
+  font-size: 1.6vw;
+  font-weight: 300;
+  width: 100%;
+  height: auto;
+}
+
+.promise {
+  position:absolute;
+  color:black;
+  margin-top:50%;
+  font-family:Helvetica;
+  font-size: 1.6vw;
+  font-weight: 300;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width:586px){
+
+	.promise{
+		font-size:2.5vw;
+    margin-top:40%;
+	}
+
+  .weknow{
+		font-size:2.5vw;
+    margin-top:138%;
+	}
+
+}
+
+.freccia {
+  font-family: bastardo;
+  font-size: 20vw;
+  float: right;
+  margin-top: -10%;
+}
+
 .container{
   margin-top: 50px;
 }
@@ -69,6 +116,7 @@ body {
   font-weight: 800;  width: 100%;
   height: auto;
   position: relative;
+  margin-left: 10px;
 }
 
 hr {
@@ -78,7 +126,6 @@ hr {
   color:rgb(0, 0, 0);
   background-color:rgb(0, 0, 0);
 }
-
 
 .text {
   margin: 0%;
@@ -181,9 +228,7 @@ footer {
     text-align: right;
     margin-right:4vw;
     letter-spacing: -5px;
-    line-height: 120%;
-    margin-top: 10vh;
-    
+    line-height: 120%;    
 	}
 
   .angry{
