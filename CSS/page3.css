@@ -155,7 +155,7 @@ div.bold {
 
 a {
   margin: 0%;
-  font-size: 20pt;
+  font-size: 7vw;
   font-weight: bold;
   color: #9b9b9b;
   text-decoration: none;
@@ -169,7 +169,36 @@ a:hover {
   font-size: 7vw;
   float: right;
   font-weight: bold;
+}
 
+@media only screen and (max-width:586px){
+  
+  .products {
+    float: right;
+    position: absolute;
+    width: 50%;
+  }
+  
+  .description-box{
+    float: left;
+    margin-left: 53%;
+    position: absolute;
+    width: 45%;
+  }
+
+  .price-box {
+    float: left;
+    margin-left: 53%;
+    margin-top: 16%;
+  }
+
+  .textgr {
+    font-size: 3vw;
+  }
+
+  div.bold {
+    font-size: 3vw;
+  }
 }
 
 iframe {
@@ -257,14 +286,12 @@ footer {
 	}
 
   .text{
-
     font-size: 5vw;
   }
-
 }
 
 @media only screen and (max-width:1280px){
-#data1 {
+  #data1 {
   font-size: 1.1vw;
   }
 
