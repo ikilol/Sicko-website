@@ -1,11 +1,10 @@
-.loginimm {
-    margin-top: -10%;
-    margin-left: -2%;
-    transform: scale(0.4);
-    width: 100%;
-    height: auto;
-
+body {
+    display:flex;
+    min-height:100vh;
+    flex-direction:column;
 }
+
+.main-content{flex:1;}
 
 .login {
     text-align: center;
@@ -22,13 +21,13 @@ input{
     border-width: 1px;
     padding: 6px;
     text-align: center;
-    font-size: 15pt;  
+    font-size: 1.2vw;  
     margin: 6px;
     width: 100%;
 }
 
 a.freccia {
-    font-size: 200pt;
+    font-size: 18vw;
     font-family: Bastardo;
     text-align: center;
     text-decoration: none;
@@ -40,7 +39,7 @@ a.freccia:hover {
 }
 
 .text {
-    font-size: 15vm;
+    font-size: 1vw;
     font-family: Bastardo;
     text-align: center;
     color: black;
@@ -48,4 +47,86 @@ a.freccia:hover {
 
 a.text:hover{
     color: #8ee002;
+}
+
+footer {
+    margin-top: 2%;
+}
+
+hr {
+    height:1px;
+    border:none;
+    color:rgb(0, 0, 0);
+    background-color:rgb(0, 0, 0);
+}
+
+#data1 {
+    font-size: 0.8vw; 
+    float: left; 
+    width: 25%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+#data2 {
+    font-size: 0.8vw;
+    float: right; 
+    text-align: right; 
+    width: 25%;  
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+@media only screen and (max-width:1280px){
+
+    .login {
+        width: 45%;
+    }
+
+    input{
+        font-size: 1.5vw;  
+    }
+
+    .text{
+        font-size: 1.2vw;
+    }
+
+    a.freccia {
+        font-size: 25vw;
+    }
+
+	#data1 {
+		font-size: 1.1vw;
+    }
+
+    #data2 {
+		font-size: 1.1vw;
+    }
+}
+
+@media only screen and (max-width:586px){
+
+    .login {
+        width: 60%;
+    }
+
+    input{
+        font-size: 3vw;  
+    }
+
+    .text{
+        font-size: 2.5vw;
+    }
+
+    a.freccia {
+        font-size: 35vw;
+    }
+
+	#data1 {
+		font-size: 2vw;
+    }
+
+    #data2 {
+		font-size: 2vw;
+    }
 }
