@@ -1,19 +1,22 @@
 body{
   cursor: crosshair;
+  background: #8ee002;
 }
+
+.headtitle {
+  margin-top: 6%;
+}
+
 .beThe{
   position: relative;
   color: black; 
   text-align: left;
-  font-size: 17vw;
+  font-size: 18vw;
   font-weight: 1500;
   font-family: Bastardo;
   margin:0%;
-  margin-top:-1%;
-  letter-spacing: -5;
-  width: 100%;
-  height: auto;
-
+  margin-left:18%;
+  letter-spacing: -10;
 }
 
 
@@ -21,43 +24,35 @@ body{
   position: relative;
   color: black; 
   text-align: left;
-  font-size: 17vw;
+  font-size: 18vw;
   font-weight: 1500;
   font-family: Bastardo;
-  margin:0%;
-  margin-top: -11%;
-  margin-left: 48.5%;
-  letter-spacing: -5;
-  width: 100%;
-  height: auto;
+  margin-top:-5%;
+  margin-left:57%;
+  letter-spacing: -10;
 }
 
 .atYour{
   position: relative;
   color: black; 
   text-align: left;
-  font-size: 17vw;
+  font-size: 18vw;
   font-weight: 1500;
   font-family: Bastardo;
-  margin:0%;
-  margin-top:-16%;
-  margin-left: 17%;
-  letter-spacing: -5;  width: 100%;
-  height: auto;
+  margin-top:-22%;
+  margin-left: 30%;
+  letter-spacing: -10;
 }
 
 .worst{
   position: relative;
   color: black; 
-  text-align: left;
-  font-size: 17vw;
+  text-align: right;
+  font-size: 18vw;
   font-weight: 1500;
   font-family: Bastardo;
-  margin: auto;
-  margin-left: 37%;
-  margin-top: -10%;
-  letter-spacing: -5;  width: 100%;
-  height: auto;
+  margin-top:-20%;
+  letter-spacing: -10;
 }
 
 @media only screen and (max-width:586px){
@@ -65,10 +60,8 @@ body{
 	.beThe{
 		font-size:30vw;
     text-align: right;
-    margin-left: 0vw;
+    margin-left: 0%;
     margin-top: 0vh;
-    margin-right:10vw
-    
 	}
 
   .best{
@@ -76,137 +69,64 @@ body{
     margin-left: 0vw;
     margin-top: -5vh;
     text-align: right;
-    
 	}
 
   .atYour{
 		font-size:30vw;
     margin-left: 0vw;
-    margin-top: -6vh;
+    margin-top: -21vh;
     text-align: right;
-    
-    
 	}
 
   .worst{
 		font-size:30vw;
     margin-left: 0;
-    margin-top: -5vh;
+    margin-top: -20vh;
     text-align: right;
-    
-	}
-}
-
-.outstanding{
-  color: black; 
-  text-align: left;
-  margin-left: 7%;
-  margin-top: 4%;
-  font-size: 200%;
-  font-family: Helvetica;
-  font-weight: 500;  width: 100%;
-  height: auto;
-  font-size: 2.5vw;
-}
-
-@media only screen and (max-width:586px){
-
-	.outstanding{
-		font-size:2.8vh;
-    font-weight: 500;
-    width: 70vw;
-	}
-
-  .outstanding a{
-    text-decoration: underline;
-  
-  }
-}
-
-.outstanding a{
-  color: black; 
-  text-align: left;
-  font-family: Helvetica;
-  font-weight: 500;  width: 100%;
-  height: auto;
-
-}
-
-.outstanding a:hover{
-  text-decoration: underline;
-  color: black; 
-}
-
-.video{
-  display:block;
-  margin-left:40%; 
-  position:relative;
-  width:58vw;
-  height:67vh;
-}
-
-@media only screen and (max-width:586px){
-
-	.video{
-    position: relative;
-    margin-left: 7vw;
-    width:100%;
-    height:auto;
-	}
-}
-
-.howTo {
-  margin-left: 7%;
-  width: 100%;
-  height: 100%;  width: 100%;
-  height: auto;
-}
-
-.sickEvents {
-  margin-left: 7%;
-  font-family: Bastardo;
-  font-size: 5vw;
-  font-weight: 800;  
-  width: 100%;
-  height: auto;
-}
-
-@media only screen and (max-width:586px){
-
-	.sickEvents{
-		font-size:8vw;
-    
 	}
 }
 
 .collecting {
   position:absolute;
+  color:black;
   margin-top:20%;
-  margin-left: 7%;
   font-family:Helvetica;
-  font-size: 1.5vw;
-  font-weight: 300; 
+  font-size: 1.6vw;
+  font-weight: 300;
+  width: 100%;
+  height: auto;
 }
 
 
 .yesYou {
   position:absolute;
+  color:black;
   margin-top:40%;
-  margin-left: 7%;
   font-family:Helvetica;
-  font-size: 1.5vw;
+  font-size: 1.6vw;
   font-weight: 300;
+  width: 100%;
+  height: auto;
+}
+
+.freccia {
+  font-family: bastardo;
+  font-size: 20vw;
+  float: left;
+  margin-top: -28%;
+  color: black;
 }
 
 .lazy {  
   position:absolute;
-  margin-top:95%;
-  margin-left: 7%;
+  color:black;
+  margin-top: 10%;
   font-family:Helvetica;
-  font-size: 1.5vw;
+  font-size: 1.6vw;
   font-weight: 300;
+  width: 100%;
+  height: auto;
 }
-
 
 @media only screen and (max-width:586px){
 
@@ -222,6 +142,10 @@ body{
     margin-top:21.5rem;
 	}
 
+  .freccia {
+    margin-top: -36%;
+  }
+  
   .lazy{
 		font-size:0;
     font-weight: 500;
@@ -229,15 +153,124 @@ body{
 	}
 }
 
+.description-box{
+  width: 100%;
+  float: left;
+  margin-top: -7%;
+  margin-bottom: 2%;
+}
+
+.description{
+  width: 60%;
+  color: black; 
+  text-align: left;
+  font-size: 2vw;
+  font-family: Bastardo;
+  font-weight: 500;
+}
+
+@media only screen and (max-width:586px){
+
+  .description {
+    width: 90%;
+    font-size:3.5vw;
+  }
+}
+
+.video{
+  position:relative;
+  display:block;
+  float: right;
+  width:80vw;
+  height:45vw;
+  margin-bottom: 5%;
+}
+
+@media only screen and (max-width:586px){
+
+	.video{
+    position: relative;
+    width:100vw;
+    height:50vw;
+    margin-top: 5%;
+    margin-bottom: 5%;
+	}
+}
+
+.container {
+ width: 100%;
+ margin-top: 5%;
+ margin-bottom: 5%;
+}
+
+.learn {  
+  position:absolute;
+  color:black;
+  margin-top: 0%;
+  font-family:Helvetica;
+  font-size: 1.6vw;
+  font-weight: 300;
+  width: 100%;
+  height: auto;
+}
+
+hr.small {
+  width: 82%; 
+  float: right; 
+  margin-top: 1%;
+}
+
+.grid-element{
+  width: 45%;
+  float: right;
+  padding: 1.5%;
+}
+
+.number{
+  width: 20%;
+  float: left;
+}
+
+.howto{
+  color: black; 
+  float: right;
+  text-align: left;
+  font-size: 3.5vw;
+  font-family: Bastardo;
+  font-weight: bold;
+  width: 78%;
+  padding-top: 8%;
+}
+
+.sickEvents {
+  font-family: Bastardo;
+  font-size: 5vw;
+  font-weight: 800;  
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width:586px){
+
+	.sickEvents{
+		font-size:8vw;
+    
+	}
+}
+
 .scroll {
   width: 100%;
   display:flex;
-  outline: 0.3vw solid black;
+  border: 1px solid black;
+  border-right-style: none ;
+  border-left-style: none ;
+  overflow: hidden;
 }
 
 .scroll .tick{
-  font-size: 3vw;
+  font-size: 2.5vw;
   font-family: Bastardo;
+  color: black;
   white-space: nowrap;
   animation: animate 40s linear infinite;
   animation-delay: -40s;
@@ -278,38 +311,38 @@ body{
 .item
 {
     float: left;
-    margin-right: 5px;
-      
+    margin-right: 0px;     
 }
+
 /* mettere width responsive e trasformare di 0,6*/
 
 img {
-  width: 40vw;
+  width: 46vw;
   height:auto; 
 }
 
 .Carousel1
 {
     transition: transform .5s;
-    margin-left: 7%;
-
     margin-top: 2%;
-    display: inline-block;
+    width: 100%;
+    
 }
+
 .content1
 {
     position: relative;
+    overflow: hidden;
+    margin-bottom: 5%;
 }
 
 
 .Left,.right
 {
-    background: url(https://i.postimg.cc/rFxP1K3b/left.png) no-repeat white center;
+    background: url(https://i.postimg.cc/rFxP1K3b/left.png) white no-repeat center;
     border-radius: 50%;
     position: absolute;
-    margin-left: 20px;
-    top: 50%;
-    margin-top: -20px;
+    margin-top: 15%;
     background-size: 30px;
     width: 40px;
     height: 40px;
@@ -321,23 +354,54 @@ img {
    background-image: url(https://i.postimg.cc/GmV2DgDd/4beb4317ebb605abb3096d9a1b5dbde4.png);
 }
 
-@media only screen and (max-width:586px){
-
-	.img{
-    width: 45vw;
-	}
-
-}
-
-.sicko{
-  color: black;
-}
-
-.sicko:hover{
-  color: black;
-  text-decoration: none;
-}
 
 .text {
   width: 20%;
+}
+
+hr {
+  width: 100%;
+  height:1px;
+  border:none;
+  color:rgb(0, 0, 0);
+  background-color:rgb(0, 0, 0);
+}
+
+footer {
+  margin-top: 2%;
+}
+
+#data1 {
+  font-size: 1vw; 
+  float: left; 
+  width: 25%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  color:black;
+}
+
+#data2 {
+  font-size: 1vw;
+  float: right; 
+  text-align: right; 
+  width: 25%;  
+  padding-top: 1%;
+  padding-bottom: 2%;
+  color:black;
+}
+
+@media only screen and (max-width:1280px){
+  #data1 {
+  font-size: 1.1vw;
+  }
+
+  #data2 {
+  font-size: 1.1vw;
+  }
+}
+
+@media only screen and (max-width:586px){
+  footer{
+    display: none;
+  }
 }
