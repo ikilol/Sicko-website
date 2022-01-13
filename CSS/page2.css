@@ -1,8 +1,6 @@
 body{
   background-color: #888787;
-  display:flex;
-  min-height:100vh;
-  flex-direction:column;
+  cursor:url(../static/cursors/cursor.png) 25 25, pointer;
 }
 
 .main-content{flex:1;}
@@ -348,8 +346,9 @@ footer {
     width: 35%;
     float: left;
   }
-  
-
 }
 
 
+::-webkit-scrollbar {
+  display: none;
+  }

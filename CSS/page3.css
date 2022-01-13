@@ -1,8 +1,6 @@
 body {
   background-color: #DDDDDD;
-  display:flex;
-  min-height:100vh;
-  flex-direction:column;
+  cursor:url(../static/cursors/cursor-2.png) 25 25, pointer;
 }
 
 .main-content{flex:1;}
@@ -162,6 +160,7 @@ a {
 
 a:hover {
   color: #8ee002;
+  cursor:url(../static/cursors/cursor.png) 25 25, pointer;
 }
 
 .price{
@@ -305,3 +304,7 @@ footer {
     display: none;
   }
 }
+
+::-webkit-scrollbar {
+  display: none;
+  }

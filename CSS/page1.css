@@ -1,6 +1,7 @@
 body{
   background-color: black;
   margin: 1%;
+  cursor:url(../static/cursors/cursor-4.png) 25 25, pointer;
 }
 
 .headtitle {
@@ -412,6 +413,7 @@ a {
 
 a:hover {
   color:#8ee002;
+  cursor:url(../static/cursors/cursor-3.png) 25 25, pointer;
 }
 
 .marquee {
@@ -484,7 +486,7 @@ a.link{
 }
 
 a.link:hover{
-  color: white;
+  color: #8ee002;
 }
 
 @keyframes animate{
@@ -620,3 +622,7 @@ footer {
     display: none;
   }
 }
+
+::-webkit-scrollbar {
+  display: none;
+  }

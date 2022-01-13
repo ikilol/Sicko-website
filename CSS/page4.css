@@ -3,6 +3,7 @@ body {
     min-height:100vh;
     flex-direction:column;
     width: 100%;
+    cursor:url(../static/cursors/cursor.png) 25 25, pointer;
 }
 
 .main-content{flex:1;}
@@ -33,6 +34,7 @@ a.freccia {
     text-align: center;
     text-decoration: none;
     color: #8ee002;
+    cursor:url(../static/cursors/cursor-2.png) 25 25, pointer;
 }
 
 a.freccia:hover {

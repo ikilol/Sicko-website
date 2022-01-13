@@ -1,6 +1,6 @@
 body{
-  cursor: crosshair;
   background: #8ee002;
+  cursor:url(../static/cursors/cursor-3.png) 25 25, pointer;
 }
 
 .headtitle {
@@ -415,7 +415,7 @@ hr.small {
     height: 8vw;
     margin:2%; 
     margin-top: 1%;
-    cursor: pointer;
+    cursor:url(../static/cursors/cursor-4.png) 25 25, pointer;
     float: left;
 }
 
@@ -478,3 +478,8 @@ footer {
     display: none;
   }
 }
+
+::-webkit-scrollbar {
+  display: none;
+  }
+  
