@@ -2,6 +2,7 @@ body {
     display:flex;
     min-height:100vh;
     flex-direction:column;
+    width: 100%;
 }
 
 .main-content{flex:1;}
@@ -38,7 +39,7 @@ a.freccia:hover {
     color: rgb(173, 173, 173);
 }
 
-.text {
+text {
     font-size: 1vw;
     font-family: Bastardo;
     text-align: center;
@@ -129,4 +130,166 @@ hr {
     #data2 {
 		font-size: 2vw;
     }
+}
+
+.user-section {
+    width: 100%;
+    padding: 4%;
+    float: left;
+}
+
+.profile-picture{
+    width: 15%;
+    float: left;
+}
+
+#username{
+    font-size: 7vw;
+    font-family: Bastardo;
+    font-weight: bold;
+    padding-top: 2%;
+}
+
+.username-box{
+    margin-left: 7%;
+    float: left;
+}
+
+#marker{
+    position: absolute;
+    width: 40%;
+    margin-top: -13%;
+    margin-left: -12%;
+    z-index: -1;
+}
+
+.text2 {
+    font-size: 1.6vw;
+    font-family: Bastardo;
+    text-align: left;
+    color: black;
+    width: 35%;
+}
+
+.title {
+    text-align: left;
+    font-size: 2vw;
+    font-family: Bastardo;
+    font-weight: bold;
+    height: auto;
+    margin-bottom: 1%;
+  }
+
+.data {
+    font-size: 3vw;
+    font-family: Bastardo;
+    text-align: left;
+    color: black;
+    width: 30%;
+    font-weight: 500;
+}
+
+.data-box {
+    float: left;
+    width: 15%;
+    padding-top: 2%;
+}
+
+.description{
+    float: left;
+    clear: left;
+    padding-top: 2%;
+    padding-right: 7%;
+}
+
+.data-section {
+    width: 100%;
+    border-top: 1px solid;
+}
+
+.challenge{
+    width: 45%;
+    padding: 2%;
+    margin-top: 2%;
+    float: left;
+}
+
+.challenge-name{
+    font-size: 4vw;
+    font-family: Bastardo;
+    font-weight: bold;
+    float: left;
+    padding-top: 2%;
+    margin-left: 4%;
+}
+
+.text-r {
+    font-size: 1.6vw;
+    font-family: Bastardo;
+    text-align: left;
+    color: black;
+    width: 100%;
+    float: left;
+    margin-top: 8%;
+    height: 30vw;
+    overflow: scroll;
+}
+
+.row {
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding: 10px;
+    height: 40px;
+  }
+  
+  .left {
+    width: 25%;
+    float: left;
+  }
+  
+  .right {
+    float: right;
+    border-left-style: solid;
+    border-left-width: 1px;
+    width: 73%;
+  }
+  
+  @media only screen and (max-width:586px){
+    .left {
+      width: 35%;
+      float: left;
+    }
+    
+    .right {
+      float: right;
+      border-left-style: solid;
+      border-left-width: 1px;
+      width: 60%;
+    } 
+  }
+  
+  .ranking {
+    float: left;
+    padding: 10px;
+  }
+  
+  img.players {
+    width: 3.5vw;
+    float: right;
+  }
+  
+  .username {
+    float: left;
+    margin-left: 10px;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .icks {
+    float: right;
+    padding: 10px;
+  }
+  
+    ::-webkit-scrollbar {
+    display: none;
 }
