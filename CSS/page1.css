@@ -1,5 +1,6 @@
 body{
   background-color: black;
+  margin: 1%;
 }
 
 .headtitle {
@@ -113,6 +114,10 @@ body{
   color: white;
 }
 
+#marquee-1{
+  margin-top: -6%;
+}
+
 @media only screen and (max-width:586px){
 
 	.confused{
@@ -127,12 +132,16 @@ body{
   .freccia {
     margin-top: -36%;
   }
+
+  #marquee-1{
+    margin-top: -14%;
+  }
 }
 
 .description-box{
   width: 100%;
   float: left;
-  margin-top: -12%;
+  margin-top: 3%;
 }
 
 .description {
@@ -332,7 +341,7 @@ body{
   width: 100%;
   float: left;
   margin-top: 5%;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 }
 
 .vision-box {
@@ -344,7 +353,7 @@ body{
   width: 100%;
   float: left;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 0%;
 }
 
 .title {
@@ -405,56 +414,110 @@ a:hover {
   color:#8ee002;
 }
 
-.scroll2 {
+.marquee {
   width: 100%;
   display:flex;
-  border: 1px solid white;
+  border: 2px solid rgb(255, 255, 255);
   border-right-style: none ;
   border-left-style: none ;
-  margin-top:-6%;
-  margin-bottom:16%;
   overflow: hidden;
 }
 
-.scroll2 .tick2{
+.marquee .marquee-text{
   font-size: 2.5vw;
   font-family: Bastardo;
-  color: white;
+  color: rgb(255, 255, 255);
   white-space: nowrap;
   animation: animate 40s linear infinite;
   animation-delay: -40s;
   padding: 1vw;
 }
 
-.scroll2 .tick2:nth-child(2){
+.marquee .marquee-text:nth-child(2){
   animation: animate2 40s linear infinite;
   animation-delay: -20s;
 }
 
-.scroll-link {
-  width: 100%;
+
+.marquee-link {
+  width: 91%;
   display:flex;
-  border: 1px none rgb(94, 94, 94); 
-  border-top-style: solid;
-  padding: 1%;
-  margin-top:0%;
-  margin-bottom:0%;
+  float: left;
+  border-right-style: none ;
+  border-left-style: none ;
   overflow: hidden;
+  border-right: solid 1px rgb(94, 94, 94);
 }
 
-.scroll-link .tick-link{
-  font-size: 3.8vw;
+.marquee-link .marquee-text{
+  font-size: 4vw;
   font-family: Bastardo;
   color: rgb(94, 94, 94);
   white-space: nowrap;
-  animation: animate 60s linear infinite;
-  animation-delay: -60s;
-  padding: 1vw;
+  animation: animate 40s linear infinite;
+  animation-delay: -40s;
+  padding: 2%;
 }
 
-.scroll-link .tick-link:nth-child(2){
-  animation: animate2 60s linear infinite;
-  animation-delay: -30s;
+.marquee-link .marquee-text:nth-child(2){
+  animation: animate2 40s linear infinite;
+  animation-delay: -20s;
+}
+
+.row{
+  border-top-style: solid;
+  border-top-color: rgb(94, 94, 94);
+  border-top-width: 1px;
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  margin-top: -5%;
+}
+
+a.link{
+  float: right;
+  padding: 1%;
+  font-size: 10vw;
+  font-family: Bastardo;
+  color: rgb(94, 94, 94);
+}
+
+a.link:hover{
+  color: white;
+}
+
+@keyframes animate{
+
+  0%
+  {
+    transform: translateX(100%);
+  }
+
+  100%
+  {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate2{
+
+  0%
+  {
+    transform: translateX(0%);
+  }
+
+  100%
+  {
+    transform: translateX(-200%);
+  }
+}
+
+@media only screen and (max-width:586px){
+
+	.marquee .marquee-text{
+    font-size: 4vw;
+  }
 }
 
 @keyframes animate{
@@ -491,6 +554,23 @@ a:hover {
 
   .scroll2 .tick2{
     font-size: 5vw;
+  }
+}
+
+#payoff{
+  width: 80%; 
+  float: right; 
+  margin-top: -10%; 
+  margin-right: -5%;
+}
+
+@media only screen and (max-width:586px){
+  
+  #payoff{
+    width: 115%; 
+    float: right; 
+    margin-top: -10%; 
+    margin-right: -5%;
   }
 }
 

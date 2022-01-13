@@ -42,7 +42,7 @@ let Navigation=function(index,dir)
     }
     if(index==2)
     {
-        Carousel1[0].style.transform="translateX(-"+(2.95+0.86)*100/Carousel1[0].children.length+"%)"
+        Carousel1[0].style.transform="translateX(-"+(1.95+1.87)*100/Carousel1[0].children.length+"%)"
         
     }
 
@@ -52,7 +52,7 @@ let Navigation=function(index,dir)
         
     }else if(index===1 && dir=="Left")
     {
-        Carousel1[0].style.transform="translateX(-"+0.87*100/Carousel1[0].children.length+"%)"
+        Carousel1[0].style.transform="translateX(-"+1.95*100/Carousel1[0].children.length+"%)"
         
     }
 }

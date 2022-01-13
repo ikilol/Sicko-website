@@ -58,30 +58,30 @@ body{
 @media only screen and (max-width:586px){
 
 	.beThe{
-		font-size:30vw;
+		font-size:31vw;
     text-align: right;
     margin-left: 0%;
-    margin-top: 0vh;
+    margin-top: 0%;
 	}
 
   .best{
-		font-size:30vw;
+		font-size:31vw;
     margin-left: 0vw;
-    margin-top: -5vh;
+    margin-top: -9%;
     text-align: right;
 	}
 
   .atYour{
-		font-size:30vw;
+		font-size:31vw;
     margin-left: 0vw;
-    margin-top: -21vh;
+    margin-top: -37%;
     text-align: right;
 	}
 
   .worst{
-		font-size:30vw;
+		font-size:31vw;
     margin-left: 0;
-    margin-top: -20vh;
+    margin-top: -35%;
     text-align: right;
 	}
 }
@@ -117,59 +117,61 @@ body{
   color: black;
 }
 
-.lazy {  
-  position:absolute;
-  color:black;
-  margin-top: 10%;
-  font-family:Helvetica;
-  font-size: 1.6vw;
-  font-weight: 300;
-  width: 100%;
-  height: auto;
+#marquee-1{
+  margin-top: -6%;
+}
+
+#marquee-2{
+  margin-bottom: 5%;
 }
 
 @media only screen and (max-width:586px){
 
 	.collecting{
-		font-size:0vw;
-    font-weight: 500;
-    margin-top:67vh;
+		font-size:2.5vw;
+    margin-top:29%;
 	}
 
   .yesYou{
-		font-size:0;
-    font-weight: 500;
-    margin-top:21.5rem;
+		display: none;
 	}
 
   .freccia {
     margin-top: -36%;
   }
   
-  .lazy{
-		font-size:0;
-    font-weight: 500;
-    margin-top: 72em;
-	}
+  #marquee-1{
+    margin-top: -14%;
+  }
+
+  #marquee-2{
+    margin-bottom: 6%;
+  }
+
 }
 
 .description-box{
   width: 100%;
   float: left;
-  margin-top: -7%;
-  margin-bottom: 2%;
+  margin-top: 3%;
+  margin-bottom: 5%;
 }
 
 .description{
   width: 60%;
   color: black; 
   text-align: left;
-  font-size: 2vw;
+  font-size: 2.5vw;
   font-family: Bastardo;
   font-weight: 500;
 }
 
 @media only screen and (max-width:586px){
+
+  .description-box{
+    margin-top: -2%;
+    margin-bottom: 0%;
+  }
 
   .description {
     width: 90%;
@@ -177,23 +179,40 @@ body{
   }
 }
 
+
+.lazy {  
+  position:relative;
+  display:block;
+  float: left;
+  color:black;
+  margin-top: 7%;
+  font-family:Helvetica;
+  font-size: 1.6vw;
+  font-weight: 300;
+}
+
 .video{
   position:relative;
   display:block;
   float: right;
-  width:80vw;
+  width:78vw;
   height:45vw;
   margin-bottom: 5%;
+  margin-left: 2%;
 }
 
 @media only screen and (max-width:586px){
 
+  .lazy{
+		font-size:2.5vw;
+	}
+
 	.video{
     position: relative;
-    width:100vw;
+    width:97vw;
     height:50vw;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
 	}
 }
 
@@ -242,6 +261,35 @@ hr.small {
   padding-top: 8%;
 }
 
+@media only screen and (max-width:586px){
+
+  .container {
+    margin-top: 8%;
+    margin-bottom: 5%;
+   }
+
+   .learn { 
+     font-size: 2.5vw; 
+   }
+   
+   hr.small {
+     width: 72%; 
+   }
+   
+   .grid-element{
+    width: 50%;
+   }
+   
+   .number{
+     width: 17%;
+   }
+   
+   .howto{
+     font-size: 4vw;
+     padding-top: 3%;
+   }
+}
+
 .sickEvents {
   font-family: Bastardo;
   font-size: 5vw;
@@ -258,16 +306,16 @@ hr.small {
 	}
 }
 
-.scroll {
+.marquee {
   width: 100%;
   display:flex;
-  border: 1px solid black;
+  border: 2px solid black;
   border-right-style: none ;
   border-left-style: none ;
   overflow: hidden;
 }
 
-.scroll .tick{
+.marquee .marquee-text{
   font-size: 2.5vw;
   font-family: Bastardo;
   color: black;
@@ -277,10 +325,11 @@ hr.small {
   padding: 1vw;
 }
 
-.scroll .tick:nth-child(2){
+.marquee .marquee-text:nth-child(2){
   animation: animate2 40s linear infinite;
   animation-delay: -20s;
 }
+
 
 @keyframes animate{
 
@@ -308,17 +357,37 @@ hr.small {
   }
 }
 
+@media only screen and (max-width:586px){
+
+	.marquee .marquee-text{
+    font-size: 4vw;
+  }
+}
+
 .item
 {
-    float: left;
-    margin-right: 0px;     
+    float:left;
+    margin-right: 0px; 
 }
 
 /* mettere width responsive e trasformare di 0,6*/
 
-img {
+.event {
   width: 46vw;
   height:auto; 
+}
+
+@media only screen and (max-width:586px){
+
+    .item{
+      float: left;
+      margin-right: 13.5%; 
+      margin-bottom: 0.5%;    
+  }
+
+	.event {
+    width: 90vw;
+  }
 }
 
 .Carousel1
@@ -332,31 +401,35 @@ img {
 .content1
 {
     position: relative;
+    margin-bottom: 2%;
+    width: 100%;
     overflow: hidden;
-    margin-bottom: 5%;
 }
 
 
 .Left,.right
 {
-    background: url(https://i.postimg.cc/rFxP1K3b/left.png) white no-repeat center;
-    border-radius: 50%;
-    position: absolute;
-    margin-top: 15%;
-    background-size: 30px;
-    width: 40px;
-    height: 40px;
+    background: url(../static/freccia_sx.png)no-repeat center;
+    background-size: 100%;
+    width: 8vw;
+    height: 8vw;
+    margin:2%; 
+    margin-top: 1%;
     cursor: pointer;
+    float: left;
 }
+
 .right
 {
-   right: 15px;
-   background-image: url(https://i.postimg.cc/GmV2DgDd/4beb4317ebb605abb3096d9a1b5dbde4.png);
+   float: right;
+   background-image: url(../static/freccia_dx.png);
 }
 
-
-.text {
-  width: 20%;
+@media only screen and (max-width:586px){
+  .Left,.right {
+    width: 12vw;
+    height: 12vw;
+}
 }
 
 hr {
