@@ -26,18 +26,12 @@
 
 <script src="libraries/p5.min.js"></script>
 <script src="libraries/p5.sound.min.js"></script>
+<script type="text/javascript" src="frontend/js/menu.js"></script>
 
 <style>
-    iframe {
-        width: 90%;
-        min-height: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
     
     body {
-        cursor: url(static/cursors/cursor.png) 25 25, default;
+        cursor: url(static/cursors/cursor-3.png) 25 25, default;
     }
 
     .front.page{
@@ -84,41 +78,6 @@
         cursor: url(static/cursors/cursor.png) 25 25, default;
     }
 
-    .loader {
-    position: fixed;
-    z-index: 99;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.loader > img {
-    width: 30%;
-}
-
-.loader.hidden {
-    animation: fadeOut 2s;
-    animation-fill-mode: forwards;
-    animation-delay: 5s;
-}
-
-@keyframes fadeOut {
-    100% {
-        left: -100%;
-        visibility: hidden;
-    }
-}
-
-.thumb {
-    height: 100px;
-    border: 1px solid black;
-    margin: 10px;
-}
 
 </style>
 
@@ -130,17 +89,32 @@
         <img src="static/Sicko_Dinamic_Identity.gif" alt="Loading..." />
     </div>
 
-    <div class="noselect sicko">
+    <div class="menu" >
+        <div><img src="static/menu.png" width="35vw" height="35vw" onclick="toggleMenu()"></div>
+        <div id="menuDiv" class="menuHidden" >
+                <ul>    
+                    <div class="closeButton"> <img src="static/X.png" width="35vw" height="35vw" onclick="toggleMenu()"> </div>  
+                    <div class="noselect menu-link" onclick="toggleFront()">  home <span class="menu-arrow"> ↗ </span> </div>
+                    <div class="noselect menu-link" onclick="toggleAbout()"> about <span class="menu-arrow"> ↗ </span> </div>
+                    <div class="noselect menu-link" onclick="toggleRank()"> rankings <span class="menu-arrow"> ↗ </span> </div>
+                    <div class="noselect menu-link" onclick="toggleShop()"> shop <span class="menu-arrow"> ↗ </span> </div>
+                    <div class="noselect menu-link" onclick="toggleProfile()"> personal area <span class="menu-arrow"> ↗ </span> </div>    
+                </ul>
+        </div>
+    </div>  
+
+    
+    <div class="noselect sicko" id="logo">
         sicko
     </div>
-
-    <section class="front page is-active">
+    
+    <section class="front page is-active frontOpen" id="frontDiv">
 
         <iframe class="noselect" src="pages/frontpage.html" frameborder="0" ></iframe>
         
     </section>
 
-    <section style="background-color:#000000" class="page n1" data-number="1">
+    <section style="background-color:#000000" class="page n1 aboutHidden" data-number="1" id="aboutDiv">
         <div class="about">
             about
         </div>
@@ -150,7 +124,7 @@
     </section>
 
 
-    <section style="background-color:#888787" class="page n2" data-number="2">
+    <section style="background-color:#888787" class="page n2 rankHidden" data-number="2" id="rankDiv">
 
 
         <div class="rankings">
@@ -164,7 +138,7 @@
     </section>
 
 
-    <section style="background-color:#DDDDDD" class="page n3 noselect" data-number="3">
+    <section style="background-color:#DDDDDD" class="page n3 noselect shopHidden" data-number="3" id="shopDiv">
 
         <div class="shop">
             shop
@@ -175,7 +149,7 @@
     </section>
 
 
-    <section style="background-color:#ffffff" class="page n4 noselect" data-number="4">
+    <section style="background-color:#ffffff" class="page n4 noselect profileHidden" data-number="4" id="profileDiv">
 
         <div class="personal">
             profile
