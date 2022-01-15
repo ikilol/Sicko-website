@@ -19,10 +19,12 @@ function toggleMenu() {
 var limitFunc = function(){
   if (window.innerWidth<588){
      /*your functions for big screen*/
-     document.getElementById("logo").style.display = "block";
+     document.getElementById("logo2").style.display = "block";
+     document.getElementById("logo").style.display = "none";
   }
 
   else{
+    document.getElementById("logo").style.display = "block";
     document.getElementById("logo2").style.display = "none";
   }
 };
@@ -39,7 +41,7 @@ function toggleFront() {
   
 // se il menu è chiuso si apre
   if (frontHidden) { 
-    document.getElementById("logo2").style.display = "block";
+    document.getElementById("logo").style.display = "block";
     frontDiv.classList.remove("frontHidden");
     frontDiv.classList.add("frontOpen");
     frontHidden = false;
