@@ -16,6 +16,21 @@ function toggleMenu() {
   }
 }
 
+var limitFunc = function(){
+  if (window.innerWidth<588 || !aboutHidden){
+     /*your functions for big screen*/
+     document.getElementById("logo").style.display = "none";
+  }
+
+  else{
+    document.getElementById("logo2").style.display = "none";
+  }
+};
+
+window.addEventListener("resize", limitFunc);
+window.addEventListener("onload", limitFunc);
+
+
 // pagina home
 let frontHidden = true;
     
@@ -24,7 +39,7 @@ function toggleFront() {
   
 // se il menu è chiuso si apre
   if (frontHidden) { 
-    document.getElementById("logo").style.display = "block";
+    document.getElementById("logo2").style.display = "block";
     frontDiv.classList.remove("frontHidden");
     frontDiv.classList.add("frontOpen");
     frontHidden = false;
@@ -62,10 +77,11 @@ let aboutHidden = true;
     
 function toggleAbout() {
   let aboutDiv = document.getElementById("aboutDiv");
+  
 
 // se il menu è chiuso si apre
   if (aboutHidden) {
-    document.getElementById("logo").style.display = "none";
+    document.getElementById("logo2").style.display = "none";
     frontDiv.classList.remove("frontOpen");
     frontDiv.classList.add("frontHidden");
     frontHidden = true;
@@ -105,7 +121,7 @@ function toggleRank() {
 
 // se il menu è chiuso si apre
   if (rankHidden) {
-    document.getElementById("logo").style.display = "none";
+    document.getElementById("logo2").style.display = "none";
     frontDiv.classList.remove("frontOpen");
     frontDiv.classList.add("frontHidden");
     frontHidden = true;
@@ -145,7 +161,7 @@ function toggleShop() {
 
 // se il menu è chiuso si apre
   if (shopHidden) {
-    document.getElementById("logo").style.display = "none";
+    document.getElementById("logo2").style.display = "none";
     frontDiv.classList.remove("frontOpen");
     frontDiv.classList.add("frontHidden");
     frontHidden = true;
@@ -185,7 +201,7 @@ function toggleProfile() {
 
 // se il menu è chiuso si apre
   if (profileHidden) {
-    document.getElementById("logo").style.display = "none";
+    document.getElementById("logo2").style.display = "none";
     frontDiv.classList.remove("frontOpen");
     frontDiv.classList.add("frontHidden");
     frontHidden = true;
@@ -216,3 +232,4 @@ function toggleProfile() {
     profileHidden = true;
   }
 }
+

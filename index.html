@@ -90,10 +90,10 @@
     </div>
 
     <div class="menu" >
-        <div><img src="static/menu.png" width="35vw" height="35vw" onclick="toggleMenu()"></div>
+        <div class="menuButton"><img src="static/menu.png" onclick="toggleMenu()" style="cursor: url(static/cursors/cursor-4.png) 25 25, default;"></div>
         <div id="menuDiv" class="menuHidden" >
                 <ul>    
-                    <div class="closeButton"> <img src="static/X.png" width="35vw" height="35vw" onclick="toggleMenu()"> </div>  
+                    <div class="menuButton"> <img src="static/X.png" onclick="toggleMenu()" style="cursor: url(static/cursors/cursor-4.png) 25 25, default;"> </div>  
                     <div class="noselect menu-link" onclick="toggleFront()">  home <span class="menu-arrow"> ↗ </span> </div>
                     <div class="noselect menu-link" onclick="toggleAbout()"> about <span class="menu-arrow"> ↗ </span> </div>
                     <div class="noselect menu-link" onclick="toggleRank()"> rankings <span class="menu-arrow"> ↗ </span> </div>
@@ -103,12 +103,18 @@
         </div>
     </div>  
 
-    
+    <div class="noselect sicko" id="logo2">
+        sicko
+    </div>
     <div class="noselect sicko" id="logo">
         sicko
     </div>
     
     <section class="front page is-active frontOpen" id="frontDiv">
+
+        <div class="noselect sicko" id="logo2">
+            sicko
+        </div>
 
         <iframe class="noselect" src="pages/frontpage.html" frameborder="0" ></iframe>
         

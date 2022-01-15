@@ -10,10 +10,10 @@
 	display: block;       /* iframes are inline by default */
     border: none;         /* Reset default border */
     height: 100vh;        /* Viewport-relative units */
-    width: 85vw;
+    width: 75vw;
 	border: none;
-	margin-right: 5%;
-	margin-top: 10%;
+	margin-right: 15%;
+	margin-top: -1%;
 	}
 }
 
@@ -197,7 +197,7 @@
 	.shop{
 		font-size:5vw;
 		margin-left: -1%;
-		margin-top: 18%;
+		margin-top: 8%;
 		position: fixed;
 }
 }
@@ -205,7 +205,7 @@
 @media only screen and (max-width:586px){
 	.personal{
 		font-size:5vw;
-		margin-top: 18%;
+		margin-top: 6%;
 		position: fixed;
 		margin-left: -1%;
 }
@@ -215,7 +215,7 @@
 
 	.sicko{
 	font-size: 7vw;
-	margin-top: 18%;
+	margin-top: 6%;
 	margin-left: -3%;
 	position: fixed;
 	}
@@ -235,14 +235,15 @@
 /* iOS Safari */
 .menu {
     display: none;
-    padding: 3%;
-    padding-bottom: 1%;
+    padding: 2%;
+    padding-bottom: 2%;
     top: 0;
-    left: 0;
+    right: 0;
     position: fixed;
     z-index: 90;
     background-color: black;
-    width: 100%;
+    width: 4%;
+	height: 100%;
     }
 
     .menuOpen {
@@ -260,16 +261,22 @@
     display: none;
     }
 
-	.closeButton {
-    padding: 3%;
-    padding-bottom: 1%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    z-index: 110;
-    background-color: black;
-    width: 100%;
-	color: white;
+	.menuButton {
+		padding: 2%;
+		padding-bottom: 2%;
+		padding-right: 4%;
+		top: 0;
+		right: 0;
+		position: fixed;
+		z-index: 90;
+		background-color: black;
+		width: 4%;
+		height: 100%;
+	}
+
+	img{
+		width: 150%;
+		
 	}
 
     @media only screen and (max-width:586px){
@@ -294,6 +301,7 @@
         padding: 0%;
         width: 100%;
 		float: right;
+		margin-right: 10%;
     }
 
 	.menu-arrow{
