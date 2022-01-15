@@ -17,9 +17,9 @@ function toggleMenu() {
 }
 
 var limitFunc = function(){
-  if (window.innerWidth<588 || !aboutHidden){
+  if (window.innerWidth<588){
      /*your functions for big screen*/
-     document.getElementById("logo").style.display = "none";
+     document.getElementById("logo").style.display = "block";
   }
 
   else{
@@ -81,7 +81,7 @@ function toggleAbout() {
 
 // se il menu è chiuso si apre
   if (aboutHidden) {
-    document.getElementById("logo2").style.display = "none";
+    document.getElementById("logo").style.display = "none";
     frontDiv.classList.remove("frontOpen");
     frontDiv.classList.add("frontHidden");
     frontHidden = true;
@@ -121,7 +121,7 @@ function toggleRank() {
 
 // se il menu è chiuso si apre
   if (rankHidden) {
-    document.getElementById("logo2").style.display = "none";
+    document.getElementById("logo").style.display = "none";
     frontDiv.classList.remove("frontOpen");
     frontDiv.classList.add("frontHidden");
     frontHidden = true;
@@ -161,7 +161,7 @@ function toggleShop() {
 
 // se il menu è chiuso si apre
   if (shopHidden) {
-    document.getElementById("logo2").style.display = "none";
+    document.getElementById("logo").style.display = "none";
     frontDiv.classList.remove("frontOpen");
     frontDiv.classList.add("frontHidden");
     frontHidden = true;
@@ -201,7 +201,7 @@ function toggleProfile() {
 
 // se il menu è chiuso si apre
   if (profileHidden) {
-    document.getElementById("logo2").style.display = "none";
+    document.getElementById("logo").style.display = "none";
     frontDiv.classList.remove("frontOpen");
     frontDiv.classList.add("frontHidden");
     frontHidden = true;

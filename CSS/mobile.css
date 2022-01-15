@@ -179,7 +179,7 @@
 	.about{
 		font-size:5vw;
 		margin-left: -1%;
-		margin-top: 22%;
+		margin-top: 12%;
 		position: absolute;
 	}
 }
@@ -188,7 +188,7 @@
 	.rankings{
 		font-size:5vw;
 		margin-left: -4%;
-		margin-top: 22%;
+		margin-top: 13%;
 		position: fixed;
 }
 }
@@ -276,7 +276,7 @@
 
 	img{
 		width: 150%;
-		
+
 	}
 
     @media only screen and (max-width:586px){
