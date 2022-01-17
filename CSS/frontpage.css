@@ -1,20 +1,41 @@
+::selection{
+	background:#000;
+	color:#8ee002;
+	text-shadow:none
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
 body{
+  display:flex;
+  min-height:100vh;
+  flex-direction:column;
   background: #8ee002;
   cursor:url(../static/cursors/cursor-3.png) 25 25, pointer;
 }
 
+.main-content{flex:1;}
+
 .headtitle {
-  margin-top: 6%;
+  margin-top: 3%;
 }
 
 .beThe{
   position: relative;
   color: black; 
   text-align: left;
-  font-size: 18vw;
+  font-size: 19vw;
   font-weight: 1500;
   font-family: Bastardo;
-  margin:0%;
+  margin-top: -1%;
   margin-left:18%;
   letter-spacing: -10;
 }
@@ -24,10 +45,10 @@ body{
   position: relative;
   color: black; 
   text-align: left;
-  font-size: 18vw;
+  font-size: 19vw;
   font-weight: 1500;
   font-family: Bastardo;
-  margin-top:-5%;
+  margin-top:-22%;
   margin-left:57%;
   letter-spacing: -10;
 }
@@ -36,10 +57,10 @@ body{
   position: relative;
   color: black; 
   text-align: left;
-  font-size: 18vw;
+  font-size: 19vw;
   font-weight: 1500;
   font-family: Bastardo;
-  margin-top:-22%;
+  margin-top:-23%;
   margin-left: 30%;
   letter-spacing: -10;
 }
@@ -48,10 +69,10 @@ body{
   position: relative;
   color: black; 
   text-align: right;
-  font-size: 18vw;
+  font-size: 19vw;
   font-weight: 1500;
   font-family: Bastardo;
-  margin-top:-20%;
+  margin-top:-22%;
   letter-spacing: -10;
 }
 
@@ -67,7 +88,7 @@ body{
   .best{
 		font-size:31vw;
     margin-left: 0vw;
-    margin-top: -9%;
+    margin-top: -35%;
     text-align: right;
 	}
 
@@ -158,10 +179,10 @@ body{
 }
 
 .description{
-  width: 60%;
+  width: 70%;
   color: black; 
   text-align: left;
-  font-size: 2.5vw;
+  font-size: 2.7vw;
   font-family: Bastardo;
   font-weight: 500;
 }
@@ -291,11 +312,9 @@ hr.small {
 }
 
 .sickEvents {
-  font-family: Bastardo;
-  font-size: 5vw;
-  font-weight: 800;  
-  width: 100%;
-  height: auto;
+  width: 50%;
+  margin-bottom: -2%;
+  z-index: 1000;
 }
 
 @media only screen and (max-width:586px){
@@ -442,6 +461,7 @@ hr {
 
 footer {
   margin-top: 2%;
+  font-family: Bastardo;
 }
 
 #data1 {
@@ -474,9 +494,13 @@ footer {
 }
 
 @media only screen and (max-width:586px){
-  footer{
-    display: none;
-  }
+  #data1 {
+        font-size: 2vw;
+    }
+
+    #data2 {
+        font-size: 2vw;
+    }
 }
 
 ::-webkit-scrollbar {

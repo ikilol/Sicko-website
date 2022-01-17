@@ -1,0 +1,358 @@
+body {
+  display:flex;
+    min-height:100vh;
+    flex-direction:column;
+  background-color: #DDDDDD;
+  cursor:url(../static/cursors/cursor-2.png) 25 25, pointer;
+}
+
+.main-content{flex:1;}
+
+.closeButton{
+    width: 4%;
+    float: right;
+    right: 4%;
+    top: 4%;
+    position: absolute;
+  }
+  
+  iframe {
+    margin-left: 7%;
+    width: 85%;
+    height: 80vh;
+    float: left;
+    border-style: none;
+  }
+  
+  .wireframe{
+    float: left;
+    position: relative;
+  }
+  
+  .background{
+    position: absolute;
+    width: 80%;
+    z-index: -1;
+    margin-left: 5%;
+  }
+  
+  
+  
+  
+  #louder-wireframe{
+    width: 6%;
+    margin-top: 15%;
+  }
+  
+  #louder-iframe{
+    height: 72vw;  
+    margin-left: 0%;
+  }
+  
+  #louder-description{
+    margin-top: -20%;
+    display: block;
+    float: left;
+  }
+  
+  
+  
+  #faster-wireframe{
+    width: 6%;
+    margin-top: 18%;
+  }
+  
+  #faster-iframe{
+    height: 55vw;  
+    margin-left: 0%;
+  }
+  
+  #faster-description{
+    margin-top: -5%;
+    display: block;
+    float: left;
+  }
+  
+  
+  
+  
+  #stronger-wireframe{
+    width: 10%;
+    margin-top: 22%;
+  }
+  
+  #stronger-iframe{
+    height: 75vw;  
+    margin-left: 0%;
+    margin-top: 2%;
+  }
+  
+  #stronger-description{
+    margin-top: -25%;
+    display: block;
+    float: left;
+  }
+  
+  
+  
+  .angrier-wireframe{
+   float: left;
+   clear: left;
+  }
+  
+  #angrier-render{
+    width: 90%;
+    margin-left: 7%;
+    margin-top: 10%;
+  }
+  
+  #angrier-background{
+    float: right;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 80%;
+   }
+  
+   #angrier-description{
+     margin-top: 10%;
+    float: left;
+    width: 100%;
+   }
+  
+  
+  .title {
+    color: black; 
+    text-align: left;
+    font-size: 2vw;
+    font-family: Bastardo;
+    font-weight: bold;
+    height: auto;
+    margin-bottom: 2%;
+  }
+  
+  .text {
+    margin: 0%;
+    font-size: 2vw;
+  }
+  
+  .description{
+    color: rgb(0, 0, 0); 
+    text-align: left;
+    font-size: 2vw;
+    font-family: Bastardo;
+    font-weight: 500;
+    height: auto;
+    width: 45%
+  }
+  
+  .price{
+    font-size: 4vw;
+    float: right;
+    font-weight: bold;
+    font-family: Bastardo;
+  }
+  
+  .buybox{
+    width: 30%;
+    position: relative;
+    float: right;
+    margin-right: 2%;
+    margin-bottom: 10%;
+  }
+  
+  .buy-input{
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 7px;
+    padding-left: 7px;
+    display: block;
+    float: right;
+    margin: 4px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .input-text{
+    color: rgb(0, 0, 0); 
+    text-align: center;
+    font-size: 2vw;
+    font-family: Bastardo;
+    font-weight: 500;
+    height: auto;
+  }
+  
+  #cross{
+    position: absolute;
+    float: left;
+    display: block;
+    right: 0;
+    width: 40%;
+    z-index: 2;
+  }
+  
+  @media only screen and (max-width:586px){
+  
+    #cross{
+      width: 100%;
+      height: 20%;
+    }
+  
+    #louder-description{
+      margin-top: -30%;
+    }
+  
+    #faster-description{
+      margin-top: -15%;
+    }
+  
+    #stronger-description{
+      margin-top: -40%;
+    }
+  
+    .title {
+      font-size: 4vw;
+  
+    }
+    
+    .price{
+      font-size: 7vw;
+    }
+  
+    .description {
+      font-size: 4vw;
+      width: 100%;
+    }
+  
+    .buybox{
+      width: 94%;
+      margin-bottom: 10%;
+    }
+  
+    .input-text{
+      font-size: 4vw;
+    }
+  
+  }
+  
+  @media only screen and (max-width:800px){
+  
+    #louder-background{
+      margin-top: 1%;
+      width: 97%;
+      margin-left: 0%;
+    }
+    
+    #louder-wireframe{
+      display: none;
+    }
+  
+    #louder-iframe{
+      height: 120vw;  
+      margin-left: 0%;
+      width: 100%;
+    }
+  
+    #faster-background{
+      margin-top: 1%;
+      width: 97%;
+      margin-left: 0%;
+    }
+  
+    #faster-wireframe{
+      display: none;
+    }
+  
+    #faster-iframe{
+      height: 110vw;   
+      margin-left: 5%;
+    }
+  
+    #stronger-background{
+      margin-top: 1%;
+      width: 97%;
+      margin-left: 0%;
+    }
+  
+    #stronger-wireframe{
+      display: none;
+    }
+  
+    #stronger-iframe{
+      height: 120vw; 
+      margin-left: 5%;
+    }
+  
+    #angrier-render{
+      width: 105%;
+      margin-left: 0%;
+    }
+  
+    #angrier-background{
+      width: 100%;
+      margin-left: 0%;
+    }
+  
+    #angrier-description{
+      margin-top: 70%;
+    }
+  
+  }
+
+  hr {
+    width: 100%;
+    height:1px;
+    border:none;
+    color:rgb(0, 0, 0);
+    background-color:rgb(0, 0, 0);
+  }
+
+footer {
+    margin-top: 1%;
+    font-family: Bastardo;
+  }
+  
+  #data1 {
+    font-size: 1vw; 
+    float: left; 
+    width: 25%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+  }
+  
+  #data2 {
+    font-size: 1vw;
+    float: right; 
+    text-align: right; 
+    width: 25%;  
+    padding-top: 1%;
+    padding-bottom: 2%;
+  }
+
+  @media only screen and (max-width:1280px){
+    #data1 {
+    font-size: 1.1vw;
+    }
+  
+    #data2 {
+    font-size: 1.1vw;
+    }
+  }
+  
+  @media only screen and (max-width:586px){
+    #data1 {
+          font-size: 2vw;
+      }
+  
+      #data2 {
+          font-size: 2vw;
+      }
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+    }
+  
+    

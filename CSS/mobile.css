@@ -253,7 +253,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .9);
+    background: rgba(0, 0, 0);
     display: flex;
     }
 
@@ -285,12 +285,6 @@
     }
     }
 
-	ul{
-		bottom: 3%;
-		right: 7%;
-		position: absolute;
-	}
-
     .menu-link {
         font-family: Bastardo;
         font-size: 6vw;
@@ -298,21 +292,41 @@
 		text-align: right;
         color: white;
         list-style: none;
-        padding: 0%;
-        width: 100%;
+        padding: 4%;
 		float: right;
-		margin-right: 10%;
+		border-right: white 1px solid;
     }
 
 	.menu-arrow{
-		font-size: 10vw;
-		font-weight: bold;
-		border-left: 1px solid white;
-		padding-left: 3%;
-		margin-left: 3%;
+		font-family: Bastardo;
+		font-size: 15vw;
+		font-weight: 300;
+		float: right;
+		margin-right: 10%;
+		padding: 2%;
 	}
 	
-	.menu-link:hover{
+	.menu-arrow:hover{
 		cursor: url(../static/cursors/cursor-4.png) 25 25, default;
 		color: #8ee002;
 	}
+
+
+	.links{
+		width: 90%;
+		color: white;
+		bottom: 0;
+		position: absolute;
+		margin-bottom: -7%;
+	}
+
+	.row{
+		border-top-style: solid;
+		border-top-color: white;
+		border-top-width: 1px;
+		position: relative;
+		display: block;
+		float: left;
+		width: 100%;
+		margin-top: -7%;
+	  }

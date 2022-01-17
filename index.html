@@ -92,14 +92,36 @@
     <div class="menu" >
         <div class="menuButton"><img src="static/menu.png" onclick="toggleMenu()" style="cursor: url(static/cursors/cursor-4.png) 25 25, default;"></div>
         <div id="menuDiv" class="menuHidden" >
-                <ul>    
-                    <div class="menuButton"> <img src="static/X.png"onclick="toggleMenu()" style="cursor: url(static/cursors/cursor-4.png) 25 25, default;"> </div>  
-                    <div class="noselect menu-link" onclick="toggleFront()">  home <span class="menu-arrow"> ↗ </span> </div>
-                    <div class="noselect menu-link" onclick="toggleAbout()"> about <span class="menu-arrow"> ↗ </span> </div>
-                    <div class="noselect menu-link" onclick="toggleRank()"> rankings <span class="menu-arrow"> ↗ </span> </div>
-                    <div class="noselect menu-link" onclick="toggleShop()"> shop <span class="menu-arrow"> ↗ </span> </div>
-                    <div class="noselect menu-link" onclick="toggleProfile()"> personal area <span class="menu-arrow"> ↗ </span> </div>    
-                </ul>
+                <ul class="links">
+                    <div class="menuButton" style="border-left: white 1px solid;"> <img src="static/X.png"onclick="toggleMenu()" style="cursor: url(static/cursors/cursor-4.png) 25 25, default;"> </div>  
+                    
+                    <div class="row">
+                        <div class="menu-arrow" onclick="toggleFront()"> ↗ </div>
+                        <div class="noselect menu-link" onclick="toggleFront()"> home </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="menu-arrow" onclick="toggleAbout()"> ↗ </div>
+                        <div class="noselect menu-link" onclick="toggleAbout()"> about </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="menu-arrow" onclick="toggleRank()"> ↗ </div>
+                        <div class="noselect menu-link" onclick="toggleRank()"> rankings </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="menu-arrow" onclick="toggleShop()"> ↗ </div>
+                        <div class="noselect menu-link" onclick="toggleShop()"> shop </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="menu-arrow"> ↗ </div>
+                        <div class="noselect menu-link" onclick="toggleProfile()"> personal area </div>
+                    </div>
+
+                <ul> 
+                
         </div>
     </div>  
 

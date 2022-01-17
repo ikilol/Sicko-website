@@ -1,3 +1,19 @@
+::selection{
+	background: black;
+	color: #8ee002;
+	text-shadow:none
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
 body {
   display:flex;
     min-height:100vh;
@@ -19,7 +35,7 @@ body {
   font-size: 18vw;
   font-weight: 1500;
   font-family: Bastardo;
-  margin:0%;
+  margin-top:-1%;
   margin-top:0%;
   letter-spacing: -10;
 }
@@ -31,8 +47,7 @@ body {
   font-size: 17.5vw;
   font-weight: 1500;
   font-family: Bastardo;
-  margin:0%;
-  margin-top:-6%;
+  margin-top:-21%;
   margin-left: 6%;
   letter-spacing: -10;
 }
@@ -44,8 +59,7 @@ body {
   font-size: 18vw;
   font-weight: 1500;
   font-family: Bastardo;
-  margin:0%;
-  margin-top:-3%;
+  margin-top:-18%;
   margin-left: 28%;
   letter-spacing: -5;
 }
@@ -59,8 +73,44 @@ body {
   font-family: Bastardo;
   margin: auto;
   margin-left: 15%;
-  margin-top: -7%;
+  margin-top: -21%;
   letter-spacing: -5;
+}
+
+@media only screen and (max-width:586px){
+
+	.if{
+		font-size:30vw;
+    text-align: right;
+    margin-left: 0;
+    letter-spacing: -1px;
+	}
+
+  .angry{
+		font-size:30vw;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: 85%;
+    margin-left: 0;
+    margin-top: -32%;
+	}
+
+  .know{
+		font-size:30vw;
+    text-align: right;
+    margin-left: 0;
+    letter-spacing: 0;
+    margin-top: -30%;
+	}
+
+  .buy{
+		font-size:30vw;
+    text-align: right;
+    margin-left: 0;
+    letter-spacing: 0;
+    line-height: 85%;
+    margin-top: -32%;
+	}
 }
 
 .weknow {
@@ -107,16 +157,14 @@ body {
 }
 
 .container{
-  margin-top: 50px;
+  margin-top: 5vw;
 }
 
 .shopnow {
-  font-family: Bastardo;
-  font-size: 5vw;
-  font-weight: 800;  width: 100%;
-  height: auto;
-  position: relative;
-  margin-left: 10px;
+  width: 30%;
+  position: absolute;
+  margin-left: 0%;
+  margin-top: -10%;
 }
 
 hr {
@@ -131,30 +179,33 @@ hr {
 .textgr {
   margin: 0%;
   font-size: 2vw;
+  font-family: Bastardo;
 }
 
 div.bold {
   margin: 0%;
   font-weight: bold;
   font-size: 2vw;
+  font-family: Bastardo;
 }
 
 .grid-element {
   margin: 0%;
   float: left;
-  width: 29%;
-  padding-top: 7px;
-  padding-bottom: 14px;
-  padding-left: 10px;
-  padding-right: 10px;
+  width: 31%;
+  padding-top: 0.7vw;
+  padding-bottom: 1.4vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 a {
   margin: 0%;
   font-size: 7vw;
-  font-weight: bold;
+  font-weight: 300;
   color: #9b9b9b;
   text-decoration: none;
+  font-family: Bastardo;
 }
 
 a:hover {
@@ -193,301 +244,76 @@ a:hover {
   }
 }
 
-.closeButton{
-  width: 4%;
-  float: right;
-  right: 4%;
-  top: 4%;
-  position: absolute;
+#marquee-1{
+  margin-top: 0%;
+  margin-bottom: 3%;
 }
 
-iframe {
-  margin-left: 7%;
-  width: 85%;
-  height: 80vh;
-  float: left;
-  border-style: none;
-}
-
-.wireframe{
-  float: left;
-  position: relative;
-}
-
-.background{
-  position: absolute;
-  width: 80%;
-  z-index: -1;
-  margin-left: 5%;
-}
-
-
-
-
-#louder-wireframe{
-  width: 6%;
-  margin-top: 15%;
-}
-
-#louder-iframe{
-  height: 72vw;  
-  margin-left: 0%;
-}
-
-#louder-description{
-  margin-top: -20%;
-  display: block;
-  float: left;
-}
-
-
-
-#faster-wireframe{
-  width: 6%;
-  margin-top: 18%;
-}
-
-#faster-iframe{
-  height: 55vw;  
-  margin-left: 0%;
-}
-
-#faster-description{
-  margin-top: -5%;
-  display: block;
-  float: left;
-}
-
-
-
-
-#stronger-wireframe{
-  width: 10%;
-  margin-top: 22%;
-}
-
-#stronger-iframe{
-  height: 75vw;  
-  margin-left: 0%;
-  margin-top: 2%;
-}
-
-#stronger-description{
-  margin-top: -25%;
-  display: block;
-  float: left;
-}
-
-
-
-.angrier-wireframe{
- float: left;
- clear: left;
-}
-
-#angrier-render{
-  width: 90%;
-  margin-left: 7%;
-  margin-top: 10%;
-}
-
-#angrier-background{
-  float: right;
-  margin-left: 10%;
-  margin-top: 5%;
-  width: 80%;
- }
-
- #angrier-description{
-   margin-top: 10%;
-  float: left;
-  width: 100%;
- }
-
-
-.title {
-  color: black; 
-  text-align: left;
-  font-size: 2vw;
-  font-family: Bastardo;
-  font-weight: bold;
-  height: auto;
+#marquee-2{
+  margin-top: 4%;
   margin-bottom: 2%;
 }
 
-.text {
-  margin: 0%;
-  font-size: 2vw;
-}
-
-.description{
-  color: rgb(0, 0, 0); 
-  text-align: left;
-  font-size: 2vw;
-  font-family: Bastardo;
-  font-weight: 500;
-  height: auto;
-  width: 45%
-}
-
-.price{
-  font-size: 4vw;
-  float: right;
-  font-weight: bold;
-}
-
-.buybox{
-  width: 30%;
-  position: relative;
-  float: right;
-  margin-right: 2%;
-  margin-bottom: 10%;
-}
-
-.buy-input{
-  border-color: black;
-  border-style: solid;
-  border-width: 1px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-right: 7px;
-  padding-left: 7px;
-  display: block;
-  float: right;
-  margin: 4px;
+.marquee {
   width: 100%;
-  text-align: center;
+  display:flex;
+  border: 2px solid #9b9b9b;
+  border-right-style: none ;
+  border-left-style: none ;
+  overflow: hidden;
 }
 
-.input-text{
-  color: rgb(0, 0, 0); 
-  text-align: center;
-  font-size: 2vw;
+.marquee .marquee-text{
+  font-size: 2.5vw;
   font-family: Bastardo;
-  font-weight: 500;
-  height: auto;
+  color: #9b9b9b;
+  white-space: nowrap;
+  animation: animate 40s linear infinite;
+  animation-delay: -40s;
+  padding: 1vw;
 }
 
-#cross{
-  position: absolute;
-  float: left;
-  display: block;
-  right: 0;
-  width: 40%;
-  z-index: 2;
+.marquee .marquee-text:nth-child(2){
+  animation: animate2 40s linear infinite;
+  animation-delay: -20s;
+}
+
+@keyframes animate{
+
+  0%
+  {
+    transform: translateX(100%);
+  }
+
+  100%
+  {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate2{
+
+  0%
+  {
+    transform: translateX(0%);
+  }
+
+  100%
+  {
+    transform: translateX(-200%);
+  }
 }
 
 @media only screen and (max-width:586px){
 
-  #cross{
-    width: 100%;
-    height: 20%;
-  }
-
-  #louder-description{
-    margin-top: -30%;
-  }
-
-  #faster-description{
-    margin-top: -15%;
-  }
-
-  #stronger-description{
-    margin-top: -40%;
-  }
-
-  .title {
-    font-size: 4vw;
-
-  }
-  
-  .price{
-    font-size: 7vw;
-  }
-
-  .description {
-    font-size: 4vw;
-    width: 100%;
-  }
-
-  .buybox{
-    width: 94%;
-    margin-bottom: 10%;
-  }
-
-  .input-text{
+	.marquee .marquee-text{
     font-size: 4vw;
   }
-
 }
-
-@media only screen and (max-width:800px){
-
-  #louder-background{
-    margin-top: 1%;
-    width: 97%;
-    margin-left: 0%;
-  }
-  
-  #louder-wireframe{
-    display: none;
-  }
-
-  #louder-iframe{
-    height: 120vw;  
-    margin-left: 0%;
-    width: 100%;
-  }
-
-  #faster-background{
-    margin-top: 1%;
-    width: 97%;
-    margin-left: 0%;
-  }
-
-  #faster-wireframe{
-    display: none;
-  }
-
-  #faster-iframe{
-    height: 110vw;   
-    margin-left: 5%;
-  }
-
-  #stronger-background{
-    margin-top: 1%;
-    width: 97%;
-    margin-left: 0%;
-  }
-
-  #stronger-wireframe{
-    display: none;
-  }
-
-  #stronger-iframe{
-    height: 120vw; 
-    margin-left: 5%;
-  }
-
-  #angrier-render{
-    width: 105%;
-    margin-left: 0%;
-  }
-
-  #angrier-background{
-    width: 100%;
-    margin-left: 0%;
-  }
-
-  #angrier-description{
-    margin-top: 70%;
-  }
-
-}
-
 
 footer {
   margin-top: 1%;
+  font-family: Bastardo;
 }
 
 #data1 {
@@ -505,46 +331,6 @@ footer {
   width: 25%;  
   padding-top: 1%;
   padding-bottom: 2%;
-}
-
-@media only screen and (max-width:586px){
-
-	.if{
-		font-size:30vw;
-    text-align: right;
-    margin-right:4vw;
-    letter-spacing: -5px;
-    line-height: 120%;    
-	}
-
-  .angry{
-		font-size:30vw;
-    text-align: right;
-    margin-right:4vw;
-    letter-spacing: -5px;
-    line-height: 90%;
-	}
-
-  .know{
-		font-size:30vw;
-    text-align: right;
-    margin-left:0vw;
-    margin-right:4vw;
-    letter-spacing: -5px;
-	}
-
-  .buy{
-		font-size:30vw;
-    text-align: right;
-    margin-left:0vw;
-    margin-right:4vw;
-    letter-spacing: -5px;
-    line-height: 90%;
-	}
-
-  .text{
-    font-size: 5vw;
-  }
 }
 
 @media only screen and (max-width:1280px){
