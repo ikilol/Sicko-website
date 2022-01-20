@@ -24,7 +24,7 @@ body{
 }
 
 .headtitle {
-  margin-top: 3%;
+  margin-top: 2%;
   margin-bottom: 21%;
 }
 
@@ -199,6 +199,7 @@ body{
   color: white;
   text-align: center;
   font-size: 2.7vw;
+  font-family: Bastardo;
   position: absolute;
   padding: 0.5% 1.5%;
 }
@@ -377,10 +378,11 @@ body{
   float: left;
   margin-top: 5%;
   margin-bottom: 5%;
+  font-size: 2vw;
 }
 
 .vision-box {
-  width: 46%;
+  width: 45%;
   float: left;
 }
 
@@ -411,10 +413,23 @@ body{
   height: auto;
 }
 
+.text2{
+  color: rgb(94, 94, 94); 
+  text-align: left;
+  font-size: 2vw;
+  font-family: Bastardo;
+  font-weight: 500;
+  height: auto;
+}
+
 @media only screen and (max-width:586px){
 
 	.text{
 		font-size:4.5vw;
+	}
+
+  .text2{
+		font-size:3.5vw;
 	}
 
   .title{
@@ -642,9 +657,13 @@ footer {
 }
 
 @media only screen and (max-width:586px){
-  footer{
-    display: none;
-  }
+  #data1 {
+        font-size: 2vw;
+    }
+
+    #data2 {
+        font-size: 2vw;
+    }
 }
 
 ::-webkit-scrollbar {

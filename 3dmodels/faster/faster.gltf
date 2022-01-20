@@ -106,12 +106,12 @@
                 6,
                 7
             ],
-            "name" : "faster_def_22 v14",
+            "name" : "faster_def_22 v17",
             "rotation" : [
-                0.7071068286895752,
-                0,
-                0,
-                0.7071067094802856
+                0.6884862184524536,
+                -0.1612044721841812,
+                0.16120445728302002,
+                0.6884860992431641
             ],
             "scale" : [
                 0.0010000000474974513,
@@ -123,25 +123,35 @@
     "materials" : [
         {
             "doubleSided" : true,
+            "emissiveFactor" : [
+                0.03855132311582565,
+                0.03855132311582565,
+                0.03855132311582565
+            ],
             "name" : "Plastic - Glossy (Grey).001",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
-                    0.30980393290519714,
-                    0.3137255012989044,
-                    0.3176470696926117,
+                    0.05928676202893257,
+                    0.05928676202893257,
+                    0.05928676202893257,
                     1
                 ],
-                "roughnessFactor" : 0.5527864098548889
+                "roughnessFactor" : 0.4266600012779236
             }
         },
         {
             "doubleSided" : true,
+            "emissiveFactor" : [
+                0.2389121800661087,
+                1,
+                0
+            ],
             "name" : "Plastic - Glossy (Grey).002",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
-                    0,
+                    0.086685910820961,
                     1,
-                    0.11764705926179886,
+                    0.010410841554403305,
                     1
                 ],
                 "roughnessFactor" : 0.5527864098548889
@@ -149,15 +159,20 @@
         },
         {
             "doubleSided" : true,
+            "emissiveFactor" : [
+                0.030084116384387016,
+                0.030084116384387016,
+                0.030084116384387016
+            ],
             "name" : "Plastic - Glossy (Grey)",
             "pbrMetallicRoughness" : {
                 "baseColorFactor" : [
-                    0.16470588743686676,
-                    0.16470588743686676,
-                    0.16470588743686676,
+                    0.05090605840086937,
+                    0.05090605840086937,
+                    0.05090605840086937,
                     1
                 ],
-                "roughnessFactor" : 0.5527864098548889
+                "roughnessFactor" : 0.53476881980896
             }
         }
     ],
@@ -319,7 +334,7 @@
         {
             "bufferView" : 8,
             "componentType" : 5126,
-            "count" : 2977,
+            "count" : 2935,
             "max" : [
                 2.1498799324035645,
                 1.5759999752044678,
@@ -335,19 +350,19 @@
         {
             "bufferView" : 9,
             "componentType" : 5126,
-            "count" : 2977,
+            "count" : 2935,
             "type" : "VEC3"
         },
         {
             "bufferView" : 10,
             "componentType" : 5126,
-            "count" : 2977,
+            "count" : 2935,
             "type" : "VEC2"
         },
         {
             "bufferView" : 11,
             "componentType" : 5123,
-            "count" : 12594,
+            "count" : 12498,
             "type" : "SCALAR"
         },
         {
@@ -496,88 +511,88 @@
         },
         {
             "buffer" : 0,
-            "byteLength" : 35724,
+            "byteLength" : 35220,
             "byteOffset" : 62552
         },
         {
             "buffer" : 0,
-            "byteLength" : 35724,
-            "byteOffset" : 98276
+            "byteLength" : 35220,
+            "byteOffset" : 97772
         },
         {
             "buffer" : 0,
-            "byteLength" : 23816,
-            "byteOffset" : 134000
+            "byteLength" : 23480,
+            "byteOffset" : 132992
         },
         {
             "buffer" : 0,
-            "byteLength" : 25188,
-            "byteOffset" : 157816
-        },
-        {
-            "buffer" : 0,
-            "byteLength" : 38724,
-            "byteOffset" : 183004
+            "byteLength" : 24996,
+            "byteOffset" : 156472
         },
         {
             "buffer" : 0,
             "byteLength" : 38724,
-            "byteOffset" : 221728
+            "byteOffset" : 181468
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 38724,
+            "byteOffset" : 220192
         },
         {
             "buffer" : 0,
             "byteLength" : 25816,
-            "byteOffset" : 260452
+            "byteOffset" : 258916
         },
         {
             "buffer" : 0,
             "byteLength" : 27564,
-            "byteOffset" : 286268
+            "byteOffset" : 284732
         },
         {
             "buffer" : 0,
             "byteLength" : 3864,
-            "byteOffset" : 313832
+            "byteOffset" : 312296
         },
         {
             "buffer" : 0,
             "byteLength" : 3864,
-            "byteOffset" : 317696
+            "byteOffset" : 316160
         },
         {
             "buffer" : 0,
             "byteLength" : 2576,
-            "byteOffset" : 321560
+            "byteOffset" : 320024
         },
         {
             "buffer" : 0,
             "byteLength" : 2280,
-            "byteOffset" : 324136
+            "byteOffset" : 322600
         },
         {
             "buffer" : 0,
             "byteLength" : 3864,
-            "byteOffset" : 326416
+            "byteOffset" : 324880
         },
         {
             "buffer" : 0,
             "byteLength" : 3864,
-            "byteOffset" : 330280
+            "byteOffset" : 328744
         },
         {
             "buffer" : 0,
             "byteLength" : 2576,
-            "byteOffset" : 334144
+            "byteOffset" : 332608
         },
         {
             "buffer" : 0,
             "byteLength" : 2280,
-            "byteOffset" : 336720
+            "byteOffset" : 335184
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 339000,
+            "byteLength" : 337464,
             "uri" : "faster.bin"
         }
     ]

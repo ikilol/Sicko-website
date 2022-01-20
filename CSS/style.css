@@ -61,7 +61,7 @@ iframe {
 .loader.hidden {
     animation: fadeOut 2s;
     animation-fill-mode: forwards;
-    animation-delay: 0s;
+    animation-delay: 3s;
 }
 
 @keyframes fadeOut {

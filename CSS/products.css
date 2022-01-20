@@ -1,27 +1,31 @@
-body {
+  body {
   display:flex;
-    min-height:100vh;
-    flex-direction:column;
+  min-height:100vh;
+  flex-direction:column;
   background-color: #DDDDDD;
   cursor:url(../static/cursors/cursor-2.png) 25 25, pointer;
-}
+  }
 
-.main-content{flex:1;}
+  .main-content{flex:1;}
 
-.closeButton{
-    width: 4%;
+  .a:hover{
+    cursor:url(../static/cursors/cursor.png) 25 25, pointer;
+  }
+
+  .closeButton{
+    width: 3%;
     float: right;
-    right: 4%;
+    right: 2%;
     top: 4%;
     position: absolute;
+    z-index: 100;
   }
   
   iframe {
-    margin-left: 7%;
-    width: 85%;
-    height: 80vh;
+    width: 70%;
     float: left;
     border-style: none;
+    position: absolute;
   }
   
   .wireframe{
@@ -31,13 +35,184 @@ body {
   
   .background{
     position: absolute;
-    width: 80%;
+    width: 65%;
     z-index: -1;
     margin-left: 5%;
+    margin-top: 3%;
+  }
+  
+  .simbol{
+    position: absolute;
+    width: 4%;
+    margin-left: 5.5%;
+    margin-top: 38%;
+    float: right;
+    opacity: 0.5;
+  }
+
+  .link-box{
+    width: 15%;
+    float: right;
+    margin-right:2%;
+    margin-top: 10%;
+  }
+
+  .link{
+    width: 100%;
+    padding-top: 4%;
+    border-top: black 1px solid;
+  }
+
+
+  .title {
+    color: black; 
+    text-align: left;
+    font-size: 2vw;
+    font-family: Bastardo;
+    font-weight: bold;
+    height: auto;
+  }
+  
+  .text {
+    color: rgb(0, 0, 0); 
+    text-align: left;
+    font-size: 1.6vw;
+    font-family: Bastardo;
+    font-weight: 500;
+    height: auto;
+    width: 60%;
+    margin-top:2%;
+  }
+  
+  .description-box{
+    position: relative;
+    float: left;
+  }
+  
+  .price{
+    font-size: 3vw;
+    float: right;
+    font-weight: bold;
+    font-family: Bastardo;
+  }
+  
+  .buybox{
+    width: 20%;
+    position: relative;
+    float: right;
+    margin-right: 2%;
+  }
+  
+  .quantity{
+    width: 30%;
+    border: solid 1px black;
+    display: block;
+    float: right;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .addToCart{
+    width: 65%;
+    margin-left:0%;
+    border: solid 1px black;
+    display: block;
+    float: left;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .soonAvailable{
+    width: 100%;
+    clear: right;
+    background-color: black;
+    display: block;
+    float: right;
+    margin-top: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .input-text{
+    color: rgb(0, 0, 0); 
+    text-align: center;
+    font-size: 1.6vw;
+    font-family: Bastardo;
+    font-weight: 500;
+    height: auto;
+  }
+  
+  #cross{
+    position: absolute;
+    float: left;
+    display: block;
+    right: 0;
+    width: 30%;
+    z-index: 2;
+  }
+  
+  @media only screen and (max-width:586px){
+
+    .closeButton{
+      width: 5%;
+    }
+
+    .simbol{
+      width: 10%;
+      margin-left: 1%;
+      margin-top: 58%;
+    }
+
+    .link-box{
+      display: none;
+    }
+
+    .title {
+      font-size: 3.5vw;
+    }
+    
+    .text {
+      font-size: 3vw;
+      width: 100%;
+    }
+
+    .input-text{
+      font-size: 3vw;
+    }
+    
+    .price{
+      font-size: 4.5vw;
+    }
+    
+    .buybox{
+      width: 98%;
+      margin-top: 25%;
+      position: absolute;
+    }
+  
+    .addToCart{
+      width: 67.5%;
+      margin-left:0%;
+    }
+  
+    .soonAvailable{
+      margin-top: 1.5%;
+    }
+    
+    #cross{
+      width: 98%;
+      margin-top: 17%;
+    }
+
+    .background{
+      width: 98%;
+      margin-left: 1%;
+    }
   }
   
   
-  
+
+
   
   #louder-wireframe{
     width: 6%;
@@ -45,17 +220,36 @@ body {
   }
   
   #louder-iframe{
-    height: 72vw;  
+    height: 90vw;  
     margin-left: 0%;
+    margin-top: -10%;
   }
   
   #louder-description{
-    margin-top: -20%;
-    display: block;
-    float: left;
+    margin-top:7%;
+  }
+
+  @media only screen and (max-width:586px){
+    #louder-description{
+      margin-top:90%;
+    }
+
+    
+    #louder-wireframe{
+      display: none;
+    }
+  
+    #louder-iframe{
+      height: 180vw;  
+      margin-left: 0%;
+      width: 100%;
+      margin-top: -28%;
+    }
   }
   
-  
+
+
+
   
   #faster-wireframe{
     width: 6%;
@@ -68,13 +262,28 @@ body {
   }
   
   #faster-description{
-    margin-top: -5%;
-    display: block;
-    float: left;
+    margin-top: 12%;
   }
   
+  @media only screen and (max-width:586px){
+    #faster-description{
+      margin-top: 95%;
+    }
   
+    #faster-wireframe{
+      display: none;
+    }
   
+    #faster-iframe{
+      height: 100vw;   
+      margin-left: 10%;
+      margin-top: 5%;
+    }
+  }
+  
+
+
+
   
   #stronger-wireframe{
     width: 10%;
@@ -82,28 +291,53 @@ body {
   }
   
   #stronger-iframe{
-    height: 75vw;  
+    height: 60vw;  
     margin-left: 0%;
-    margin-top: 2%;
+    margin-top: -2%;
   }
   
   #stronger-description{
-    margin-top: -25%;
+    margin-top: 10%;
     display: block;
     float: left;
   }
   
+  #stronger-background{
+    margin-left: 3%;
+  }
   
+  @media only screen and (max-width:586px){
+    #stronger-description{
+      margin-top: 90%;
+    }
+
+    #stronger-wireframe{
+      display: none;
+    }
   
+    #stronger-iframe{
+      height: 120vw; 
+      margin-left: 10%;
+    }
+
+    #stronger-background{
+      margin-left: 0%;
+    }
+  }
+  
+
+
+
+
   .angrier-wireframe{
    float: left;
    clear: left;
   }
   
   #angrier-render{
-    width: 90%;
-    margin-left: 7%;
-    margin-top: 10%;
+    width: 80%;
+    margin-left: 0%;
+    margin-top: 4%;
   }
   
   #angrier-background{
@@ -119,172 +353,8 @@ body {
     width: 100%;
    }
   
-  
-  .title {
-    color: black; 
-    text-align: left;
-    font-size: 2vw;
-    font-family: Bastardo;
-    font-weight: bold;
-    height: auto;
-    margin-bottom: 2%;
-  }
-  
-  .text {
-    margin: 0%;
-    font-size: 2vw;
-  }
-  
-  .description{
-    color: rgb(0, 0, 0); 
-    text-align: left;
-    font-size: 2vw;
-    font-family: Bastardo;
-    font-weight: 500;
-    height: auto;
-    width: 45%
-  }
-  
-  .price{
-    font-size: 4vw;
-    float: right;
-    font-weight: bold;
-    font-family: Bastardo;
-  }
-  
-  .buybox{
-    width: 30%;
-    position: relative;
-    float: right;
-    margin-right: 2%;
-    margin-bottom: 10%;
-  }
-  
-  .buy-input{
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-right: 7px;
-    padding-left: 7px;
-    display: block;
-    float: right;
-    margin: 4px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .input-text{
-    color: rgb(0, 0, 0); 
-    text-align: center;
-    font-size: 2vw;
-    font-family: Bastardo;
-    font-weight: 500;
-    height: auto;
-  }
-  
-  #cross{
-    position: absolute;
-    float: left;
-    display: block;
-    right: 0;
-    width: 40%;
-    z-index: 2;
-  }
-  
-  @media only screen and (max-width:586px){
-  
-    #cross{
-      width: 100%;
-      height: 20%;
-    }
-  
-    #louder-description{
-      margin-top: -30%;
-    }
-  
-    #faster-description{
-      margin-top: -15%;
-    }
-  
-    #stronger-description{
-      margin-top: -40%;
-    }
-  
-    .title {
-      font-size: 4vw;
-  
-    }
-    
-    .price{
-      font-size: 7vw;
-    }
-  
-    .description {
-      font-size: 4vw;
-      width: 100%;
-    }
-  
-    .buybox{
-      width: 94%;
-      margin-bottom: 10%;
-    }
-  
-    .input-text{
-      font-size: 4vw;
-    }
-  
-  }
-  
-  @media only screen and (max-width:800px){
-  
-    #louder-background{
-      margin-top: 1%;
-      width: 97%;
-      margin-left: 0%;
-    }
-    
-    #louder-wireframe{
-      display: none;
-    }
-  
-    #louder-iframe{
-      height: 120vw;  
-      margin-left: 0%;
-      width: 100%;
-    }
-  
-    #faster-background{
-      margin-top: 1%;
-      width: 97%;
-      margin-left: 0%;
-    }
-  
-    #faster-wireframe{
-      display: none;
-    }
-  
-    #faster-iframe{
-      height: 110vw;   
-      margin-left: 5%;
-    }
-  
-    #stronger-background{
-      margin-top: 1%;
-      width: 97%;
-      margin-left: 0%;
-    }
-  
-    #stronger-wireframe{
-      display: none;
-    }
-  
-    #stronger-iframe{
-      height: 120vw; 
-      margin-left: 5%;
-    }
-  
+
+   @media only screen and (max-width:586px){
     #angrier-render{
       width: 105%;
       margin-left: 0%;
@@ -298,8 +368,12 @@ body {
     #angrier-description{
       margin-top: 70%;
     }
-  
   }
+  
+
+
+
+
 
   hr {
     width: 100%;

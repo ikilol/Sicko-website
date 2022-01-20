@@ -25,7 +25,7 @@ body {
 .main-content{flex:1;}
 
 .headtitle {
-  margin-top: 3%;
+  margin-top: 2%;
 }
 
 .if{
@@ -231,7 +231,7 @@ a:hover {
 
   .price-box {
     float: left;
-    margin-left: 53%;
+    margin-left: 55%;
     margin-top: 16%;
   }
 
@@ -244,11 +244,6 @@ a:hover {
   }
 }
 
-#marquee-1{
-  margin-top: 0%;
-  margin-bottom: 3%;
-}
-
 #marquee-2{
   margin-top: 4%;
   margin-bottom: 2%;
@@ -257,7 +252,7 @@ a:hover {
 .marquee {
   width: 100%;
   display:flex;
-  border: 2px solid #9b9b9b;
+  border: 2px solid #8ee002;
   border-right-style: none ;
   border-left-style: none ;
   overflow: hidden;
@@ -266,7 +261,7 @@ a:hover {
 .marquee .marquee-text{
   font-size: 2.5vw;
   font-family: Bastardo;
-  color: #9b9b9b;
+  color: #8ee002;
   white-space: nowrap;
   animation: animate 40s linear infinite;
   animation-delay: -40s;

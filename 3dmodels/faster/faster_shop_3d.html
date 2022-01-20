@@ -32,7 +32,7 @@
         camera.position.set(0, 0, 0.12);
 
         //renderer
-        var renderer = new THREE.WebGLRenderer({ alpha: true });
+        var renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
         document.body.appendChild(renderer.domElement);
 
@@ -47,21 +47,18 @@
         var light2 = new THREE.AmbientLight(0x404040); // soft white light
         scene.add( light2 );
         
-        const dirLight = new THREE.DirectionalLight( 0xffffff, 2 );
-        dirLight.position.set( 0, 100, 100 );
+        const dirLight = new THREE.DirectionalLight( 0xffffff, 3 );
+        dirLight.position.set( 0, 0, -6 );
         scene.add( dirLight );
         
         const dirLight2 = new THREE.DirectionalLight( 0xffffff, 2 );
-        dirLight2.position.set( -100, -100, -100 );
+        dirLight2.position.set( -2, 0, 2 );
         scene.add( dirLight2 );
         
         const dirLight3 = new THREE.DirectionalLight( 0xffffff, 2 );
-        dirLight3.position.set( 100, 0, 0 );
+        dirLight3.position.set(2, 0, 2 );
         scene.add( dirLight3 );
 
-        const pointLight = new THREE.PointLight( 0x000000, 1 );
-        pointLight.position.set( 100, 100, 0 );
-        scene.add( pointLight );
         
         //loader
         var loader = new GLTFLoader ();        
