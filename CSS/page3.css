@@ -80,43 +80,42 @@ body {
 @media only screen and (max-width:586px){
 
 	.if{
-		font-size:30vw;
+		font-size:26vw;
     text-align: right;
     margin-left: 0;
-    letter-spacing: -1px;
 	}
 
   .angry{
-		font-size:30vw;
+		font-size:26vw;
     text-align: right;
     letter-spacing: 0;
-    line-height: 85%;
+    line-height: 80%;
     margin-left: 0;
-    margin-top: -32%;
+    margin-top: -26%;
 	}
 
   .know{
-		font-size:30vw;
+		font-size:26vw;
     text-align: right;
     margin-left: 0;
     letter-spacing: 0;
-    margin-top: -30%;
+    margin-top: -26%;
 	}
 
   .buy{
-		font-size:30vw;
+		font-size:26vw;
     text-align: right;
     margin-left: 0;
     letter-spacing: 0;
     line-height: 85%;
-    margin-top: -32%;
+    margin-top: -28%;
 	}
 }
 
 .weknow {
   position:absolute;
   color:black;
-  margin-top:24%;
+  margin-top:21%;
   font-family:Helvetica;
   font-size: 1.6vw;
   font-weight: 300;
@@ -127,7 +126,7 @@ body {
 .promise {
   position:absolute;
   color:black;
-  margin-top:50%;
+  margin-top:49%;
   font-family:Helvetica;
   font-size: 1.6vw;
   font-weight: 300;
@@ -135,25 +134,35 @@ body {
   height: auto;
 }
 
-@media only screen and (max-width:586px){
-
-	.promise{
-		font-size:2.5vw;
-    margin-top:66%;
-	}
-
-  .weknow{
-		font-size:2.5vw;
-    margin-top:138%;
-	}
-
-}
-
 .freccia {
   font-family: bastardo;
   font-size: 20vw;
   float: right;
   margin-top: -10%;
+}
+
+@media only screen and (max-width:586px){
+
+	.promise{
+		font-size:2.5vw;
+    margin-top:53%;
+	}
+
+  .weknow{
+		font-size:2.5vw;
+    margin-top:122%;
+	}
+
+  .freccia{
+    font-size: 35vw;
+    margin-right: -3%;
+    margin-top: -14%;
+  }
+}
+
+.shopimg{
+  width: 100%;
+  margin-top: -3%;
 }
 
 .container{
@@ -176,7 +185,7 @@ hr {
 }
 
 
-.textgr {
+.text {
   margin: 0%;
   font-size: 2vw;
   font-family: Bastardo;
@@ -214,6 +223,17 @@ a:hover {
 }
 
 @media only screen and (max-width:586px){
+
+  .shopimg{
+    width: 100%;
+    margin-top: -5%;
+    margin-bottom: 10%;
+  }
+  
+  .shopnow {
+    width: 50%;
+    margin-top: -17%;
+  }
   
   .products {
     float: right;
@@ -232,15 +252,20 @@ a:hover {
   .price-box {
     float: left;
     margin-left: 55%;
-    margin-top: 16%;
+    margin-top: 21%;
   }
 
-  .textgr {
-    font-size: 3vw;
+  .text {
+    font-size: 3.5vw;
+    font-family: Bastardo;
   }
 
   div.bold {
-    font-size: 3vw;
+    font-size: 3.5vw;
+  }
+
+  .grid-element{
+    margin-bottom: -2.5%;
   }
 }
 

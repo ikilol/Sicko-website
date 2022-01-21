@@ -19,6 +19,7 @@
     top: 4%;
     position: absolute;
     z-index: 100;
+    cursor:url(../static/cursors/cursor.png) 25 25, pointer;
   }
   
   iframe {
@@ -61,8 +62,19 @@
     width: 100%;
     padding-top: 4%;
     border-top: black 1px solid;
+    cursor:url(../static/cursors/cursor.png) 25 25, pointer;
   }
 
+  .link2{
+    color: black;
+    text-decoration: underline;
+    z-index: 200;
+  }
+
+  .link2:hover{
+    color: #9b9b9b;
+    cursor:url(../static/cursors/cursor.png) 25 25, pointer;
+  }
 
   .title {
     color: black; 
@@ -76,7 +88,7 @@
   .text {
     color: rgb(0, 0, 0); 
     text-align: left;
-    font-size: 1.6vw;
+    font-size: 2vw;
     font-family: Bastardo;
     font-weight: 500;
     height: auto;
@@ -147,7 +159,7 @@
     float: left;
     display: block;
     right: 0;
-    width: 30%;
+    width: 25%;
     z-index: 2;
   }
   
@@ -168,11 +180,11 @@
     }
 
     .title {
-      font-size: 3.5vw;
+      font-size: 4.5vw;
     }
     
     .text {
-      font-size: 3vw;
+      font-size: 3.5vw;
       width: 100%;
     }
 
@@ -182,6 +194,7 @@
     
     .price{
       font-size: 4.5vw;
+      margin-top: 10%;
     }
     
     .buybox{
@@ -201,7 +214,7 @@
     
     #cross{
       width: 98%;
-      margin-top: 17%;
+      margin-top: 25%;
     }
 
     .background{
@@ -220,18 +233,18 @@
   }
   
   #louder-iframe{
-    height: 90vw;  
+    height: 80vw;   
     margin-left: 0%;
     margin-top: -10%;
   }
   
   #louder-description{
-    margin-top:10%;
+    margin-top:4%;
   }
 
   @media only screen and (max-width:586px){
     #louder-description{
-      margin-top:90%;
+      margin-top:100%;
     }
 
     
@@ -240,10 +253,10 @@
     }
   
     #louder-iframe{
-      height: 180vw;  
+      height: 160vw;  
       margin-left: 0%;
       width: 100%;
-      margin-top: -28%;
+      margin-top: -10%;
     }
   }
   
@@ -262,12 +275,12 @@
   }
   
   #faster-description{
-    margin-top: 10%;
+    margin-top: 4%;
   }
   
   @media only screen and (max-width:586px){
     #faster-description{
-      margin-top: 95%;
+      margin-top: 100%;
     }
   
     #faster-wireframe{
@@ -297,7 +310,7 @@
   }
   
   #stronger-description{
-    margin-top: 10%;
+    margin-top: 4%;
     display: block;
     float: left;
   }
@@ -317,7 +330,8 @@
   
     #stronger-iframe{
       height: 120vw; 
-      margin-left: 10%;
+      margin-left: 0%;
+      width: 100%;
     }
 
     #stronger-background{
@@ -348,7 +362,7 @@
    }
   
    #angrier-description{
-     margin-top: 10%;
+     margin-top: 7%;
     float: left;
     width: 100%;
    }
@@ -356,8 +370,9 @@
 
    @media only screen and (max-width:586px){
     #angrier-render{
-      width: 105%;
+      width: 100%;
       margin-left: 0%;
+      margin-top: 12%;
     }
   
     #angrier-background{
@@ -366,7 +381,7 @@
     }
   
     #angrier-description{
-      margin-top: 70%;
+      margin-top: 80%;
     }
   }
   

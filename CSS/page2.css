@@ -22,7 +22,7 @@ body{
 .main-content{flex:1;}
 
 .headtitle {
-  margin-top: 2%;
+  margin-top: 3%;
   margin-bottom: 15%;
 }
 
@@ -73,34 +73,38 @@ body{
 
 @media only screen and (max-width:586px){
 
+  .headtitle{
+    margin-top: 7%;
+    margin-bottom: 25%;
+  }
+
 	.the10{
-		font-size:28vw;
+		font-size:26vw;
     text-align: right;
     margin-left: 0%; 
     margin-top: 0%;
 	}
 
   .angriest{
-		font-size:28vw;
+		font-size:26vw;
     text-align: right;
     margin-left: 0%;
-    margin-top: -30%;
+    margin-top: -29%;
 	}
 
   .histerical{
-		font-size:28vw;
+		font-size:26vw;
     text-align: right;
     margin-left:0%;
     margin-right:0%;
-    margin-top: -28%;
-    letter-spacing: -3px;
+    margin-top: -27%;
 	}
 
   .bitches{
-		font-size:28vw;
+		font-size:26vw;
     text-align: right;
     margin-left: 0%;
-    margin-top: -28%;
+    margin-top: -27%;
 	}
 }
 
@@ -109,6 +113,7 @@ body{
   font-size: 20vw;
   float: right;
   margin-top: -10%;
+  color: black;
 }
 
 .weknow {
@@ -141,8 +146,14 @@ body{
 
   .weknow2{
 		font-size:2.5vw;
-    margin-top:10%;
+    margin-top:6%;
 	}
+
+  .freccia{
+    font-size: 35vw;
+    margin-right: -3%;
+    margin-top: -14%;
+  }
 }
 
 
@@ -246,11 +257,6 @@ img.players {
   }
 }
 
-#marquee-1{
-  margin-top: -6%;
-  margin-bottom: 7%;
-}
-
 #marquee-2{
   margin-top: 4%;
   margin-bottom: 4%;
@@ -259,7 +265,7 @@ img.players {
 .marquee {
   width: 100%;
   display:flex;
-  border: 2px solid  black;
+  border: 2px solid  white;
   border-right-style: none ;
   border-left-style: none ;
   overflow: hidden;
@@ -268,7 +274,7 @@ img.players {
 .marquee .marquee-text{
   font-size: 2.5vw;
   font-family: Bastardo;
-  color: black;
+  color: white;
   white-space: nowrap;
   animation: animate 40s linear infinite;
   animation-delay: -40s;
@@ -345,74 +351,6 @@ footer {
   padding-bottom: 2%;
 }
 
-
-@keyframes ticker {
-	to {
-		transform: translateX( calc( (var(--size) + 0.5em) * -1 ) )
-	}
-}
-
-@media only screen and (max-width:586px){
-
-	.numUno{
-		font-size:30vw;
-    text-align: right;
-    margin-left: -10%;
-	}
-
-  .numDue{
-		font-size:30vw;
-    margin-left: -3vw;
-    margin-top: 1vh;
-    text-align: right;  
-	}
-
-  .numTre{
-		font-size:30vw;
-    margin-left: -3vw;
-    margin-top: 1vh;
-    text-align: right;  
-	}
-}
-
-@media only screen and (max-width:586px){
-
-	.users{
-    text-align:right;
-		font-size:2.5vw;
-    font-weight: 500;
-    margin-top: 38%;
-    margin-left: -3%;
-	}
-
-  .ickss{
-    text-align:right;
-    font-size:2.5vw;
-    font-weight: 500;
-    margin-top:71%;
-    margin-left: -3%;
-	}
-
-  .challenges{
-    text-align:right;
-    font-size:2.5vw;
-    font-weight: 500;
-    margin-top:106%;
-    margin-left: -3%;
-	}
-
-  .exla{
-    margin-right: 0%;
-    margin-left: 45%;
-    margin-top: -230%;
-    transform:scale(0.1);
-  }
-
-  .hash{
-    margin-top: -100%;
-    margin-left: -22%;
-  }
-}
 
 @media only screen and (max-width:1280px){
   #data1 {
