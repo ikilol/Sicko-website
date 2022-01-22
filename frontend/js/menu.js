@@ -38,6 +38,7 @@ let frontHidden = true;
     
 function toggleFront() {
   let frontDiv = document.getElementById("frontDiv");
+  var iframe1 = document.getElementById("myIframe1");
   
 // se il menu è chiuso si apre
   if (frontHidden) { 
@@ -45,6 +46,7 @@ function toggleFront() {
     frontDiv.classList.remove("frontHidden");
     frontDiv.classList.add("frontOpen");
     frontHidden = false;
+    iframe1.style.height = iframe1.contentWindow.document.body.scrollHeight + 'px';
 
     aboutDiv.classList.remove("aboutOpen");
     aboutDiv.classList.add("aboutHidden");
@@ -79,6 +81,7 @@ let aboutHidden = true;
     
 function toggleAbout() {
   let aboutDiv = document.getElementById("aboutDiv");
+  var iframe2 = document.getElementById("myIframe2");
   
 
 // se il menu è chiuso si apre
@@ -91,6 +94,7 @@ function toggleAbout() {
     aboutDiv.classList.remove("aboutHidden");
     aboutDiv.classList.add("aboutOpen");
     aboutHidden = false;
+    iframe2.style.height = iframe2.contentWindow.document.body.scrollHeight + 'px';
 
     rankDiv.classList.remove("rankOpen");
     rankDiv.classList.add("rankHidden");
@@ -120,6 +124,7 @@ let rankHidden = true;
     
 function toggleRank() {
   let rankDiv = document.getElementById("rankDiv");
+  var iframe3 = document.getElementById("myIframe3");
 
 // se il menu è chiuso si apre
   if (rankHidden) {
@@ -135,6 +140,7 @@ function toggleRank() {
     rankDiv.classList.remove("rankHidden");
     rankDiv.classList.add("rankOpen");
     rankHidden = false;
+    iframe3.style.height = iframe3.contentWindow.document.body.scrollHeight + 'px';
     
     shopDiv.classList.remove("shopOpen");
     shopDiv.classList.add("shopHidden");
@@ -160,6 +166,7 @@ let shopHidden = true;
     
 function toggleShop() {
   let shopDiv = document.getElementById("shopDiv");
+  var iframe4 = document.getElementById("myIframe4");
 
 // se il menu è chiuso si apre
   if (shopHidden) {
@@ -179,6 +186,7 @@ function toggleShop() {
     shopDiv.classList.remove("shopHidden");
     shopDiv.classList.add("shopOpen");
     shopHidden = false;
+    iframe4.style.height = iframe4.contentWindow.document.body.scrollHeight + 'px';
 
     profileDiv.classList.remove("profileOpen");
     profileDiv.classList.add("profileHidden");

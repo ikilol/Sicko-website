@@ -7,7 +7,8 @@
 <meta name="google-signin-client_id" content="813699983043-kir7fj27jiabnksmsd3988k0hr06q2a2.apps.googleusercontent.com">
 <meta name="google-signin-scope" content="https://www.googleapis.com/auth/analytics.readonly">
 <meta name="google-site-verification" content="oQNb7B36et4x4CWNekNYgEZyaBfs8UVwM7nTzpJGuw4" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
 
 
 <title>sicko</title>
@@ -114,12 +115,6 @@
                         <div class="menu-arrow" onclick="toggleShop()"> ↗ </div>
                         <div class="noselect menu-link"> shop </div>
                     </div>
-
-                    <div class="row">
-                        <div class="menu-arrow"  onclick="toggleProfile()"> ↗ </div>
-                        <div class="noselect menu-link"> personal area </div>
-                    </div>
-
                 <ul> 
                 
         </div>
@@ -135,8 +130,8 @@
             sicko
         </div>
 
-        <iframe class="noselect" src="pages/frontpage.html" frameborder="0" ></iframe>
-        
+        <iframe class="noselect" src="pages/frontpage.html" frameborder="0" id="myIframe1"></iframe>
+ 
     </section>
 
     <section style="background-color:#000000" class="page n1 aboutHidden" data-number="1" id="aboutDiv">
@@ -144,7 +139,7 @@
             about
         </div>
 
-        <iframe class="noselect" src="pages/about.html" frameborder="0" ></iframe>
+        <iframe class="noselect" src="pages/about.html" frameborder="0" id="myIframe2"></iframe>
 
     </section>
 
@@ -156,7 +151,7 @@
             rankings
         </div>
         
-      <iframe class="noselect" src="pages/rankings.html" frameborder="0" ></iframe>
+      <iframe class="noselect" src="pages/rankings.html" frameborder="0" id="myIframe3"></iframe>
     
         
     
@@ -169,7 +164,7 @@
             shop
         </div>
 
-        <iframe class="noselect" src="pages/shop.html" frameborder="0"></iframe>
+        <iframe class="noselect" src="pages/shop.html" frameborder="0" id="myIframe4"></iframe>
        
     </section>
 
@@ -194,6 +189,21 @@
     loader.className += " hidden"; // class "loader hidden"
     });
 </script>
+
+    
+
+    <script>
+    // Selecting the iframe element
+    var iframe1 = document.getElementById("myIframe1");
+
+    // Adjusting the iframe height onload event
+    iframe1.onload = function(){
+        if (window.innerWidth<586){
+        iframe1.style.height = iframe1.contentWindow.document.body.scrollHeight + 'px';
+    }
+    }
+    </script>
+
 </body>
 
 </html>

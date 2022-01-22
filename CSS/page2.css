@@ -14,9 +14,22 @@
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
+::-webkit-scrollbar {
+  display: none;
+  }
+  
+  body, html {
+    overflow-x: hidden;
+    }
+
 body{
+  display:flex;
+  min-height:100vh;
+  flex-direction:column;
   background-color: #888787;
   cursor:url(../static/cursors/cursor.png) 25 25, pointer;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .main-content{flex:1;}
@@ -146,7 +159,7 @@ body{
 
   .weknow2{
 		font-size:2.5vw;
-    margin-top:6%;
+    margin-top:100%;
 	}
 
   .freccia{
@@ -284,6 +297,7 @@ img.players {
 .marquee .marquee-text:nth-child(2){
   animation: animate2 40s linear infinite;
   animation-delay: -20s;
+  will-change: transform;
 }
 
 @keyframes animate{

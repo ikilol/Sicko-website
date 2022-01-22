@@ -1,7 +1,15 @@
 @media only screen and (max-width:586px){
+
+	body, html {
+		overflow-y: hidden;
+		}
+
 	body{
-		overflow:auto;
-		margin:0
+		overflow-x: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 }
 
@@ -10,10 +18,11 @@
 	display: block;       /* iframes are inline by default */
     border: none;         /* Reset default border */
     height: 100vh;        /* Viewport-relative units */
-    width: 75vw;
+    width: 80vw;
 	border: none;
-	margin-right: 15%;
+	margin-right: 12%;
 	margin-top: -1%;
+	overflow-x: hidden;
 	}
 }
 
@@ -179,7 +188,7 @@
 	.about{
 		font-size:5vw;
 		margin-left: -1%;
-		margin-top: 12%;
+		margin-top: 7%;
 		position: absolute;
 	}
 }
@@ -188,7 +197,7 @@
 	.rankings{
 		font-size:5vw;
 		margin-left: -4%;
-		margin-top: 13%;
+		margin-top: 10%;
 		position: fixed;
 }
 }
@@ -197,7 +206,7 @@
 	.shop{
 		font-size:5vw;
 		margin-left: -1%;
-		margin-top: 8%;
+		margin-top: 5%;
 		position: fixed;
 }
 }

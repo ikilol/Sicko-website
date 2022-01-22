@@ -14,12 +14,22 @@
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
+::-webkit-scrollbar {
+  display: none;
+  }
+  
+body, html {
+  overflow-x: hidden;
+  }
+
 body{
   display:flex;
   min-height:100vh;
   flex-direction:column;
   background: #8ee002;
   cursor:url(../static/cursors/cursor-3.png) 25 25, pointer;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .main-content{flex:1;}
@@ -79,30 +89,30 @@ body{
 @media only screen and (max-width:586px){
 
 	.beThe{
-		font-size:31vw;
+		font-size:26vw;
     text-align: right;
     margin-left: 0%;
     margin-top: 0%;
 	}
 
   .best{
-		font-size:31vw;
+		font-size:26vw;
     margin-left: 0vw;
-    margin-top: -35%;
+    margin-top: -29%;
     text-align: right;
 	}
 
   .atYour{
-		font-size:31vw;
+		font-size:26vw;
     margin-left: 0vw;
-    margin-top: -37%;
+    margin-top: -30%;
     text-align: right;
 	}
 
   .worst{
-		font-size:31vw;
+		font-size:26vw;
     margin-left: 0;
-    margin-top: -35%;
+    margin-top: -29%;
     text-align: right;
 	}
 }
@@ -150,7 +160,7 @@ body{
 
 	.collecting{
 		font-size:2.5vw;
-    margin-top:37%;
+    margin-top:39%;
 	}
 
   .yesYou{
@@ -321,8 +331,14 @@ hr.small {
    }
    
    .howto{
-     font-size: 4vw;
+     font-size: 4.5vw;
      padding-top: 3%;
+   }
+
+   .notes{
+    font-size: 3vw;
+    margin-left: 5%;
+    margin-top: 1%;
    }
 }
 
@@ -362,6 +378,7 @@ hr.small {
 .marquee .marquee-text:nth-child(2){
   animation: animate2 40s linear infinite;
   animation-delay: -20s;
+  will-change: transform;
 }
 
 
@@ -518,7 +535,4 @@ footer {
     }
 }
 
-::-webkit-scrollbar {
-  display: none;
-  }
   
