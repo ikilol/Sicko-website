@@ -58,9 +58,9 @@
 
   .teachers {
     margin-top:4%;
-    width: 30%;
+    width: 40%;
     float: left;
-    margin-right: 20%;
+    margin-right: 10%;
   }
 
   .assistants {
@@ -71,8 +71,8 @@
 
   .students {
     margin-top:4%;
-    width: 30%;
-    float: left;
+    width: 100%;
+    float: right;
   }
 
   .legit {
@@ -109,28 +109,21 @@
   }
 
   .teachersimg{
-    position:absolute;
-    margin-top: -157%;
-    margin-left: -35%;
-    width:100%;
-    height:auto;
-    transform: scale(0.03);
+    float: left;
+    width: 8%;
+    padding-right: 5%;
   }
 
   .assistimg{
-    position:absolute;
-    margin-top: -121%;
-    margin-left: 5%;
-    width:100%;
-    height:auto;
-    transform: scale(0.03);
+    float: left;
+    width: 12%;
+    padding-right: 5%;
   }
 
   .teamimg{
-    position:absolute;
-    width: 50%;
-    margin-left: 45%;
-    margin-top: 35%;
+    float: left;
+    width: 51%;
+    padding-right: 4%;
   }
 
   .title {
@@ -191,13 +184,6 @@
       width: 60%;
     }
 
-
-    .teachersimg{
-      transform: scale(0.06);
-      margin-top: -135%;
-      margin-left: -11%;
-    }
-
     .assistants {
       margin-left: 45%;
       margin-top: 10%;
@@ -205,22 +191,19 @@
     }
 
     .assistimg {
-      transform: scale(0.06);
-      margin-left: -11%;
-      margin-top: -72%;
+      width: 10%;
     }
 
     .teamimg{
-      width: 70%;
-      margin-left: 22%;
-      margin-top: 92%;
+      width: 150%;
+      padding-bottom: 10%;
     }
 
     .students {
-      margin-left: 45%;
-      margin-top: 50%;
-      margin-bottom: 5%;
-      width: 60%;
+      float: left;
+      margin-left: 54%;
+      width: 30%;
+      margin-top: 0%;
     }
 
   }
@@ -245,19 +228,24 @@
       margin-top: 95%;
     }
 
-    .teachersimg{
-      margin-top: -120%;
+    .teachers{
+      margin-left: 28%;
+      width: 80%;
     }
 
-    .assistimg {
-      transform: scale(0.06);
-      margin-left: -11%;
-      margin-top: -50%;
+    .assistants{
+      margin-left: 28%;
+      width: 80%;
     }
+
+    .students{
+      margin-left: 40%;
+      width: 80%;
+    }
+    
     .teamimg{
-      width: 70%;
-      margin-left: 22%;
-      margin-top: 118%;
+      width: 85%;
+      
     }
   }
 

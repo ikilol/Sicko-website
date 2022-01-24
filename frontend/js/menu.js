@@ -42,6 +42,7 @@ function toggleFront() {
   
   if (frontHidden && navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) { 
     document.getElementById("logo").style.display = "block";
+    document.getElementById("logo2").style.display = "none";
     frontDiv.classList.remove("frontHidden");
     frontDiv.classList.add("frontOpen");
     frontHidden = false;
@@ -64,6 +65,7 @@ function toggleFront() {
     menuHidden = true;
   } else if (frontHidden){
     document.getElementById("logo").style.display = "block";
+    document.getElementById("logo2").style.display = "none";
     frontDiv.classList.remove("frontHidden");
     frontDiv.classList.add("frontOpen");
     frontHidden = false;
