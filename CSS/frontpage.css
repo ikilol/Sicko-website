@@ -88,6 +88,10 @@ body{
 
 @media only screen and (max-width:586px){
 
+  .headtitle {
+    margin-top: 3%;
+  }
+  
 	.beThe{
 		font-size:26vw;
     text-align: right;
@@ -185,6 +189,13 @@ body{
 
 }
 
+@media only screen and (max-width:400px){
+
+  .collecting{
+		font-size:3vw;
+	}
+}
+
 .description-box{
   width: 100%;
   float: left;
@@ -210,10 +221,17 @@ body{
 
   .description {
     width: 90%;
-    font-size:3.5vw;
+    font-size:4vw;
   }
 }
 
+@media only screen and (max-width:400px){
+
+  .description {
+    width: 90%;
+    font-size:5vw;
+  }
+}
 
 .lazy {  
   position:relative;
@@ -248,6 +266,13 @@ body{
     height:50vw;
     margin-top: 5%;
     margin-bottom: 8%;
+	}
+}
+
+@media only screen and (max-width:400px){
+
+  .lazy{
+		font-size:3vw;
 	}
 }
 
@@ -340,6 +365,29 @@ hr.small {
     margin-left: 5%;
     margin-top: 1%;
    }
+}
+
+@media only screen and (max-width:400px){
+
+  .learn{
+		font-size:3vw;
+	}
+
+  hr.small {
+    width: 65%; 
+  }
+
+  .grid-element{
+    width: 70%;
+   }
+
+   .howto{
+    font-size: 6vw;
+  }
+
+  .notes{
+    font-size: 3.5vw;
+  }
 }
 
 .sickEvents {
@@ -489,6 +537,10 @@ hr {
   border:none;
   color:rgb(0, 0, 0);
   background-color:rgb(0, 0, 0);
+}
+
+a {
+  color: #000;
 }
 
 footer {

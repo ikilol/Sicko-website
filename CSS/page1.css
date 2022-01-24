@@ -86,7 +86,7 @@ body{
 @media only screen and (max-width:586px){
 
   .headtitle{
-    margin-top: 7%;
+    margin-top: 6%;
   }
 	.what{
 		font-size:26vw;
@@ -172,6 +172,14 @@ body{
     margin-top: 0%;
     position: absolute;
   }
+}
+
+@media only screen and (max-width:400px){
+
+  .foolproof{
+		font-size:3vw;
+    margin-top:62%;
+	}
 }
 
 .description-box{
@@ -429,7 +437,7 @@ body{
 @media only screen and (max-width:586px){
 
 	.text{
-		font-size:4.5vw;
+		font-size:4vw;
 	}
 
   .title{
@@ -448,6 +456,21 @@ body{
   }
 }
 
+@media only screen and (max-width:400px){
+
+  .text{
+		font-size:5vw;
+	}
+  
+  .title{
+		font-size:5vw;
+    margin-bottom: 3%;
+	}
+
+  title.description {
+    width: 99%;
+  }
+}
 
 a {
   text-decoration: none;
@@ -587,16 +610,15 @@ a.link:hover{
   }
 }
 
+@media only screen and (max-width:400px){
 
-@media only screen and (max-width:586px){
-  
-  .scroll2 {
-    margin-top:-13%;
+  .marquee-link {
+    width: 86%;
   }
+}
 
-  .scroll2 .tick2{
-    font-size: 5vw;
-  }
+#conclusions{
+  width: 99%;
 }
 
 #payoff{

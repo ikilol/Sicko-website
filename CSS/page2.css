@@ -87,7 +87,7 @@ body{
 @media only screen and (max-width:586px){
 
   .headtitle{
-    margin-top: 7%;
+    margin-top: 4%;
     margin-bottom: 25%;
   }
 
@@ -106,7 +106,7 @@ body{
 	}
 
   .histerical{
-		font-size:26vw;
+		font-size:25vw;
     text-align: right;
     margin-left:0%;
     margin-right:0%;
@@ -169,6 +169,13 @@ body{
   }
 }
 
+@media only screen and (max-width:400px){
+
+  .weknow2{
+		font-size:3vw;
+    margin-top:105%;
+	}
+}
 
 .text {
   font-family: Bastardo;
@@ -181,6 +188,12 @@ body{
   }   
 }
 
+@media only screen and (max-width:400px){
+
+  .text{
+		font-size: 4.5vw;
+	}
+}
 .could{
   width: 60%;
   margin-top: -5%;
@@ -270,6 +283,22 @@ img.players {
   }
 }
 
+@media only screen and (max-width:400px){
+
+  .could{
+		width: 80%;
+	}
+
+  img.players {
+    width: 9vw;
+  }
+  
+  .row {
+    padding: 1.5vw;
+    height: 9vw;
+  }
+}
+
 #marquee-2{
   margin-top: 4%;
   margin-bottom: 4%;
@@ -333,7 +362,9 @@ img.players {
   }
 }
 
-
+a {
+  color: #000;
+}
 
 hr {
   width: 100%;

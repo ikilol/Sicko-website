@@ -35,11 +35,13 @@
   .main-content{flex:1;}
 
   .closeButton{
-    width: 4%;
+    width: 3%;
     float: right;
-    right: 4%;
-    top: 4%;
+    right: 2%;
+    top: 1.5%;
     position: absolute;
+    z-index: 100;
+    cursor:url(../static/cursors/cursor-3.png) 25 25, pointer;
   }
   
   #right{
@@ -151,6 +153,11 @@
   }
   
   @media only screen and (max-width:586px){
+
+    .closeButton{
+      width: 5%;
+    }
+    
     #right {
     width: 99%;
     margin-top: 15%;
@@ -171,12 +178,12 @@
 
     .legit {
       font-size:2.5vw;
-      margin-top: 43%;
+      margin-top: 48%;
       }
     
     .never {
       font-size:2.5vw;
-      margin-top: 78%;
+      margin-top: 74%;
     }
 
     .teachers{
@@ -187,7 +194,7 @@
 
     .teachersimg{
       transform: scale(0.06);
-      margin-top: -140%;
+      margin-top: -135%;
       margin-left: -11%;
     }
 
@@ -200,13 +207,13 @@
     .assistimg {
       transform: scale(0.06);
       margin-left: -11%;
-      margin-top: -78%;
+      margin-top: -72%;
     }
 
     .teamimg{
       width: 70%;
       margin-left: 22%;
-      margin-top: 85%;
+      margin-top: 92%;
     }
 
     .students {
@@ -218,7 +225,81 @@
 
   }
 
+  @media only screen and (max-width:400px){
 
+    .text{
+      font-size:5vw;
+    }
+  
+    .title{
+      font-size:6.5vw;
+    }
+
+    .legit {
+      font-size:3vw;
+      margin-top: 63%;
+      }
+    
+    .never {
+      font-size:3vw;
+      margin-top: 95%;
+    }
+
+    .teachersimg{
+      margin-top: -120%;
+    }
+
+    .assistimg {
+      transform: scale(0.06);
+      margin-left: -11%;
+      margin-top: -50%;
+    }
+    .teamimg{
+      width: 70%;
+      margin-left: 22%;
+      margin-top: 118%;
+    }
+  }
+
+  .lookUp{
+    float: left;
+    margin-top: 30%;
+    margin-left: 45%;
+    width: 10%;
+    height: 65vh;
+    display: none;
+    overflow: hidden;
+  }
+  
+  .lookUp-text{
+    -webkit-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    transform:rotate(-90deg);
+    float: left;
+    margin: 440%;
+    width: 900%;
+    font-size: 5vw;
+    color: white;
+    font-family: Bastardo;
+    font-weight: 300;
+    margin-left: -400%;
+  }
+  .lookUp-arrows{
+    font-family: Bastardo;
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width:400px){
+    .lookUp{
+      display: block;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
   footer {
     margin-top: 1%;
     font-family: Bastardo;

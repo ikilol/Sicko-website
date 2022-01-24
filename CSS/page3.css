@@ -89,6 +89,10 @@ body {
 
 @media only screen and (max-width:586px){
 
+  .headtitle {
+    margin-top: 3%;
+  }
+
 	.if{
 		font-size:26vw;
     text-align: right;
@@ -155,7 +159,7 @@ body {
 
 	.promise{
 		font-size:2.5vw;
-    margin-top:53%;
+    margin-top:55%;
 	}
 
   .weknow{
@@ -168,6 +172,19 @@ body {
     margin-right: -3%;
     margin-top: -14%;
   }
+}
+
+@media only screen and (max-width:400px){
+
+  .promise{
+		font-size:3vw;
+    margin-top:58%;
+	}
+
+  .weknow{
+		font-size:3vw;
+    margin-top:128%;
+	}
 }
 
 .shopimg{
@@ -218,7 +235,7 @@ div.bold {
   padding-right: 1vw;
 }
 
-a {
+a.link-product {
   margin: 0%;
   font-size: 7vw;
   font-weight: 300;
@@ -227,7 +244,7 @@ a {
   font-family: Bastardo;
 }
 
-a:hover {
+a.link-product:hover {
   color: #8ee002;
   cursor:url(../static/cursors/cursor.png) 25 25, pointer;
 }
@@ -261,8 +278,8 @@ a:hover {
 
   .price-box {
     float: left;
-    margin-left: 55%;
-    margin-top: 21%;
+    margin-left: 53%;
+    margin-top: 22%;
   }
 
   .text {
@@ -276,6 +293,60 @@ a:hover {
 
   .grid-element{
     margin-bottom: -2.5%;
+  }
+}
+
+@media only screen and (max-width:400px){
+
+  .shopimg{
+    width: 100%;
+    margin-top: -5%;
+    margin-bottom: 10%;
+  }
+  
+  .shopnow {
+    width: 65%;
+    margin-top: -20%;
+  }
+  
+  .products {
+    float: right;
+    position: absolute;
+    width: 98%;
+    display: block;
+  }
+  
+  .description-box{
+    float: left;
+    margin-left: 0%;
+    position: absolute;
+    width: 65%;
+    margin-top: 57%;
+  }
+
+  .price-box {
+    float: right;
+    margin-right: 0%;
+    margin-top: 57%;
+    z-index: 100;
+    width: 20%;
+  }
+
+  .text {
+    font-size: 4.5vw;
+    font-family: Bastardo;
+  }
+
+  div.bold {
+    font-size: 4.5vw;
+  }
+
+  .grid-element{
+    margin-bottom: 5.5%;
+  }
+
+  a.link-product{
+    font-size: 16vw;
   }
 }
 
@@ -342,6 +413,9 @@ a:hover {
   }
 }
 
+a{
+  color: #000;
+}
 footer {
   margin-top: 1%;
   font-family: Bastardo;

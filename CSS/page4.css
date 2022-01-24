@@ -84,6 +84,10 @@ a.text:active{
   color: black;
 }
 
+a {
+  color: #000;
+}
+
 footer {
     margin-top: 2%;
     font-family: Bastardo;
@@ -165,6 +169,22 @@ hr {
     #data2 {
 		font-size: 2vw;
     }
+}
+
+.logOut{
+  float: right;
+  right: 2%;
+  top: 1.5%;
+  font-size: 2vw;
+  font-family: Bastardo;
+  font-weight: bold;
+  position: absolute;
+  z-index: 100;
+}
+
+.logOut:hover{
+  color: #8ee002;
+  cursor:url(../static/cursors/cursor-2.png) 25 25, pointer;
 }
 
 .user-section {
