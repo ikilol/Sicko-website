@@ -2,47 +2,21 @@ let serial; // variable for the serial object
 let latestData = 0; // variable to hold the data
 let ok = 1;
 
-var ctx = document.getElementById("myChart");
-const labels  = [
-  '0 sec',
-  '',
-  '',
-  '',
-  '',
-  '5 sec',
-  '',
-  '',
-  '',
-  '',
-  '10 sec',
-  
-];
-
-const data = {
-  labels: labels,
-  datasets: [{
-    data: [latestData],
-    backgroundColor: [
-      '#8ee002',
-    ],
-  }]
-};
-
-const config = {
-  type: 'bar',
-  data: data,
-};
+let phase = 0;
+let zoff = 0;
+let slider;
+let slider1;
 
 
 function setup() {
-  noCanvas();
+  createCanvas(windowWidth, 400);
   background(250);
   // serial constructor
   serial = new p5.SerialPort();
   // get a list of all connected serial devices
   serial.list();
   // serial port to use - you'll need to change this
-  serial.open('COM8');
+  serial.open('COM3');
   // callback for when the sketchs connects to the server
   serial.on('connected', serverConnected);
   // callback to print the list of serial devices
@@ -55,14 +29,7 @@ function setup() {
   serial.on('open', gotOpen);
   // what to do when the port closes
   serial.on('close', gotClose);
-
-  const myChart = new Chart(
-    document.getElementById('myChart'),
-    config
-    
-  );
-
-}
+  }
 
 
 
@@ -103,7 +70,79 @@ function gotData() {
 }
 
 function draw() {
+  background(255);
 
+  if (latestData <= 10){
+    slider = createSlider(0, 10, 0.7, 0.1);
+    slider1 = createSlider(0, 10, 0.4, 0.1);
 
+    translate(random(-1),random(-1));
+    }
 
+  if (latestData > 10 && latestData < 20){
+    slider = createSlider(0, 10, 1, 0.1);
+    slider1 = createSlider(0, 10, 2, 0.1);
+    translate(random(-2),random(-2));
+    }
+  
+    if (latestData > 20 && latestData < 80){
+      slider = createSlider(15, 10, 3, 0.1);
+      slider1 = createSlider(16, 10, 4, 0.1);
+      translate(random(-3),random(-3));
+    }
+  
+    if (latestData > 80 && latestData < 200){
+      slider = createSlider(25, 10, 5, 0.1);
+      slider1 = createSlider(36, 10, 6, 0.1);
+      translate(random(-4),random(-4));
+    }
+  
+    if (latestData >= 200){
+      slider = createSlider(50, 10, 10, 0.1);
+      slider1 = createSlider(100, 10, 10, 0.1);
+      translate(random(-5),random(-5));
+    }
+    
+    slider.hide();
+    slider1.hide();
+
+  translate(width / 2, height / 2);
+  stroke(0);
+  strokeWeight(2);
+  noFill();
+  beginShape();
+  let noiseMax = slider.value();
+  for (let a = 0; a < TWO_PI; a += radians(6)) {
+    let xoff = map(cos(a + phase), -1, 1, 0, noiseMax);
+    let yoff = map(sin(a + phase), -1, 1, 0, noiseMax);
+    let r = map(noise(xoff, yoff, zoff), 0, 1, 100, height / 2);
+    let x = r * cos(a);
+    let y = r * sin(a);
+    vertex(x, y);
+  }
+  endShape(CLOSE);
+  phase += 0.003;
+  zoff += 0.03;
+
+  stroke('#8ee002');
+  strokeWeight(2);
+  noFill();
+  beginShape();
+  let noiseMax1 = slider1.value();
+  for (let a = 0; a < TWO_PI; a += radians(5)) {
+    let xoff = map(cos(a + phase), -1, 1, 0, noiseMax1);
+    let yoff = map(sin(a + phase), -1, 1, 0, noiseMax1);
+    let r = map(noise(xoff, yoff, zoff), 0, 1, 100, height / 2);
+    let x = r * cos(a);
+    let y = r * sin(a);
+    vertex(x, y);
+  }
+  endShape(CLOSE);
+
+  translate(random(0),random(-0));
+  textSize(40);
+  fill(50);
+  noStroke();
+  textAlign(CENTER, CENTER);
+  text(latestData + " icks", 0, 0);
 }
