@@ -35,14 +35,14 @@ window.addEventListener("onload", limitFunc);
 
 // pagina home
 let frontHidden = true;
-    
+
 function toggleFront() {
   let frontDiv = document.getElementById("frontDiv");
   var iframe1 = document.getElementById("myIframe1");
   
-// se il menu è chiuso si apre
-  if (frontHidden) { 
+  if (frontHidden && navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) { 
     document.getElementById("logo").style.display = "block";
+    document.getElementById("logo2").style.display = "none";
     frontDiv.classList.remove("frontHidden");
     frontDiv.classList.add("frontOpen");
     frontHidden = false;
@@ -59,16 +59,35 @@ function toggleFront() {
     shopDiv.classList.remove("shopOpen");
     shopDiv.classList.add("shopHidden");
     shopHidden = true;
-
-    profileDiv.classList.remove("profileOpen");
-    profileDiv.classList.add("profileHidden");
-    profileHidden = true;
     
     menuDiv.classList.remove("menuOpen");
     menuDiv.classList.add("menuHidden");
     menuHidden = true;
-// se il menù è aperto si chiude
-  } else {
+  } else if (frontHidden){
+    document.getElementById("logo").style.display = "block";
+    document.getElementById("logo2").style.display = "none";
+    frontDiv.classList.remove("frontHidden");
+    frontDiv.classList.add("frontOpen");
+    frontHidden = false;
+
+    aboutDiv.classList.remove("aboutOpen");
+    aboutDiv.classList.add("aboutHidden");
+    aboutHidden = true;
+
+    rankDiv.classList.remove("rankOpen");
+    rankDiv.classList.add("rankHidden");
+    rankHidden = true;
+
+    shopDiv.classList.remove("shopOpen");
+    shopDiv.classList.add("shopHidden");
+    shopHidden = true;
+    
+    menuDiv.classList.remove("menuOpen");
+    menuDiv.classList.add("menuHidden");
+    menuHidden = true;
+  }
+  
+  else {
     frontDiv.classList.remove("frontOpen");
     frontDiv.classList.add("frontHidden");
     frontHidden = true;
@@ -83,9 +102,7 @@ function toggleAbout() {
   let aboutDiv = document.getElementById("aboutDiv");
   var iframe2 = document.getElementById("myIframe2");
   
-
-// se il menu è chiuso si apre
-  if (aboutHidden) {
+  if (aboutHidden && navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
     document.getElementById("logo").style.display = "none";
     frontDiv.classList.remove("frontOpen");
     frontDiv.classList.add("frontHidden");
@@ -104,14 +121,30 @@ function toggleAbout() {
     shopDiv.classList.add("shopHidden");
     shopHidden = true;
 
-    profileDiv.classList.remove("profileOpen");
-    profileDiv.classList.add("profileHidden");
-    profileHidden = true;
+    menuDiv.classList.remove("menuOpen");
+    menuDiv.classList.add("menuHidden");
+    menuHidden = true;
+  } else if (aboutHidden){
+    document.getElementById("logo").style.display = "none";
+    frontDiv.classList.remove("frontOpen");
+    frontDiv.classList.add("frontHidden");
+    frontHidden = true;
+
+    aboutDiv.classList.remove("aboutHidden");
+    aboutDiv.classList.add("aboutOpen");
+    aboutHidden = false;
+
+    rankDiv.classList.remove("rankOpen");
+    rankDiv.classList.add("rankHidden");
+    rankHidden = true;
+
+    shopDiv.classList.remove("shopOpen");
+    shopDiv.classList.add("shopHidden");
+    shopHidden = true;
 
     menuDiv.classList.remove("menuOpen");
     menuDiv.classList.add("menuHidden");
     menuHidden = true;
-// se il menù è aperto si chiude
   } else {
     aboutDiv.classList.remove("aboutOpen");
     aboutDiv.classList.add("aboutHidden");
@@ -126,8 +159,7 @@ function toggleRank() {
   let rankDiv = document.getElementById("rankDiv");
   var iframe3 = document.getElementById("myIframe3");
 
-// se il menu è chiuso si apre
-  if (rankHidden) {
+  if (rankHidden && navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
     document.getElementById("logo").style.display = "none";
     frontDiv.classList.remove("frontOpen");
     frontDiv.classList.add("frontHidden");
@@ -146,15 +178,32 @@ function toggleRank() {
     shopDiv.classList.add("shopHidden");
     shopHidden = true;
 
-    profileDiv.classList.remove("profileOpen");
-    profileDiv.classList.add("profileHidden");
-    profileHidden = true;
+    menuDiv.classList.remove("menuOpen");
+    menuDiv.classList.add("menuHidden");
+    menuHidden = true;
+  } else if(rankHidden){
+    document.getElementById("logo").style.display = "none";
+    frontDiv.classList.remove("frontOpen");
+    frontDiv.classList.add("frontHidden");
+    frontHidden = true;
+
+    aboutDiv.classList.remove("aboutOpen");
+    aboutDiv.classList.add("aboutHidden");
+    aboutHidden = true;
+
+    rankDiv.classList.remove("rankHidden");
+    rankDiv.classList.add("rankOpen");
+    rankHidden = false;
+    
+    shopDiv.classList.remove("shopOpen");
+    shopDiv.classList.add("shopHidden");
+    shopHidden = true;
 
     menuDiv.classList.remove("menuOpen");
     menuDiv.classList.add("menuHidden");
     menuHidden = true;
-// se il menù è aperto si chiude
-  } else {
+  }
+  else {
     rankDiv.classList.remove("rankOpen");
     rankDiv.classList.add("rankHidden");
     rankHidden = true;
@@ -168,8 +217,7 @@ function toggleShop() {
   let shopDiv = document.getElementById("shopDiv");
   var iframe4 = document.getElementById("myIframe4");
 
-// se il menu è chiuso si apre
-  if (shopHidden) {
+  if (shopHidden && navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
     document.getElementById("logo").style.display = "none";
     frontDiv.classList.remove("frontOpen");
     frontDiv.classList.add("frontHidden");
@@ -188,29 +236,10 @@ function toggleShop() {
     shopHidden = false;
     iframe4.style.height = iframe4.contentWindow.document.body.scrollHeight + 'px';
 
-    profileDiv.classList.remove("profileOpen");
-    profileDiv.classList.add("profileHidden");
-    profileHidden = true;
-
     menuDiv.classList.remove("menuOpen");
     menuDiv.classList.add("menuHidden");
     menuHidden = true;
-// se il menù è aperto si chiude
-  } else {
-    shopDiv.classList.remove("shopOpen");
-    shopDiv.classList.add("shopHidden");
-    shopHidden = true;
-  }
-}
-
-// pagina personale
-let profileHidden = true;
-    
-function toggleProfile() {
-  let profileDiv = document.getElementById("profileDiv");
-
-// se il menu è chiuso si apre
-  if (profileHidden) {
+  } else if(shopHidden){
     document.getElementById("logo").style.display = "none";
     frontDiv.classList.remove("frontOpen");
     frontDiv.classList.add("frontHidden");
@@ -224,22 +253,19 @@ function toggleProfile() {
     rankDiv.classList.add("rankHidden");
     rankHidden = true;
 
-    shopDiv.classList.remove("shopOpen");
-    shopDiv.classList.add("shopHidden");
-    shopHidden = true;
-
-    profileDiv.classList.remove("profileHidden");
-    profileDiv.classList.add("profileOpen");
-    profileHidden = false;
+    shopDiv.classList.remove("shopHidden");
+    shopDiv.classList.add("shopOpen");
+    shopHidden = false;
 
     menuDiv.classList.remove("menuOpen");
     menuDiv.classList.add("menuHidden");
     menuHidden = true;
-// se il menù è aperto si chiude
-  } else {
-    profileDiv.classList.remove("profileOpen");
-    profileDiv.classList.add("profileHidden");
-    profileHidden = true;
+  }
+  else {
+    shopDiv.classList.remove("shopOpen");
+    shopDiv.classList.add("shopHidden");
+    shopHidden = true;
   }
 }
+
 

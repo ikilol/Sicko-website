@@ -6,10 +6,10 @@
 
 	body{
 		overflow-x: hidden;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    	width: 100%;
+    	-webkit-box-sizing: border-box;
+      	-moz-box-sizing: border-box;
+        box-sizing: border-box;
 }
 }
 
@@ -108,6 +108,7 @@
 @media only screen and (max-width:586px){
 	.page.n4{
 		left:0;
+		top: 0;
 	}
 
 	.profileHidden{
@@ -116,6 +117,7 @@
 
 	.profileOpen {
 		left:0;
+		top: 0;
 		position: absolute;
 	}
 }
@@ -123,6 +125,7 @@
 @media only screen and (max-width:586px){
 	.page.n3{
 		left:0;
+		top: 0;
 	}
 
 	.shopHidden{
@@ -131,6 +134,7 @@
 
 	.shopOpen {
 		left:0;
+		top: 0;
 		position: absolute;
 	}
 }
@@ -138,6 +142,7 @@
 @media only screen and (max-width:586px){
 	.page.n2{
 		left:0;
+		top: 0;
 }
 	.rankHidden{
 		display: none;
@@ -145,6 +150,7 @@
 
 	.rankOpen {
 		left:0;
+		top: 0;
 		position: absolute;
 	}
 }
@@ -152,6 +158,7 @@
 @media only screen and (max-width:586px){
 	.page.n1{
 		left:0;
+		top: 0;
 	}
 
 	.aboutHidden{
@@ -160,6 +167,7 @@
 
 	.aboutOpen {
 		left:0;
+		top: 0;
 		position: absolute;
 	}
 }
@@ -167,6 +175,7 @@
 @media only screen and (max-width:586px){
 	.page.n0{
 		left:0;
+
 		display: none;
 	}
 
@@ -180,6 +189,7 @@
 
 	.frontOpen {
 		left:0;
+
 		position: absolute;
 	}
 }
@@ -189,7 +199,7 @@
 		font-size:5vw;
 		margin-left: -1%;
 		margin-top: 7%;
-		position: absolute;
+		position: fixed;
 	}
 }
 
@@ -248,7 +258,6 @@
     padding-bottom: 2%;
     top: 0;
     right: 0;
-    position: fixed;
     z-index: 90;
     background-color: black;
     width: 4%;
@@ -260,10 +269,9 @@
     z-index: 99;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 98%;
     height: 100%;
-    background: rgba(0, 0, 0);
-    display: flex;
+    background: black;
     }
 
     .menuHidden {
@@ -271,12 +279,13 @@
     }
 
 	.menuButton {
+		float: right;
+		position: fixed;
 		padding: 2%;
 		padding-bottom: 2%;
 		padding-right: 4%;
 		top: 0;
 		right: 0;
-		position: fixed;
 		z-index: 90;
 		background-color: black;
 		width: 4%;
@@ -322,8 +331,9 @@
 
 
 	.links{
-		width: 90%;
+		width: 99%;
 		color: white;
+		right: 0;
 		bottom: 0;
 		position: absolute;
 		margin-bottom: -7%;
@@ -335,7 +345,7 @@
 		border-top-width: 1px;
 		position: relative;
 		display: block;
-		float: left;
-		width: 100%;
+		float: right;
+		width: 90%;
 		margin-top: -7%;
 	  }
