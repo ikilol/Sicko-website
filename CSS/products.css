@@ -39,7 +39,7 @@ body {
   }
 
   a:hover{
-    cursor:url(../static/cursors/cursor.png) 25 25, pointer;
+    cursor:url(../static/cursors/cursor-medio-2.png) 25 0, pointer;
   }
 
   .closeButton{
@@ -49,7 +49,7 @@ body {
     top: 4%;
     position: absolute;
     z-index: 100;
-    cursor:url(../static/cursors/cursor.png) 25 25, pointer;
+    cursor:url(../static/cursors/cursor-medio-2.png) 25 0, pointer;
   }
   
   iframe {
@@ -92,7 +92,7 @@ body {
     width: 100%;
     padding-top: 4%;
     border-top: black 1px solid;
-    cursor:url(../static/cursors/cursor.png) 25 25, pointer;
+    cursor:url(../static/cursors/cursor-medio-2.png) 25 0, pointer;
   }
 
   .link2{
@@ -103,7 +103,7 @@ body {
 
   .link2:hover{
     color: #9b9b9b;
-    cursor:url(../static/cursors/cursor.png) 25 25, pointer;
+    cursor:url(../static/cursors/cursor-medio-2.png) 25 0, pointer;
   }
 
   .title {

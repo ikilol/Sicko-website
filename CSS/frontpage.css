@@ -514,7 +514,7 @@ hr.small {
     height: 8vw;
     margin:2%; 
     margin-top: 1%;
-    cursor:url(../static/cursors/cursor-4.png) 25 25, pointer;
+    cursor:url(../static/cursors/cursor-medio-3.png) 25 0, pointer;
     float: left;
 }
 

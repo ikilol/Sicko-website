@@ -11,19 +11,22 @@
     <link rel="icon" type="image/x-icon" href="static/icon.ico">
 
     <link rel="stylesheet" type="text/css" href="../CSS/fontsettings.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/page4.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/personal-page.css">
 
     <script src="https://kit.fontawesome.com/48764efa36.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">   
 </head>
-<body>
+<body class="noselect">
     <section class="main-content">
 
     <div class="user-section">
-        <div>
-            <a href="login.html" class="logOut"> log out </a>
-        </div>
+        <div class="logOut">
+            <img src="../static/profile-img.png" alt="" onclick="myFunction()" class="logOutbtn">
+            <div id="logOutDropdown" class="dropdown-content-logOut">
+              <a href="login.html">log out</a>
+            </div>
+          </div>
 
         <div class="user-section">
         <img class="profile-picture" src="../static/players/player_2.png" alt="">
@@ -33,7 +36,7 @@
         
         <div class="text2 description" > * CEO of insulting assholes, on my way to learn how to properly punch them.</div>
         <div class="data data-box"> 89 <span class="text2"> enemies</span> </div>
-        <div class="data data-box"> 2.6k <span class="text2"> icks</span> </div>
+        <div class="data data-box"> 10k <span class="text2"> icks</span> </div>
         <div class="data data-box"> 34 <span class="text2"> challenges</span> </div>
         </div>
     </div>
@@ -47,246 +50,289 @@
     <div class="title"> averages </div>
 
     <div class="data-section">
-        <img src="../static/grafico2.png" alt="" style="width: 80%; margin-left: 10%;">
+        
+        <div class="btn-group">
+        <button class="btn-toggle" type="button">day ↘ </button>
+        <ul class="dropdown-menu">
+            <li style="border-top:solid 1px gray; padding-top: 0.1vw;" onclick="changeImage1()">day</li>
+            <li onclick="changeImage2()" >month</li>
+            <li onclick="changeImage3()" >year</li>
+        </ul>
+        </div>
+
+          <img id="grafico" src="../static/grafici/grafico-1.png" class="grafici-medie"/>
+          <br />
+
     </div>
 
     <div class="title"> challenges </div>
 
-    <div class="data-section" >
-        <div class="challenge" style="border-right: 1px solid;">
-            <img class="profile-picture" src="../static/players/player_1.png" alt="">
-            <div class="challenge-name" class="username-box"> exam-week </div>
-            
-            <div class="text-r"> 
-                <div class="row">
-                    <div class="left">
-                        <div class="ranking"> #1 </div>
-                        <div> <img class="players" src="../static/players/player_1.png" alt=""> </div>
-                    </div>
-                    <div class="right">
-                        <div class="username"> @luci.ac00 </div>
-                        <div class="icks"> 87653 </div>
-                    </div>
-                </div>
-        
-                <div class="row">
-                    <div class="left">
-                        <div class="ranking"> #2 </div>
-                        <div> <img class="players" src="../static/players/player_2.png" alt=""> </div>
-                    </div>
-                    <div class="right">
-                        <div class="username"> @praewaaaaa.d </div>
-                        <div class="icks"> 87698 </div>
-                    </div>
-                </div>
-        
-                <div class="row">
-                    <div class="left">
-                        <div class="ranking"> #3 </div>
-                        <div> <img class="players" src="../static/players/player_3.png" alt=""> </div>
-                    </div>
-                    <div class="right">
-                        <div class="username"> @georgesspr </div>
-                        <div class="icks"> 87631 </div>
-                    </div>
-                </div>
-        
-                <div class="row">
-                    <div class="left">
-                        <div class="ranking"> #4 </div>
-                        <div> <img class="players" src="../static/players/player_4.png" alt=""> </div>
-                    </div>
-                    <div class="right">  
-                        <div class="username"> @gabriellehavana </div>
-                        <div class="icks"> 87630 </div>
-                    </div>
-                </div>
-        
-                <div class="row">
-                    <div class="left">
-                        <div class="ranking"> #5 </div>
-                        <div> <img class="players" src="../static/players/player_5.png" alt=""> </div>
-                    </div> 
-                    <div class="right">   
-                        <div class="username"> @limerence99_ </div>
-                        <div class="icks"> 87627 </div>
-                    </div>    
-                </div>
-        
-                <div class="row">
-                    <div class="left">
-                        <div class="ranking"> #6 </div>
-                        <div> <img class="players" src="../static/players/player_6.png" alt=""> </div>
-                    </div>
-                    <div class="right"> 
-                        <div class="username"> @bojan.duric </div>
-                        <div class="icks"> 87623 </div>
-                    </div>  
-                </div>
-        
-                <div class="row">
-                    <div class="left">
-                        <div class="ranking"> #7 </div>
-                        <div> <img class="players" src="../static/players/player_7.png" alt=""> </div>
-                    </div>
-                    <div class="right"> 
-                        <div class="username"> @franciscorelvas17 </div>
-                        <div class="icks"> 87621 </div>
-                    </div> 
-                </div>
-        
-                <div class="row">
-                    <div class="left">
-                        <div class="ranking"> #8 </div>
-                        <div> <img class="players" src="../static/players/player_8.png" alt=""> </div>
-                    </div>
-                    <div class="right"> 
-                        <div class="username"> @hediyeeee_ </div>
-                        <div class="icks"> 87620 </div>
-                    </div> 
-                </div>
-        
-                <div class="row">
-                    <div class="left">
-                        <div class="ranking"> #9 </div>
-                        <div> <img class="players" src="../static/players/player_9.png" alt=""> </div>
-                    </div>
-                    <div class="right"> 
-                        <div class="username"> @lucas_roddrigo </div>
-                        <div class="icks"> 87619 </div>
-                    </div>
-                </div>
-        
-                <div class="row" style="border-bottom-style: solid; border-bottom-width: 1px;">
-                    <div class="left">
-                        <div class="ranking"> #10 </div>
-                        <div> <img class="players" src="../static/players/player_10.png" alt=""> </div>
-                    </div>
-                    <div class="right"> 
-                        <div class="username"> @brkkrkmzr</div>
-                        <div class="icks"> 87615 </div>
-                    </div>
-                 </div> 
-        </div>
-    </div>
+        <div class="challenge-wrap">
+                <div class="challenge-section"> 
 
-    <div class="data-section" style="border-top-style: none;">
-        <div class="challenge">
-            <img class="profile-picture" src="../static/players/player_1.png" alt="">
-            <div class="challenge-name" class="username-box"> exam-week </div>
+                <div class="challenge">
+
+                    <img class="profile-picture" src="../static/players/player_1.png" alt="">
+                    <div class="challenge-name" class="username-box"> exam-week </div>
+                    <div class="data2 data-box2"> 5 <span class="text2"> enemies</span> </div>
+                    <div class="data2 data-box2"> 22.9k <span class="text2"> icks</span> </div>
+                    <div class="data2 data-box2" style="width: 32%;"> <span class="text2"> started</span> 21-12-21</div>
+                    
+                    <p id="countdown1" class="countdown"></p>
+
+                    <div class="text-r rank"> 
+                        <div class="row">
+                            <div class="left">
+                                <div class="ranking"> #1 </div>
+                                <div> <img class="players" src="../static/players/player_1.png" alt=""> </div>
+                            </div>
+                            <div class="right">
+                                <div class="username"> @launaps </div>
+                                <div class="icks"> 7653 </div>
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div class="left">
+                                <div class="ranking"> #2 </div>
+                                <div> <img class="players" src="../static/players/player_2.png" alt=""> </div>
+                            </div>
+                            <div class="right">
+                                <div class="username"> @alessiaatoffanin </div>
+                                <div class="icks"> 6998 </div>
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div class="left">
+                                <div class="ranking"> #3 </div>
+                                <div> <img class="players" src="../static/players/player_3.png" alt=""> </div>
+                            </div>
+                            <div class="right">
+                                <div class="username"> @ikilol </div>
+                                <div class="icks"> 4631 </div>
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div class="left">
+                                <div class="ranking"> #4 </div>
+                                <div> <img class="players" src="../static/players/player_4.png" alt=""> </div>
+                            </div>
+                            <div class="right">  
+                                <div class="username"> @lafranza </div>
+                                <div class="icks"> 2630 </div>
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div class="left">
+                                <div class="ranking"> #5 </div>
+                                <div> <img class="players" src="../static/players/player_5.png" alt=""> </div>
+                            </div> 
+                            <div class="right">   
+                                <div class="username"> @andresanguineti </div>
+                                <div class="icks"> 1207 </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
             
-            <div class="text-r"> 
-                <div class="row">
-                    <div class="left">
-                        <div class="ranking"> #1 </div>
-                        <div> <img class="players" src="../static/players/player_1.png" alt=""> </div>
+                <div class="challenge">
+
+                    <img class="profile-picture" src="../static/players/player_1.png" alt="">
+                    <div class="challenge-name" class="username-box"> exam-week </div>
+                    <div class="data2 data-box2"> 12 <span class="text2"> enemies</span> </div>
+                    <div class="data2 data-box2"> 12k <span class="text2"> icks</span> </div>
+                    <div class="data2 data-box2" style="width: 32%;"> <span class="text2"> started</span> 21-12-21</div>
+                
+                    <p id="countdown2" class="countdown"></p>
+                    
+                    <div class="text-r rank"> 
+                        <div class="row">
+                            <div class="left">
+                                <div class="ranking"> #1 </div>
+                                <div> <img class="players" src="../static/players/player_1.png" alt=""> </div>
+                            </div>
+                            <div class="right">
+                                <div class="username"> @luci.ac00 </div>
+                                <div class="icks"> 87653 </div>
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div class="left">
+                                <div class="ranking"> #2 </div>
+                                <div> <img class="players" src="../static/players/player_2.png" alt=""> </div>
+                            </div>
+                            <div class="right">
+                                <div class="username"> @praewaaaaa.d </div>
+                                <div class="icks"> 87698 </div>
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div class="left">
+                                <div class="ranking"> #3 </div>
+                                <div> <img class="players" src="../static/players/player_3.png" alt=""> </div>
+                            </div>
+                            <div class="right">
+                                <div class="username"> @georgesspr </div>
+                                <div class="icks"> 87631 </div>
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div class="left">
+                                <div class="ranking"> #4 </div>
+                                <div> <img class="players" src="../static/players/player_4.png" alt=""> </div>
+                            </div>
+                            <div class="right">  
+                                <div class="username"> @gabriellehavana </div>
+                                <div class="icks"> 87630 </div>
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div class="left">
+                                <div class="ranking"> #5 </div>
+                                <div> <img class="players" src="../static/players/player_5.png" alt=""> </div>
+                            </div> 
+                            <div class="right">   
+                                <div class="username"> @limerence99_ </div>
+                                <div class="icks"> 87627 </div>
+                            </div>    
+                        </div>
+                
+                        <div class="row">
+                            <div class="left">
+                                <div class="ranking"> #6 </div>
+                                <div> <img class="players" src="../static/players/player_6.png" alt=""> </div>
+                            </div>
+                            <div class="right"> 
+                                <div class="username"> @bojan.duric </div>
+                                <div class="icks"> 87623 </div>
+                            </div>  
+                        </div>
+                
+                        <div class="row">
+                            <div class="left">
+                                <div class="ranking"> #7 </div>
+                                <div> <img class="players" src="../static/players/player_7.png" alt=""> </div>
+                            </div>
+                            <div class="right"> 
+                                <div class="username"> @franciscorelvas17 </div>
+                                <div class="icks"> 87621 </div>
+                            </div> 
+                        </div>
+                
+                        <div class="row">
+                            <div class="left">
+                                <div class="ranking"> #8 </div>
+                                <div> <img class="players" src="../static/players/player_8.png" alt=""> </div>
+                            </div>
+                            <div class="right"> 
+                                <div class="username"> @hediyeeee_ </div>
+                                <div class="icks"> 87620 </div>
+                            </div> 
+                        </div>
+                
+                        <div class="row">
+                            <div class="left">
+                                <div class="ranking"> #9 </div>
+                                <div> <img class="players" src="../static/players/player_9.png" alt=""> </div>
+                            </div>
+                            <div class="right"> 
+                                <div class="username"> @lucas_roddrigo </div>
+                                <div class="icks"> 87619 </div>
+                            </div>
+                        </div>
+                
+                        <div class="row" style="border-bottom-style: solid; border-bottom-width: 1px;">
+                            <div class="left">
+                                <div class="ranking"> #10 </div>
+                                <div> <img class="players" src="../static/players/player_10.png" alt=""> </div>
+                            </div>
+                            <div class="right"> 
+                                <div class="username"> @brkkrkmzr</div>
+                                <div class="icks"> 87615 </div>
+                            </div>
+                        </div> 
                     </div>
-                    <div class="right">
-                        <div class="username"> @luci.ac00 </div>
-                        <div class="icks"> 87653 </div>
-                    </div>
+
                 </div>
-        
-                <div class="row">
-                    <div class="left">
-                        <div class="ranking"> #2 </div>
-                        <div> <img class="players" src="../static/players/player_2.png" alt=""> </div>
+            
+                <div class="challenge">
+
+                    <img class="profile-picture" src="../static/players/player_1.png" alt="">
+                    <div class="challenge-name" class="username-box"> exam-week </div>
+                    <div class="data2 data-box2"> 5 <span class="text2"> enemies</span> </div>
+                    <div class="data2 data-box2"> 12k <span class="text2"> icks</span> </div>
+                    <div class="data2 data-box2" style="width: 32%;"> <span class="text2"> started</span> 21-12-21</div>
+                
+                    <p id="countdown3" class="countdown"></p>
+                    
+                    <div class="text-r rank"> 
+                        <div class="row">
+                            <div class="left">
+                                <div class="ranking"> #1 </div>
+                                <div> <img class="players" src="../static/players/player_1.png" alt=""> </div>
+                            </div>
+                            <div class="right">
+                                <div class="username"> @launaps </div>
+                                <div class="icks"> 7653 </div>
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div class="left">
+                                <div class="ranking"> #2 </div>
+                                <div> <img class="players" src="../static/players/player_2.png" alt=""> </div>
+                            </div>
+                            <div class="right">
+                                <div class="username"> @alessiaatoffanin </div>
+                                <div class="icks"> 87698 </div>
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div class="left">
+                                <div class="ranking"> #3 </div>
+                                <div> <img class="players" src="../static/players/player_3.png" alt=""> </div>
+                            </div>
+                            <div class="right">
+                                <div class="username"> @ikilol </div>
+                                <div class="icks"> 87631 </div>
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div class="left">
+                                <div class="ranking"> #4 </div>
+                                <div> <img class="players" src="../static/players/player_4.png" alt=""> </div>
+                            </div>
+                            <div class="right">  
+                                <div class="username"> @lafranza </div>
+                                <div class="icks"> 87630 </div>
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div class="left">
+                                <div class="ranking"> #5 </div>
+                                <div> <img class="players" src="../static/players/player_5.png" alt=""> </div>
+                            </div> 
+                            <div class="right">   
+                                <div class="username"> @andresanguineti </div>
+                                <div class="icks"> 87627 </div>
+                            </div>    
+                        </div>
                     </div>
-                    <div class="right">
-                        <div class="username"> @praewaaaaa.d </div>
-                        <div class="icks"> 87698 </div>
-                    </div>
+
                 </div>
-        
-                <div class="row">
-                    <div class="left">
-                        <div class="ranking"> #3 </div>
-                        <div> <img class="players" src="../static/players/player_3.png" alt=""> </div>
-                    </div>
-                    <div class="right">
-                        <div class="username"> @georgesspr </div>
-                        <div class="icks"> 87631 </div>
-                    </div>
-                </div>
-        
-                <div class="row">
-                    <div class="left">
-                        <div class="ranking"> #4 </div>
-                        <div> <img class="players" src="../static/players/player_4.png" alt=""> </div>
-                    </div>
-                    <div class="right">  
-                        <div class="username"> @gabriellehavana </div>
-                        <div class="icks"> 87630 </div>
-                    </div>
-                </div>
-        
-                <div class="row">
-                    <div class="left">
-                        <div class="ranking"> #5 </div>
-                        <div> <img class="players" src="../static/players/player_5.png" alt=""> </div>
-                    </div> 
-                    <div class="right">   
-                        <div class="username"> @limerence99_ </div>
-                        <div class="icks"> 87627 </div>
-                    </div>    
-                </div>
-        
-                <div class="row">
-                    <div class="left">
-                        <div class="ranking"> #6 </div>
-                        <div> <img class="players" src="../static/players/player_6.png" alt=""> </div>
-                    </div>
-                    <div class="right"> 
-                        <div class="username"> @bojan.duric </div>
-                        <div class="icks"> 87623 </div>
-                    </div>  
-                </div>
-        
-                <div class="row">
-                    <div class="left">
-                        <div class="ranking"> #7 </div>
-                        <div> <img class="players" src="../static/players/player_7.png" alt=""> </div>
-                    </div>
-                    <div class="right"> 
-                        <div class="username"> @franciscorelvas17 </div>
-                        <div class="icks"> 87621 </div>
-                    </div> 
-                </div>
-        
-                <div class="row">
-                    <div class="left">
-                        <div class="ranking"> #8 </div>
-                        <div> <img class="players" src="../static/players/player_8.png" alt=""> </div>
-                    </div>
-                    <div class="right"> 
-                        <div class="username"> @hediyeeee_ </div>
-                        <div class="icks"> 87620 </div>
-                    </div> 
-                </div>
-        
-                <div class="row">
-                    <div class="left">
-                        <div class="ranking"> #9 </div>
-                        <div> <img class="players" src="../static/players/player_9.png" alt=""> </div>
-                    </div>
-                    <div class="right"> 
-                        <div class="username"> @lucas_roddrigo </div>
-                        <div class="icks"> 87619 </div>
-                    </div>
-                </div>
-        
-                <div class="row" style="border-bottom-style: solid; border-bottom-width: 1px;">
-                    <div class="left">
-                        <div class="ranking"> #10 </div>
-                        <div> <img class="players" src="../static/players/player_10.png" alt=""> </div>
-                    </div>
-                    <div class="right"> 
-                        <div class="username"> @brkkrkmzr</div>
-                        <div class="icks"> 87615 </div>
-                    </div>
-                 </div> 
+            </div>
+            
         </div>
-    </div>
 
     </section>
     
@@ -301,6 +347,115 @@
             terms & conditions <br>
             privacy policy</div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("logOutDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.logOutbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content-logOut");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        
+        //menu grafico
+        $(".btn-toggle").on("click", function() {
+                $('.dropdown-menu').toggleClass('open');
+            });
+            $(".dropdown-menu li").on("click", function() {
+                $('.btn-toggle').text($(this).text() + " ↘");
+                $('.dropdown-menu').removeClass('open');
+            });
+
+        //cambiografico
+        function changeImage1() {
+            document.getElementById("grafico").src = "../static/grafici/grafico-1.png";}
+
+            function changeImage2() {
+            document.getElementById("grafico").src = "../static/grafici/grafico-2.png";}
+
+            function changeImage3() {
+            document.getElementById("grafico").src = "../static/grafici/grafico-3.png";}
+           
+       
+       //countdown
+        var countDownDate1 = new Date("Feb 8, 2022 18:00:00").getTime();     
+        var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate1 - now;
+
+        
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown1").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown1").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+
+        
+
+        var countDownDate2 = new Date("Mar 8, 2022 18:35:00").getTime();
+
+        var x2 = setInterval(function() {
+        var now2 = new Date().getTime();
+        var distance2 = countDownDate2 - now2;
+
+        var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
+        var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds2 = Math.floor((distance2 % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown2").innerHTML = days2 + "d " + hours2 + "h "
+        + minutes2 + "m " + seconds2 + "s ";
+
+        if (distance2 < 0) {
+            clearInterval(x2);
+            document.getElementById("countdown2").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+
+
+
+        var countDownDate3 = new Date("Feb 13, 2022 10:30:00").getTime();
+
+        var x3 = setInterval(function() {
+        var now3 = new Date().getTime();
+        var distance3 = countDownDate3 - now3;
+
+        var days3 = Math.floor(distance3 / (1000 * 60 * 60 * 24));
+        var hours3 = Math.floor((distance3 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes3 = Math.floor((distance3 % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds3 = Math.floor((distance3 % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown3").innerHTML = days3 + "d " + hours3 + "h "
+        + minutes3 + "m " + seconds3 + "s ";
+
+        if (distance3 < 0) {
+            clearInterval(x2);
+            document.getElementById("countdown3").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+
+       </script>
 
 </body>
 </html>

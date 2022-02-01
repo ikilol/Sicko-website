@@ -246,7 +246,7 @@ a.link-product {
 
 a.link-product:hover {
   color: #8ee002;
-  cursor:url(../static/cursors/cursor.png) 25 25, pointer;
+  cursor:url(../static/cursors/cursor-medio-2.png) 25 0, pointer;
 }
 
 @media only screen and (max-width:586px){
