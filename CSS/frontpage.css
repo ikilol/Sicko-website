@@ -306,28 +306,30 @@ hr.small {
 }
 
 .number{
-  width: 20%;
+  width: 13%;
   float: left;
+  border-right: 1px solid black;
+  padding-right: 2%;
 }
 
 .howto{
   color: black; 
   float: right;
   text-align: left;
-  font-size: 3.5vw;
+  font-size: 3vw;
   font-family: Bastardo;
   font-weight: bold;
   width: 78%;
-  padding-top: 8%;
+  padding-top: 2%;
 }
 
 .notes{
   width: 70%;
   float: left;
-  margin-left: 3%;
+  margin-left: 7%;
   margin-top: 1%;
   text-align: left;
-  font-size: 1.6vw;
+  font-size: 2vw;
   font-family: Bastardo;
   font-weight: 500;
 }

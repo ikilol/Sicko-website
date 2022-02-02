@@ -4,5 +4,5 @@ body {
   
     /* This centers our sketch horizontally. */
     justify-content: center;
-
+    cursor:url(../static/cursors/cursor.png) 25 25, pointer;
   }

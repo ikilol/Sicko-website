@@ -219,7 +219,7 @@ body{
   background-color: black;
   color: white;
   text-align: center;
-  font-size: 2.7vw;
+  font-size: 2vw;
   font-family: Bastardo;
   position: absolute;
   padding: 0.5% 1.5%;
@@ -308,7 +308,7 @@ body{
   }
 
   .city {
-    font-size: 4vw;
+    font-size: 3.5vw;
     border: none;
     color: #8ee002;
     text-align: right;
@@ -418,7 +418,7 @@ body{
 .title {
   color: rgb(255, 255, 255); 
   text-align: left;
-  font-size: 3vw;
+  font-size: 2vw;
   font-family: Bastardo;
   font-weight: bold;
   height: auto;
@@ -428,7 +428,7 @@ body{
 .text{
   color: rgb(94, 94, 94); 
   text-align: left;
-  font-size: 2.7vw;
+  font-size: 2vw;
   font-family: Bastardo;
   font-weight: 500;
   height: auto;
@@ -437,11 +437,11 @@ body{
 @media only screen and (max-width:586px){
 
 	.text{
-		font-size:4vw;
+		font-size:3.5vw;
 	}
 
   .title{
-		font-size:5vw;
+		font-size:3.5vw;
     margin-bottom: 4%;
 	}
 
@@ -459,11 +459,11 @@ body{
 @media only screen and (max-width:400px){
 
   .text{
-		font-size:5vw;
+		font-size:4.5vw;
 	}
   
   .title{
-		font-size:5vw;
+		font-size:4.5vw;
     margin-bottom: 3%;
 	}
 
@@ -624,17 +624,16 @@ a.link:hover{
 #payoff{
   width: 80%; 
   float: right; 
-  margin-top: -10%; 
-  margin-right: -5%;
+  margin-top: 0%; 
+  margin-right: 0%;
 }
 
 @media only screen and (max-width:586px){
   
   #payoff{
-    width: 115%; 
+    width: 100%; 
     float: right; 
-    margin-top: -10%; 
-    margin-right: -5%;
+    margin-top: 2%;
   }
 }
 

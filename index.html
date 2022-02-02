@@ -92,29 +92,29 @@
     </div>
 
     <div class="menu" >
-        <div class="menuButton"><img src="static/menu.png" onclick="toggleMenu()" style="cursor: url(static/cursors/cursor-4.png) 25 25, default;"></div>
+        <div class="menuButton"><img src="static/menu.png" onclick="toggleMenu()" style="cursor:url(../static/cursors/cursor-medio-3.png) 25 0, pointer;"></div>
         <div id="menuDiv" class="menuHidden" >
                 <ul class="links">
-                    <div class="menuButton"> <img src="static/X.png"onclick="toggleMenu()" style="cursor: url(static/cursors/cursor-4.png) 25 25, default;"> </div>  
+                    <div class="menuButton"> <img src="static/X.png"onclick="toggleMenu()" style="cursor:url(../static/cursors/cursor-medio-3.png) 25 0, pointer;"> </div>  
                     
                     <div class="row">
                         <div class="menu-arrow" onclick="toggleFront()"> ↗ </div>
-                        <div class="noselect menu-link"> home </div>
+                        <div class="noselect menu-link" onclick="toggleFront()"> home </div>
                     </div>
 
                     <div class="row">
                         <div class="menu-arrow" onclick="toggleAbout()"> ↗ </div>
-                        <div class="noselect menu-link"> about </div>
+                        <div class="noselect menu-link" onclick="toggleAbout()"> about </div>
                     </div>
 
                     <div class="row">
                         <div class="menu-arrow" onclick="toggleRank()"> ↗ </div>
-                        <div class="noselect menu-link"> rankings </div>
+                        <div class="noselect menu-link" onclick="toggleRank()"> rankings </div>
                     </div>
 
                     <div class="row">
                         <div class="menu-arrow" onclick="toggleShop()"> ↗ </div>
-                        <div class="noselect menu-link"> shop </div>
+                        <div class="noselect menu-link" onclick="toggleShop()"> shop </div>
                     </div>
                 <ul> 
                 

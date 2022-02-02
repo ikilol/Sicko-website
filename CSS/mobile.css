@@ -313,6 +313,7 @@
         padding: 4%;
 		float: right;
 		border-right: white 1px solid;
+		cursor:url(../static/cursors/cursor-medio-3.png) 25 0, pointer;
     }
 
 	.menu-arrow{
@@ -322,13 +323,16 @@
 		float: right;
 		margin-right: 10%;
 		padding: 2%;
+		cursor:url(../static/cursors/cursor-medio-3.png) 25 0, pointer;
 	}
 	
 	.menu-arrow:hover{
-		cursor: url(../static/cursors/cursor-4.png) 25 25, default;
 		color: #8ee002;
 	}
 
+	.menu-link:hover{
+		color: #8ee002;
+	}
 
 	.links{
 		width: 99%;
