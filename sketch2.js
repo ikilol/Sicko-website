@@ -157,7 +157,7 @@ if (latestData >= 3000 && latestData < 4000){
   textStyle(NORMAL);
   noStroke();
   textAlign(CENTER, CENTER);
-  text("stronger ↘", -360, -177);
+  text("stronger ↘", -386, -177);
 
   textSize(40);
   fill(0);
@@ -184,7 +184,9 @@ if (latestData >= 3000 && latestData < 4000){
   textStyle(NORMAL);
   noStroke();
   textAlign(CENTER, CENTER);
-  text("louder ↘", -370, -177);
+  text("louder ↘", -393, -177);
+
+
 
   textSize(40);
   fill(0);
@@ -271,13 +273,13 @@ if (latestData >= 3000 && latestData < 4000){
 
 if (latestData >= 2000 && latestData < 3000 || latestData >= 4000){
 
-    textSize(20);
-    fill(0);
-    textStyle(NORMAL);
-    noStroke();
-    textAlign(CENTER, CENTER);
-    text("faster ↘", -372, -177);
-  }
+  textSize(20);
+  fill(0);
+  textStyle(NORMAL);
+  noStroke();
+  textAlign(CENTER, CENTER);
+  text("faster ↘", -395, -177);
+}
 
     if(timer == true){
     textSize(40);
