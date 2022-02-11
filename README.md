@@ -15,5 +15,8 @@ starting from rage.
  sicko believes in taking pride in stubborness. 
  
  This is sicko.
+ 
+ 
+ Youtube channel: https://www.youtube.com/channel/UCjK3NKOe8TOuYqVfqGPYF0Q
     
     
