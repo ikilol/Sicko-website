@@ -18,5 +18,6 @@ starting from rage.
  
  
  Youtube channel: https://www.youtube.com/channel/UCjK3NKOe8TOuYqVfqGPYF0Q
+ Instagram profile: https://www.instagram.com/sicko_worldwide/?hl=en
     
     
